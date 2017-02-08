@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 1 resources to &apos;OgreTutorial&apos;" description="Move 1 resources to &apos;OgreTutorial&apos;" destination="/OgreTutorial" element1="/PA1/plugins.cfg" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1485985137093" updateReferences="true"/>
+</session>
