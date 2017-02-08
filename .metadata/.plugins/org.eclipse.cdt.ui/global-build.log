@@ -196,3 +196,75 @@ make: Nothing to be done for 'all'.
 12:50:50 **** Incremental Build of configuration Debug for project PA0 ****
 make all 
 make: Nothing to be done for 'all'.
+13:08:25 **** Incremental Build of configuration Debug for project PA1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:09:19 **** Build of configuration Debug for project Gonzalez_AS0 ****
+make all 
+Building target: Gonzalez_AS0
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Gonzalez_AS0"  ./src/BaseApplication.o ./src/TutorialApplication.o   -lOgreOverlay -lOgreMain -lOIS -lboost_system
+Finished building target: Gonzalez_AS0
+ 
+13:09:19 **** Incremental Build of configuration Debug for project PA1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:09:44 **** Incremental Build of configuration Debug for project Gonzalez_AS0 ****
+make all 
+make: Nothing to be done for 'all'.
+13:16:05 **** Incremental Build of configuration Debug for project Gonzalez_AS0 ****
+make all 
+make: Nothing to be done for 'all'.
+13:46:43 **** Incremental Build of configuration Debug for project PA1 ****
+make all 
+Building file: ../src/TutorialApplication.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA1/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TutorialApplication.d" -MT"src/TutorialApplication.d" -o "src/TutorialApplication.o" "../src/TutorialApplication.cpp"
+../src/TutorialApplication.cpp:11:40: error: no ‘void TutorialApplication::createCamera()’ member function declared in class ‘TutorialApplication’
+ void TutorialApplication::createCamera()
+                                        ^
+../src/TutorialApplication.cpp:22:43: error: no ‘void TutorialApplication::createViewports()’ member function declared in class ‘TutorialApplication’
+ void TutorialApplication::createViewports()
+                                           ^
+../src/TutorialApplication.cpp:34:76: error: no ‘bool TutorialApplication::processUnbufferedInput(const Ogre::FrameEvent&)’ member function declared in class ‘TutorialApplication’
+ bool TutorialApplication::processUnbufferedInput(const Ogre::FrameEvent& fe)
+                                                                            ^
+make: *** [src/TutorialApplication.o] Error 1
+src/subdir.mk:21: recipe for target 'src/TutorialApplication.o' failed
+13:46:56 **** Incremental Build of configuration Debug for project Gonzalez_AS0 ****
+make all 
+make: Nothing to be done for 'all'.
+13:46:56 **** Incremental Build of configuration Debug for project PA1 ****
+make all 
+Building file: ../src/TutorialApplication.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA1/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TutorialApplication.d" -MT"src/TutorialApplication.d" -o "src/TutorialApplication.o" "../src/TutorialApplication.cpp"
+../src/TutorialApplication.cpp:11:40: error: no ‘void TutorialApplication::createCamera()’ member function declared in class ‘TutorialApplication’
+ void TutorialApplication::createCamera()
+                                        ^
+../src/TutorialApplication.cpp:22:43: error: no ‘void TutorialApplication::createViewports()’ member function declared in class ‘TutorialApplication’
+ void TutorialApplication::createViewports()
+                                           ^
+../src/TutorialApplication.cpp:34:76: error: no ‘bool TutorialApplication::processUnbufferedInput(const Ogre::FrameEvent&)’ member function declared in class ‘TutorialApplication’
+ bool TutorialApplication::processUnbufferedInput(const Ogre::FrameEvent& fe)
+                                                                            ^
+src/subdir.mk:21: recipe for target 'src/TutorialApplication.o' failed
+make: *** [src/TutorialApplication.o] Error 1
+13:47:26 **** Incremental Build of configuration Debug for project Gonzalez_AS0 ****
+make all 
+make: Nothing to be done for 'all'.
+13:47:27 **** Incremental Build of configuration Debug for project PA1 ****
+make all 
+Building file: ../src/TutorialApplication.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA1/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TutorialApplication.d" -MT"src/TutorialApplication.d" -o "src/TutorialApplication.o" "../src/TutorialApplication.cpp"
+Finished building: ../src/TutorialApplication.cpp
+ 
+Building target: PA1
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "PA1"  ./src/BaseApplication.o ./src/TutorialApplication.o   -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA1
+ 
+13:47:39 **** Incremental Build of configuration Debug for project PA1 ****
+make all 
+make: Nothing to be done for 'all'.

@@ -1,6 +1,6 @@
-12:49:18 **** Build of configuration Debug for project PA1 ****
+13:47:39 **** Incremental Build of configuration Debug for project PA1 ****
 make all 
 make: Nothing to be done for 'all'.
 
-12:49:19 Build Finished (took 215ms)
+13:47:39 Build Finished (took 214ms)
 
