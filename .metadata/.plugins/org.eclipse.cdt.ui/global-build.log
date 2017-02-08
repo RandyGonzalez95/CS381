@@ -180,3 +180,19 @@ Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "PA1"  ./src/BaseApplication.o ./src/TutorialApplication.o   -lOgreMain -lOgreOverlay -lOIS -lboost_system
 Finished building target: PA1
  
+12:49:17 **** Build of configuration Debug for project PA0 ****
+make all 
+Building target: PA0
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "PA0"  ./src/BaseApplication.o ./src/TutorialApplication.o   -lOgreOverlay -lOgreMain -lOIS -lboost_system
+Finished building target: PA0
+ 
+12:49:18 **** Build of configuration Debug for project PA1 ****
+make all 
+make: Nothing to be done for 'all'.
+12:49:57 **** Incremental Build of configuration Debug for project PA0 ****
+make all 
+make: Nothing to be done for 'all'.
+12:50:50 **** Incremental Build of configuration Debug for project PA0 ****
+make all 
+make: Nothing to be done for 'all'.

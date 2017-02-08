@@ -1,15 +1,6 @@
-14:07:10 **** Incremental Build of configuration Debug for project PA1 ****
+12:49:18 **** Build of configuration Debug for project PA1 ****
 make all 
-Building file: ../src/TutorialApplication.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/randygonzalez/Desktop/CS381/PA1/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TutorialApplication.d" -MT"src/TutorialApplication.d" -o "src/TutorialApplication.o" "../src/TutorialApplication.cpp"
-Finished building: ../src/TutorialApplication.cpp
- 
-Building target: PA1
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "PA1"  ./src/BaseApplication.o ./src/TutorialApplication.o   -lOgreMain -lOgreOverlay -lOIS -lboost_system
-Finished building target: PA1
- 
+make: Nothing to be done for 'all'.
 
-14:07:13 Build Finished (took 3s.70ms)
+12:49:19 Build Finished (took 215ms)
 
