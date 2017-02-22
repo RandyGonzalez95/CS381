@@ -1,3 +1,11 @@
+/*
+ * Copyright 2017
+ * Randy Gonzalez
+ * CS 381
+ * UNR
+ * randygonzalez@nevada.unr.edu
+ */
+
 #include "TutorialApplication.h"
 
 TutorialApplication::TutorialApplication()	: mRotate(.13),
@@ -29,6 +37,7 @@ void TutorialApplication::createScene()
   Ogre::SceneNode* cubeNode = mSceneMgr->getRootSceneNode()->createChildSceneNode(
     "NinjaNode");
   cubeNode->attachObject(cubeEntity);
+  cubeEntity->setMaterialName("Borg/borg");
 
   // Create Plane
   Ogre::Plane plane(Ogre::Vector3::UNIT_Y, 0);

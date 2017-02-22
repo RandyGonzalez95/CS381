@@ -1,3 +1,10 @@
+/*
+ * Copyright 2017
+ * Randy Gonzalez
+ * CS 381
+ * UNR
+ * randygonzalez@nevada.unr.edu
+ */
 #ifndef TUTORIALAPPLICATION_H
 #define TUTORIALAPPLICATION_H
 

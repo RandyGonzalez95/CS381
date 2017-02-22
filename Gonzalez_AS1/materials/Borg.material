@@ -1,0 +1,15 @@
+material Borg/borg
+{
+	technique
+	{
+		pass
+		{
+			ambient 2 2 2
+
+			texture_unit
+			{
+				texture borg.jpg
+			}
+		}
+	}
+}

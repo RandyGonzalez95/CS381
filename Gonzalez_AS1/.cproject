@@ -25,6 +25,7 @@
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.1116998762" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.358877078" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/materials}&quot;"/>
 									<listOptionValue builtIn="false" value="/usr/local/include/OGRE/Terrain"/>
 									<listOptionValue builtIn="false" value="/usr/local/include/OGRE/Overlay"/>
 									<listOptionValue builtIn="false" value="/usr/include/ois"/>
@@ -39,14 +40,14 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.1563247181" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1467357992" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
-								<option id="gnu.cpp.link.option.libs.1558093631" superClass="gnu.cpp.link.option.libs" valueType="libs">
+								<option id="gnu.cpp.link.option.libs.1558093631" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="OgreMain"/>
 									<listOptionValue builtIn="false" value="OgreOverlay"/>
 									<listOptionValue builtIn="false" value="OgreTerrain"/>
 									<listOptionValue builtIn="false" value="OIS"/>
 									<listOptionValue builtIn="false" value="boost_system"/>
 								</option>
-								<option id="gnu.cpp.link.option.paths.1417865994" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+								<option id="gnu.cpp.link.option.paths.1417865994" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/usr/local/lib/OGRE"/>
 									<listOptionValue builtIn="false" value="/usr/lib/x86_64-linux-gnu"/>
 								</option>

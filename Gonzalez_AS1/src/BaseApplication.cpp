@@ -14,7 +14,13 @@ Tutorial Framework (for Ogre 1.9)
 http://www.ogre3d.org/wiki/
 -----------------------------------------------------------------------------
 */
-
+/*
+ * Copyright 2017
+ * Randy Gonzalez
+ * CS 381
+ * UNR
+ * randygonzalez@nevada.unr.edu
+ */
 #include "BaseApplication.h"
 
 #if OGRE_PLATFORM == OGRE_PLATFORM_APPLE

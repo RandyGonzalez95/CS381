@@ -1,8 +1,24 @@
-22:26:43 **** Incremental Build of configuration Debug for project Gonzalez_AS1 ****
+12:50:58 **** Incremental Build of configuration Debug for project Gonzalez_AS1 ****
 make all 
+Building file: ../src/BaseApplication.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/include" -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BaseApplication.d" -MT"src/BaseApplication.d" -o "src/BaseApplication.o" "../src/BaseApplication.cpp"
+In file included from ../src/BaseApplication.cpp:24:0:
+/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/include/BaseApplication.h: In constructor ‘BaseApplication::BaseApplication()’:
+/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/include/BaseApplication.h:130:33: warning: ‘BaseApplication::mKeyboard’ will be initialized after [-Wreorder]
+     OIS::Keyboard*              mKeyboard;
+                                 ^
+/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/include/BaseApplication.h:117:33: warning:   ‘Ogre::OverlaySystem* BaseApplication::mOverlaySystem’ [-Wreorder]
+     Ogre::OverlaySystem*        mOverlaySystem;
+                                 ^
+../src/BaseApplication.cpp:31:1: warning:   when initialized here [-Wreorder]
+ BaseApplication::BaseApplication(void)
+ ^
+Finished building: ../src/BaseApplication.cpp
+ 
 Building file: ../src/TutorialApplication.cpp
 Invoking: GCC C++ Compiler
-g++ -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/include" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TutorialApplication.d" -MT"src/TutorialApplication.d" -o "src/TutorialApplication.o" "../src/TutorialApplication.cpp"
+g++ -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/include" -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TutorialApplication.d" -MT"src/TutorialApplication.d" -o "src/TutorialApplication.o" "../src/TutorialApplication.cpp"
 Finished building: ../src/TutorialApplication.cpp
  
 Building target: Gonzalez_AS1
@@ -10,6 +26,6 @@ Invoking: GCC C++ Linker
 g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "Gonzalez_AS1"  ./src/BaseApplication.o ./src/TutorialApplication.o   -lOgreMain -lOgreOverlay -lOgreTerrain -lOIS -lboost_system
 Finished building target: Gonzalez_AS1
  
-22:26:50 **** Incremental Build of configuration Debug for project Gonzalez_AS1 ****
+12:51:04 **** Incremental Build of configuration Debug for project Gonzalez_AS1 ****
 make all 
 make: Nothing to be done for 'all'.
