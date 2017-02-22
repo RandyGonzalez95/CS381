@@ -1,0 +1,32 @@
+#ifndef TUTORIALAPPLICATION_H
+#define TUTORIALAPPLICATION_H
+
+#include "BaseApplication.h"
+
+class TutorialApplication : public BaseApplication
+{
+public:
+  TutorialApplication();
+  virtual ~TutorialApplication();
+
+
+protected:
+  virtual void createScene();
+  virtual bool keyPressed(const OIS::KeyEvent& ke);
+  virtual bool frameRenderingQueued(const Ogre::FrameEvent& fe);
+  virtual bool keyReleased(const OIS::KeyEvent& ke)
+
+private:
+  bool processUnbufferedInput(const Ogre::FrameEvent& fe);
+
+  Ogre::Real mRotate;
+  Ogre::Real mMove;
+  Ogre::SceneNode* mCamNode;
+  Ogre::Vector3 mDirection;
+  Ogre::Real surfaceHeight;
+  Ogre::Vector3 cubeVel;
+
+};
+
+
+#endif /* TUTORIALAPPLICATION_H */
