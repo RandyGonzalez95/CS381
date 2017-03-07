@@ -1,6 +1,6 @@
-12:51:04 **** Incremental Build of configuration Debug for project Gonzalez_AS1 ****
+13:14:55 **** Incremental Build of configuration Debug for project Gonzalez_AS1 ****
 make all 
 make: Nothing to be done for 'all'.
 
-12:51:05 Build Finished (took 165ms)
+13:14:56 Build Finished (took 169ms)
 

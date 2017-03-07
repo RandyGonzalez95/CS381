@@ -1,0 +1,28 @@
+/*
+ * Entity381.h
+ *
+ *  Created on: Mar 6, 2017
+ *      Author: randygonzalez
+ */
+
+#ifndef INCLUDE_ENTITY381_H_
+#define INCLUDE_ENTITY381_H_
+
+#include <cstring>
+
+class Entity381
+{
+public:
+
+private:
+	int entityId;
+	string entityName;
+	float minSpeed, masxSpeed, speed, heading, desiredSpeed, desiredHeading;
+	float acceleration, turningRate;
+
+
+};
+
+
+
+#endif /* INCLUDE_ENTITY381_H_ */

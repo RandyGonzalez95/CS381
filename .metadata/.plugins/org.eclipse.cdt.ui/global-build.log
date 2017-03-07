@@ -1,31 +1,22 @@
-12:50:58 **** Incremental Build of configuration Debug for project Gonzalez_AS1 ****
+21:56:21 **** Incremental Build of configuration Debug for project Gonzalez_AS2 ****
 make all 
-Building file: ../src/BaseApplication.cpp
+Building file: ../src/as2.cpp
 Invoking: GCC C++ Compiler
-g++ -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/include" -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BaseApplication.d" -MT"src/BaseApplication.d" -o "src/BaseApplication.o" "../src/BaseApplication.cpp"
-In file included from ../src/BaseApplication.cpp:24:0:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/include/BaseApplication.h: In constructor ‘BaseApplication::BaseApplication()’:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/include/BaseApplication.h:130:33: warning: ‘BaseApplication::mKeyboard’ will be initialized after [-Wreorder]
-     OIS::Keyboard*              mKeyboard;
-                                 ^
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/include/BaseApplication.h:117:33: warning:   ‘Ogre::OverlaySystem* BaseApplication::mOverlaySystem’ [-Wreorder]
-     Ogre::OverlaySystem*        mOverlaySystem;
-                                 ^
-../src/BaseApplication.cpp:31:1: warning:   when initialized here [-Wreorder]
- BaseApplication::BaseApplication(void)
+g++ -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include" -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/EntityMgr.h:11:0,
+                 from /home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/as2.h:12,
+                 from ../src/as2.cpp:8:
+/home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/Entity381.h:22:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  bool isSelected = false;
+                    ^
+../src/as2.cpp: In member function ‘virtual bool AS2::frameRenderingQueued(const Ogre::FrameEvent&)’:
+../src/as2.cpp:41:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
  ^
-Finished building: ../src/BaseApplication.cpp
+Finished building: ../src/as2.cpp
  
-Building file: ../src/TutorialApplication.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/include" -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS1/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TutorialApplication.d" -MT"src/TutorialApplication.d" -o "src/TutorialApplication.o" "../src/TutorialApplication.cpp"
-Finished building: ../src/TutorialApplication.cpp
- 
-Building target: Gonzalez_AS1
+Building target: Gonzalez_AS2
 Invoking: GCC C++ Linker
-g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "Gonzalez_AS1"  ./src/BaseApplication.o ./src/TutorialApplication.o   -lOgreMain -lOgreOverlay -lOgreTerrain -lOIS -lboost_system
-Finished building target: Gonzalez_AS1
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Gonzalez_AS2"  ./src/Aspects.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: Gonzalez_AS2
  
-12:51:04 **** Incremental Build of configuration Debug for project Gonzalez_AS1 ****
-make all 
-make: Nothing to be done for 'all'.

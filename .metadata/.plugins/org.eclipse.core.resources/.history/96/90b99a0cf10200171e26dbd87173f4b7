@@ -1,0 +1,100 @@
+/*
+ * as2.cpp
+ *
+ *  Created on: Mar 6, 2017
+ *      Author: randygonzalez
+ */
+
+#include "as2.h"
+
+AS2::AS2(void)
+{
+	// Initialize all data members
+	EntityMgr *entityManager;
+	float yaw;
+	float deltaVeloctiy;
+	Ogre::Vector3 velocity, position;
+	float keyboardTimer;
+	const static float keyTime = 0.01f;
+}
+
+virtual AS2::~AS2()
+{
+
+}
+
+void AS2::CreateScene()
+{
+
+}
+
+
+bool AS2::frameRenderingQueued(const Ogre::FrameEvent& fe)
+{
+
+}
+
+void AS2::RenderGround()
+{
+
+}
+
+void AS2::RenderSky()
+{
+
+}
+
+void AS2::UpdateCamera(const Ogre::FrameEvent& fe)
+{
+
+}
+
+void AS2::UpdateVelocity(const Ogre::FrameEvent& fe)
+{
+
+}
+
+void AS2::UpdatePosition(const Ogre::FrameEvent& fe)
+{
+
+}
+
+#if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
+#define WIN32_LEAN_AND_MEAN
+#include "windows.h"
+#endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
+    INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR strCmdLine, INT)
+#else
+    int main(int argc, char *argv[])
+#endif
+    {
+	// Create application object
+	AS2 app;
+
+	try {
+	    app.go();
+	} catch(Ogre::Exception& e)  {
+#if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
+	    MessageBox(NULL, e.getFullDescription().c_str(), "An exception has occurred!", MB_OK | MB_ICONERROR | MB_TASKMODAL);
+#else
+	    std::cerr << "An exception has occurred: " <<
+		e.getFullDescription().c_str() << std::endl;
+#endif
+	}
+
+	return 0;
+    }
+
+#ifdef __cplusplus
+}
+#endif
+
+
+
+

@@ -1,0 +1,38 @@
+/*
+ * Copyright 2017
+ * Randy Gonzalez
+ * CS 381
+ * UNR
+ * randygonzalez@nevada.unr.edu
+ */
+#ifndef TUTORIALAPPLICATION_H
+#define TUTORIALAPPLICATION_H
+
+#include "BaseApplication.h"
+
+class TutorialApplication : public BaseApplication
+{
+public:
+  TutorialApplication();
+  virtual ~TutorialApplication();
+
+
+protected:
+  virtual void createScene();
+  virtual bool keyPressed(const OIS::KeyEvent& ke);
+  virtual bool keyReleased(const OIS::KeyEvent& ke);
+  virtual bool frameRenderingQueued(const Ogre::FrameEvent& fe);
+
+
+private:
+  Ogre::Real mRotate;
+  Ogre::Real mMove;
+  Ogre::SceneNode* mCamNode;
+  Ogre::Vector3 mDirection;
+  Ogre::Real surfaceHeight;
+  Ogre::Vector3 cubeVel;
+
+};
+
+
+#endif /* TUTORIALAPPLICATION_H */

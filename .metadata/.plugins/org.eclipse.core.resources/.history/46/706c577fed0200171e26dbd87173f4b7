@@ -1,0 +1,22 @@
+/*
+ * Aspects.h
+ *
+ *  Created on: Mar 6, 2017
+ *      Author: randygonzalez
+ */
+
+#ifndef INCLUDE_ASPECTS_H_
+#define INCLUDE_ASPECTS_H_
+
+class Aspects
+{
+public:
+	Aspect(Entity381* entity);
+	virtual ~Aspect();
+
+	vir
+};
+
+
+
+#endif /* INCLUDE_ASPECTS_H_ */

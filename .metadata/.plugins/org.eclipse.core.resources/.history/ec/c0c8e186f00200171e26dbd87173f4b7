@@ -1,0 +1,17 @@
+/*
+ * as2.cpp
+ *
+ *  Created on: Mar 6, 2017
+ *      Author: randygonzalez
+ */
+
+#include "as2.h"
+
+AS2::AS2(void)
+{
+
+}
+
+
+
+

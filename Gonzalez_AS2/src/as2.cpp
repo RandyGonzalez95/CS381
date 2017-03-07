@@ -1,0 +1,106 @@
+/*
+ * as2.cpp
+ *
+ *  Created on: Mar 6, 2017
+ *      Author: randygonzalez
+ */
+
+#include "as2.h"
+
+AS2::AS2(void)
+{
+	// Initialize all data members
+	entityManager = new EntityMgr();
+	yaw = 0;
+	deltaVeloctiy = 0;
+	velocity = Ogre::Vector3::ZERO;
+	position = Ogre::Vector3::ZERO;
+	keyboardTimer = 0;
+
+
+	if(!entityManager->Init())
+	{
+		std::cerr<< "Entity Manager failed to initialize"<<std::endl;
+	}
+}
+
+AS2::~AS2(void)
+{
+
+}
+
+void AS2::CreateScene()
+{
+
+}
+
+
+bool AS2::frameRenderingQueued(const Ogre::FrameEvent& fe)
+{
+
+}
+
+void AS2::RenderGround()
+{
+
+}
+
+void AS2::RenderSky()
+{
+
+}
+
+void AS2::UpdateCamera(const Ogre::FrameEvent& fe)
+{
+
+}
+
+void AS2::UpdateVelocity(const Ogre::FrameEvent& fe)
+{
+
+}
+
+void AS2::UpdatePosition(const Ogre::FrameEvent& fe)
+{
+
+}
+
+#if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
+#define WIN32_LEAN_AND_MEAN
+#include "windows.h"
+#endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
+    INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR strCmdLine, INT)
+#else
+    int main(int argc, char *argv[])
+#endif
+    {
+	// Create application object
+	//AS2 app;
+
+	try {
+	   // app.go();
+	} catch(Ogre::Exception& e)  {
+#if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
+	    MessageBox(NULL, e.getFullDescription().c_str(), "An exception has occurred!", MB_OK | MB_ICONERROR | MB_TASKMODAL);
+#else
+	    std::cerr << "An exception has occurred: " <<
+		e.getFullDescription().c_str() << std::endl;
+#endif
+	}
+
+	return 0;
+    }
+
+#ifdef __cplusplus
+}
+#endif
+
+
+
+

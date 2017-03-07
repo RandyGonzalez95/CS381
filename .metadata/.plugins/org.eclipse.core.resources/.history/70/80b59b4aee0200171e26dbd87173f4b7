@@ -1,0 +1,23 @@
+/*
+ * EntityMgr.h
+ *
+ *  Created on: Mar 6, 2017
+ *      Author: randygonzalez
+ */
+
+#ifndef INCLUDE_ENTITYMGR_H_
+#define INCLUDE_ENTITYMGR_H_
+
+class EntityMgr
+{
+public:
+	EntityMgr();
+	virtual ~EntityMgr(0;)
+
+private:
+
+};
+
+
+
+#endif /* INCLUDE_ENTITYMGR_H_ */

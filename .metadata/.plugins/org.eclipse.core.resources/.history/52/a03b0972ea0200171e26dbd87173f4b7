@@ -1,0 +1,16 @@
+/*
+ * as2.h
+ *
+ *  Created on: Mar 6, 2017
+ *      Author: randygonzalez
+ */
+
+#ifndef INCLUDE_AS2_H_
+#define INCLUDE_AS2_H_
+
+class AS2 : public BaseApplication
+
+
+
+
+#endif /* INCLUDE_AS2_H_ */

@@ -1,0 +1,16 @@
+/*
+ * EntityMgr.cpp
+ *
+ *  Created on: Mar 6, 2017
+ *      Author: randygonzalez
+ */
+#include "EntityMgr.h"
+	EntityMgr();
+	virtual ~EntityMgr();
+
+	bool Init();
+	Entity381* CreateEntity(Ogre::Entity *type, Ogre::Vector3 pos, float heading);
+	void Tick(float dt);
+
+
+

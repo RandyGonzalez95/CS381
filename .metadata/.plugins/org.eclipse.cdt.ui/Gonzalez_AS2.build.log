@@ -1,0 +1,25 @@
+21:56:21 **** Incremental Build of configuration Debug for project Gonzalez_AS2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include" -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/EntityMgr.h:11:0,
+                 from /home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/as2.h:12,
+                 from ../src/as2.cpp:8:
+/home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/Entity381.h:22:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  bool isSelected = false;
+                    ^
+../src/as2.cpp: In member function ‘virtual bool AS2::frameRenderingQueued(const Ogre::FrameEvent&)’:
+../src/as2.cpp:41:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/as2.cpp
+ 
+Building target: Gonzalez_AS2
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Gonzalez_AS2"  ./src/Aspects.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: Gonzalez_AS2
+ 
+
+21:56:26 Build Finished (took 4s.522ms)
+

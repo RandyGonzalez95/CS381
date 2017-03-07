@@ -1,0 +1,22 @@
+/*
+ * Entity381.cpp
+ *
+ *  Created on: Mar 6, 2017
+ *      Author: randygonzalez
+ */
+
+#include "Entity381.h"
+
+Entity381::Entity381()
+{
+
+}
+
+virtual ~Entity381()
+{
+
+}
+
+void Tick(float dt);
+
+
