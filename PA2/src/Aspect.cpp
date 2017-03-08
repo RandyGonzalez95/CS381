@@ -74,7 +74,9 @@ RenderableAspect::~RenderableAspect()
 
 void RenderableAspect::RenderBoat()
 {
-	entity->ogreSceneNode->setPosition(entity->position);
+	//entity->ogreSceneNode->setPosition(entity->position);
+	entity->ogreSceneNode->translate(entity->position, Ogre::Node::TS_LOCAL);
+	entity->ogreSceneNode->yaw(Ogre::Degree(0.1 * entity->desiredHeading));
 }
 
 

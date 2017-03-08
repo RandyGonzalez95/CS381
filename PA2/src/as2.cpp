@@ -96,8 +96,6 @@ void As2::UpdateCamera(const Ogre::FrameEvent& fe)
 
 bool As2::frameRenderingQueued(const Ogre::FrameEvent& fe)
 {
-
-
 	mKeyboard->capture();
 	if(mKeyboard->isKeyDown(OIS::KC_ESCAPE))
 		return false;
@@ -115,54 +113,47 @@ void As2::UpdateVelocity(const Ogre::FrameEvent& fe)
 {
 	keyboardTimer -= fe.timeSinceLastEvent;
 
+
 	//selected = 0;
 
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD8))
 	{
 		keyboardTimer = keyTime;
-		//velocity.z -= deltaVelocity;
 		entityManager->entities[selected]->velocity.z -= deltaVelocity;
 	}
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD2))
 	{
 		keyboardTimer = keyTime;
-		//velocity.z += deltaVelocity;
 		entityManager->entities[selected]->velocity.z += deltaVelocity;
 	}
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD4))
 	{
 		keyboardTimer = keyTime;
-		//velocity.x -= deltaVelocity;
-		entityManager->entities[selected]->velocity.x -= deltaVelocity;
+		entityManager->entities[selected]->desiredHeading = 0.04f;
 	}
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD6))
 	{
 		keyboardTimer = keyTime;
-		//velocity.x += deltaVelocity;
-		entityManager->entities[selected]->velocity.x += deltaVelocity;
+		entityManager->entities[selected]->desiredHeading = -0.04f;
 	}
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD9))
 	{
 		keyboardTimer = keyTime;
 		velocity.y += deltaVelocity;
-		//entityManager->entities[selected]->velocity.y += deltaVelocity;
 	}
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD3))
 	{
 		keyboardTimer = keyTime;
-		//velocity.y -= deltaVelocity;
 		entityManager->entities[selected]->velocity.y -= deltaVelocity;
 	}
 
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_SPACE))
 	{
 		keyboardTimer = keyTime;
-		//velocity = Ogre::Vector3::ZERO;
 		entityManager->entities[selected]->velocity = Ogre::Vector3::ZERO;
 	}
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_TAB))
 	{
-		entityManager->entities[selected]->velocity = Ogre::Vector3::ZERO;
 		keyboardTimer = 0.1f;
 		Selected();
 	}
