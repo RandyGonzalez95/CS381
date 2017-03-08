@@ -10,8 +10,8 @@
 
 #include "BaseApplication.h"
 #include "EntityType.h"
-#include "Aspect.h"
 #include <vector>
+#include "Aspect.h"
 
 class Aspect;
 
@@ -20,6 +20,7 @@ class Entity381
 public:
 	Entity381();
 	virtual ~Entity381();
+	bool Init();
 
 	void Tick(float dt);
 

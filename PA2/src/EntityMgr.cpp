@@ -63,10 +63,10 @@ void EntityMgr::CreateEntity(EntityType type, Ogre::Vector3 pos, float heading)
 
 void EntityMgr::Tick(float dt)
 {
-	/*for(int i = 0; i< entities.size();i++)
+	for(int i = 0; i< entities.size();i++)
 	{
 		entities[i]->Tick(dt);
-	}*/
+	}
 }
 
 

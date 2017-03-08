@@ -16,6 +16,7 @@ As2::As2(void)
 	velocity = Ogre::Vector3::ZERO;
 	keyboardTimer = keyTime;
 	cubeSceneNode = 0;
+	selected = 0;
 
 }
 
@@ -98,7 +99,7 @@ void As2::UpdateCamera(const Ogre::FrameEvent& fe)
 
 bool As2::frameRenderingQueued(const Ogre::FrameEvent& fe)
 {
-	//entityManager->Tick(fe.timeSinceLastFrame);
+
 
 	mKeyboard->capture();
 	if(mKeyboard->isKeyDown(OIS::KC_Q))
@@ -110,6 +111,9 @@ bool As2::frameRenderingQueued(const Ogre::FrameEvent& fe)
 
 	UpdateVelocity(fe);
 	UpdatePosition(fe);
+
+	entityManager->Tick(fe.timeSinceLastFrame);
+
 	CopyPositionToSceneNode();
 	return true;
 }
@@ -118,29 +122,31 @@ void As2::UpdateVelocity(const Ogre::FrameEvent& fe)
 {
 	keyboardTimer -= fe.timeSinceLastEvent;
 
+	selected = 0;
+
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD8))
 	{
 		keyboardTimer = keyTime;
-		velocity.z -= deltaVelocity;
-		//entityManager->entities[selected]->velocity.z -= deltaVelocity;
+		//velocity.z -= deltaVelocity;
+		entityManager->entities[selected]->velocity.z -= deltaVelocity;
 	}
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD2))
 	{
 		keyboardTimer = keyTime;
-		velocity.z += deltaVelocity;
-		//entityManager->entities[selected]->velocity.z += deltaVelocity;
+		//velocity.z += deltaVelocity;
+		entityManager->entities[selected]->velocity.z += deltaVelocity;
 	}
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD4))
 	{
 		keyboardTimer = keyTime;
-		velocity.x -= deltaVelocity;
-		//entityManager->entities[selected]->velocity.x -= deltaVelocity;
+		//velocity.x -= deltaVelocity;
+		entityManager->entities[selected]->velocity.x -= deltaVelocity;
 	}
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD6))
 	{
 		keyboardTimer = keyTime;
-		velocity.x += deltaVelocity;
-		//entityManager->entities[selected]->velocity.x += deltaVelocity;
+		//velocity.x += deltaVelocity;
+		entityManager->entities[selected]->velocity.x += deltaVelocity;
 	}
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD9))
 	{
@@ -151,15 +157,15 @@ void As2::UpdateVelocity(const Ogre::FrameEvent& fe)
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD3))
 	{
 		keyboardTimer = keyTime;
-		velocity.y -= deltaVelocity;
-		//entityManager->entities[selected]->velocity.y -= deltaVelocity;
+		//velocity.y -= deltaVelocity;
+		entityManager->entities[selected]->velocity.y -= deltaVelocity;
 	}
 
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_SPACE))
 	{
 		keyboardTimer = keyTime;
-		velocity = Ogre::Vector3::ZERO;
-		//entityManager->entities[selected]->velocity = Ogre::Vector3::ZERO;
+		//velocity = Ogre::Vector3::ZERO;
+		entityManager->entities[selected]->velocity = Ogre::Vector3::ZERO;
 	}
 	/*if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_TAB))
 	{
@@ -176,7 +182,7 @@ void As2::UpdatePosition(const Ogre::FrameEvent& fe)
 
 void As2::CopyPositionToSceneNode()
 {
-	cubeSceneNode->setPosition(position);
+	//cubeSceneNode->setPosition(position);
 	//entityManager->entities[0]->ogreSceneNode->setPosition(position);
 
 }

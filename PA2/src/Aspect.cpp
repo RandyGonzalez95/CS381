@@ -15,7 +15,7 @@ Aspect::Aspect()
 
 Aspect::Aspect(Entity381* ent)
 {
-
+	entity = ent;
 }
 
 Aspect::~Aspect()
@@ -33,6 +33,11 @@ PhysicsAspect::PhysicsAspect(void)
 
 }
 
+PhysicsAspect::PhysicsAspect(Entity381* ent)
+{
+	entity = ent;
+}
+
 
 PhysicsAspect::~PhysicsAspect()
 {
@@ -46,8 +51,15 @@ void PhysicsAspect::UpdatePostion()
 
 void PhysicsAspect::Tick(float dt)
 {
+	if(entity->ogreSceneNode == NULL)
+	{
+		std::cerr<<"Hello\n";
+	}
+	std::cerr<<"Not Null\n";
 	//position = position + (velocity * fe.timeSinceLastFrame);
-	//entity->position = entity->position + (entity->velocity *dt);
+	entity->position = entity->position + (entity->velocity *dt);
+	entity->ogreSceneNode->setPosition(entity->position);
+
 }
 
 RenderableAspect::RenderableAspect()

@@ -21,15 +21,13 @@ public:
 
 	virtual void Tick(float dt) = 0;
 	Entity381 *entity;
-
-
-
 };
 
 class PhysicsAspect : public Aspect
 {
 public:
 	PhysicsAspect();
+	PhysicsAspect(Entity381* ent);
 	~PhysicsAspect();
 	void UpdatePostion();
 

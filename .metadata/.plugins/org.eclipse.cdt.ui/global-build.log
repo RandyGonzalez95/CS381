@@ -413,3 +413,838 @@ Invoking: GCC C++ Linker
 g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
 Finished building target: PA2
  
+18:29:01 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::CreateEntity(EntityType, Ogre::Vector3, float)’:
+../src/EntityMgr.cpp:59:2: error: expected primary-expression before ‘/’ token
+  /numEntities++;
+  ^
+../src/EntityMgr.cpp:59:3: error: ‘numEntities’ was not declared in this scope
+  /numEntities++;
+   ^
+src/subdir.mk:30: recipe for target 'src/EntityMgr.o' failed
+make: *** [src/EntityMgr.o] Error 1
+18:29:12 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:29:56 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:31:15 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:37:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::Tick(float)’:
+../src/EntityMgr.cpp:66:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i< entities.size();i++)
+                  ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:33:04 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:34:15 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:37:57 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘bool Entity381::Init()’:
+../src/Entity381.cpp:37:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:41:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::Tick(float)’:
+../src/EntityMgr.cpp:66:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i< entities.size();i++)
+                  ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:39:19 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:48:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:39:32 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:48:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:42:21 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:58:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+../src/Entity381.cpp: In member function ‘bool Entity381::Init()’:
+../src/Entity381.cpp:45:25: warning: ‘temp’ is used uninitialized in this function [-Wuninitialized]
+  listOfAspects.push_back(temp);
+                         ^
+../src/Entity381.cpp:46:25: warning: ‘temp2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  listOfAspects.push_back(temp2);
+                         ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:43:34 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:59:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:45:55 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:58:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:47:18 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘bool Entity381::Init()’:
+../src/Entity381.cpp:42:28: error: invalid new-expression of abstract class type ‘Aspect’
+  Aspect *temp = new Aspect();
+                            ^
+In file included from /home/randygonzalez/Desktop/CS381/PA2/include/Entity381.h:13:0,
+                 from ../src/Entity381.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA2/include/Aspect.h:15:7: note:   because the following virtual functions are pure within ‘Aspect’:
+ class Aspect
+       ^
+/home/randygonzalez/Desktop/CS381/PA2/include/Aspect.h:22:15: note: 	virtual void Aspect::Tick(float)
+  virtual void Tick(float dt) = 0;
+               ^
+../src/Entity381.cpp:43:29: error: invalid new-expression of abstract class type ‘Aspect’
+  Aspect *temp2 = new Aspect();
+                             ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:59:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+make: *** [src/Entity381.o] Error 1
+src/subdir.mk:30: recipe for target 'src/Entity381.o' failed
+18:48:10 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘bool Entity381::Init()’:
+../src/Entity381.cpp:42:21: error: invalid new-expression of abstract class type ‘Aspect’
+  Aspect *temp = new Aspect;
+                     ^
+In file included from /home/randygonzalez/Desktop/CS381/PA2/include/Entity381.h:13:0,
+                 from ../src/Entity381.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA2/include/Aspect.h:15:7: note:   because the following virtual functions are pure within ‘Aspect’:
+ class Aspect
+       ^
+/home/randygonzalez/Desktop/CS381/PA2/include/Aspect.h:22:15: note: 	virtual void Aspect::Tick(float)
+  virtual void Tick(float dt) = 0;
+               ^
+../src/Entity381.cpp:43:22: error: invalid new-expression of abstract class type ‘Aspect’
+  Aspect *temp2 = new Aspect;
+                      ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:59:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+src/subdir.mk:30: recipe for target 'src/Entity381.o' failed
+make: *** [src/Entity381.o] Error 1
+18:50:57 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:53:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::Tick(float)’:
+../src/EntityMgr.cpp:66:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i< entities.size();i++)
+                  ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:51:40 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘bool Entity381::Init()’:
+../src/Entity381.cpp:42:31: error: invalid new-expression of abstract class type ‘Aspect’
+  Aspect *physics = new Aspect();
+                               ^
+In file included from /home/randygonzalez/Desktop/CS381/PA2/include/Entity381.h:13:0,
+                 from ../src/Entity381.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA2/include/Aspect.h:15:7: note:   because the following virtual functions are pure within ‘Aspect’:
+ class Aspect
+       ^
+/home/randygonzalez/Desktop/CS381/PA2/include/Aspect.h:22:15: note: 	virtual void Aspect::Tick(float)
+  virtual void Tick(float dt) = 0;
+               ^
+../src/Entity381.cpp:42:10: warning: unused variable ‘physics’ [-Wunused-variable]
+  Aspect *physics = new Aspect();
+          ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:54:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+src/subdir.mk:30: recipe for target 'src/Entity381.o' failed
+make: *** [src/Entity381.o] Error 1
+18:52:08 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘bool Entity381::Init()’:
+../src/Entity381.cpp:42:10: warning: unused variable ‘physics’ [-Wunused-variable]
+  Aspect *physics;
+          ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:54:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:52:50 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘bool Entity381::Init()’:
+../src/Entity381.cpp:42:35: error: invalid new-expression of abstract class type ‘Aspect’
+  Aspect *physics = new Aspect(this);
+                                   ^
+In file included from /home/randygonzalez/Desktop/CS381/PA2/include/Entity381.h:13:0,
+                 from ../src/Entity381.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA2/include/Aspect.h:15:7: note:   because the following virtual functions are pure within ‘Aspect’:
+ class Aspect
+       ^
+/home/randygonzalez/Desktop/CS381/PA2/include/Aspect.h:22:15: note: 	virtual void Aspect::Tick(float)
+  virtual void Tick(float dt) = 0;
+               ^
+../src/Entity381.cpp:42:10: warning: unused variable ‘physics’ [-Wunused-variable]
+  Aspect *physics = new Aspect(this);
+          ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:54:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+make: *** [src/Entity381.o] Error 1
+src/subdir.mk:30: recipe for target 'src/Entity381.o' failed
+18:53:34 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘bool Entity381::Init()’:
+../src/Entity381.cpp:42:10: warning: unused variable ‘physics’ [-Wunused-variable]
+  Aspect *physics;
+          ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:54:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::Tick(float)’:
+../src/EntityMgr.cpp:66:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i< entities.size();i++)
+                  ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:54:04 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘bool Entity381::Init()’:
+../src/Entity381.cpp:42:10: warning: unused variable ‘physics’ [-Wunused-variable]
+  Aspect *physics;
+          ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:54:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:54:29 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘bool Entity381::Init()’:
+../src/Entity381.cpp:42:10: warning: variable ‘physics’ set but not used [-Wunused-but-set-variable]
+  Aspect *physics;
+          ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:55:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:55:06 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:59:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:55:23 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:59:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:55:55 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:56:08 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+make: Nothing to be done for 'all'.
+18:56:22 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:57:01 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:57:16 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+make: Nothing to be done for 'all'.
+18:57:55 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:59:20 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+18:59:53 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:00:11 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:00:32 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:02:27 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘bool Entity381::Init()’:
+../src/Entity381.cpp:44:34: error: no matching function for call to ‘PhysicsAspect::PhysicsAspect(Entity381*)’
+  physics = new PhysicsAspect(this);
+                                  ^
+In file included from /home/randygonzalez/Desktop/CS381/PA2/include/Entity381.h:14:0,
+                 from ../src/Entity381.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA2/include/Aspect.h:29:2: note: candidate: PhysicsAspect::PhysicsAspect()
+  PhysicsAspect();
+  ^
+/home/randygonzalez/Desktop/CS381/PA2/include/Aspect.h:29:2: note:   candidate expects 0 arguments, 1 provided
+/home/randygonzalez/Desktop/CS381/PA2/include/Aspect.h:26:7: note: candidate: PhysicsAspect::PhysicsAspect(const PhysicsAspect&)
+ class PhysicsAspect : public Aspect
+       ^
+/home/randygonzalez/Desktop/CS381/PA2/include/Aspect.h:26:7: note:   no known conversion for argument 1 from ‘Entity381*’ to ‘const PhysicsAspect&’
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+src/subdir.mk:30: recipe for target 'src/Entity381.o' failed
+make: *** [src/Entity381.o] Error 1
+19:04:22 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::Tick(float)’:
+../src/EntityMgr.cpp:66:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i< entities.size();i++)
+                  ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:04:48 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:05:24 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+make: Nothing to be done for 'all'.
