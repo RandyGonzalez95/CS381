@@ -1,0 +1,22 @@
+/*
+ * PhysicsAspect.h
+ *
+ *  Created on: Mar 7, 2017
+ *      Author: randygonzalez
+ */
+
+#ifndef INCLUDE_PHYSICSASPECT_H_
+#define INCLUDE_PHYSICSASPECT_H_
+
+#include "Aspect.h"
+
+class Entity381;
+
+class PhysicsAspect : public Aspect
+{
+	virtual void Tick(float dt);
+};
+
+
+
+#endif /* INCLUDE_PHYSICSASPECT_H_ */

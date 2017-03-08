@@ -1,0 +1,34 @@
+/*
+ * PhysicsAspect.h
+ *
+ *  Created on: Mar 7, 2017
+ *      Author: randygonzalez
+ */
+
+#ifndef INCLUDE_PHYSICSASPECT_H_
+#define INCLUDE_PHYSICSASPECT_H_
+
+#include "Aspect.h"
+
+class Entity381;
+
+class PhysicsAspect : public Aspect
+{
+public:
+	void UpdatePostion();
+
+
+protected:
+	virtual void Tick(float dt);
+
+private:
+	Ogre::Vector3 position, velocity;
+	Ogre::Entity *ogreEntity;
+	Ogre::SceneNode *ogreSceneNode;
+	float minSpeed, maxSpeed, speed, heading, desiredSpeed, desiredHeading;
+
+};
+
+
+
+#endif /* INCLUDE_PHYSICSASPECT_H_ */

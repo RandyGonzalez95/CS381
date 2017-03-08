@@ -1,0 +1,29 @@
+/*
+ * RenderableAspect.h
+ *
+ *  Created on: Mar 7, 2017
+ *      Author: randygonzalez
+ */
+
+#ifndef INCLUDE_RENDERABLEASPECT_H_
+#define INCLUDE_RENDERABLEASPECT_H_
+
+
+#include "Aspect.h"
+
+class Entity381;
+
+class RenderableAspect : public Aspect
+{
+public:
+
+protected:
+	virtual void Tick(float dt);
+
+private:
+
+
+};
+
+
+#endif /* INCLUDE_RENDERABLEASPECT_H_ */

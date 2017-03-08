@@ -1,0 +1,25 @@
+/*
+ * RenderableAspect.cpp
+ *
+ *  Created on: Mar 7, 2017
+ *      Author: randygonzalez
+ */
+
+#include "RenderableAspect.h"
+
+RenderableAspect::RenderableAspect()
+{
+
+}
+
+RenderableAspect::~RenderableAspect()
+{
+
+}
+void RenderBoat();
+
+protected:
+virtual void Tick(float dt);
+
+
+

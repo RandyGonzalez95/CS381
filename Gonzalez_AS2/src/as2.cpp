@@ -81,7 +81,7 @@ extern "C" {
 #endif
     {
 	// Create application object
-	//AS2 app;
+	AS2 app;
 
 	try {
 	   // app.go();

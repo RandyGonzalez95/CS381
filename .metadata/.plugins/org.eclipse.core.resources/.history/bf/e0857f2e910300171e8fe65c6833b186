@@ -1,0 +1,16 @@
+/*
+ * PhysicsAspect.cpp
+ *
+ *  Created on: Mar 7, 2017
+ *      Author: randygonzalez
+ */
+
+PhysicsAspect::PhysicsAspect();
+~PhysicsAspect();
+void UpdatePostion();
+
+
+protected:
+virtual void Tick(float dt);
+
+

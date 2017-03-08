@@ -1,0 +1,65 @@
+/*
+ * EntityMgr.cpp
+ *
+ *  Created on: Mar 6, 2017
+ *      Author: randygonzalez
+ */
+#include "EntityMgr.h"
+
+EntityMgr::EntityMgr()
+{
+
+}
+
+EntityMgr::EntityMgr(Ogre::SceneManager* mSceneMgr)
+{
+	sceneMgr = mSceneMgr;
+}
+
+EntityMgr::~EntityMgr()
+{
+
+}
+
+bool EntityMgr::Init()
+{
+
+	return true;
+}
+
+Entity381* EntityMgr::CreateEntity(EntityType type, Ogre::Vector3 pos, float heading)
+{
+	Ogre::String matFile = "\0";
+	// Declare Temp
+	Entity381* temp;
+	temp = new Entity381();
+
+	// give our object the corresponding mesh file
+	temp->ogreEntity = sceneMgr->createEntity(temp->meshFile);
+	temp->ogreSceneNode = sceneMgr->getRootSceneNode()->createChildSceneNode(pos); // place object
+
+	// Determine what material file
+	switch(type)
+	{
+	case Destroyer:
+		matFile = "Deck";
+		break;
+
+	default:
+		break;
+	}
+
+	temp->ogreEntity->setMaterialName("Deck");
+
+	entities.push_back(temp);
+
+	return temp;
+}
+
+void EntityMgr::Tick(float dt)
+{
+
+}
+
+
+

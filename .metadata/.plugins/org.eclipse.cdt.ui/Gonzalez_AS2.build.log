@@ -1,4 +1,4 @@
-21:56:21 **** Incremental Build of configuration Debug for project Gonzalez_AS2 ****
+14:34:25 **** Build of configuration Debug for project Gonzalez_AS2 ****
 make all 
 Building file: ../src/as2.cpp
 Invoking: GCC C++ Compiler
@@ -13,13 +13,21 @@ In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/Ent
 ../src/as2.cpp:41:1: warning: no return statement in function returning non-void [-Wreturn-type]
  }
  ^
-Finished building: ../src/as2.cpp
- 
-Building target: Gonzalez_AS2
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Gonzalez_AS2"  ./src/Aspects.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
-Finished building target: Gonzalez_AS2
- 
+../src/as2.cpp: In function ‘int main(int, char**)’:
+../src/as2.cpp:84:6: error: cannot declare variable ‘app’ to be of abstract type ‘AS2’
+  AS2 app;
+      ^
+In file included from ../src/as2.cpp:8:0:
+/home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/as2.h:14:7: note:   because the following virtual functions are pure within ‘AS2’:
+ class AS2 : public BaseApplication
+       ^
+In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/as2.h:11:0,
+                 from ../src/as2.cpp:8:
+/home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/BaseApplication.h:91:18: note: 	virtual void BaseApplication::createScene()
+     virtual void createScene(void) = 0; // Override me!
+                  ^
+src/subdir.mk:30: recipe for target 'src/as2.o' failed
+make: *** [src/as2.o] Error 1
 
-21:56:26 Build Finished (took 4s.522ms)
+14:34:30 Build Finished (took 5s.27ms)
 

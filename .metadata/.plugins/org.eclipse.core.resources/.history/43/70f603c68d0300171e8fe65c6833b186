@@ -1,0 +1,89 @@
+/*
+ * Entity381.h
+ *
+ *  Created on: Mar 6, 2017
+ *      Author: randygonzalez
+ */
+
+#ifndef INCLUDE_ENTITY381_H_
+#define INCLUDE_ENTITY381_H_
+
+#include "BaseApplication.h"
+#include "EntityType.h"
+
+
+class Entity381
+{
+public:
+	Entity381();
+	virtual ~Entity381();
+
+	void Tick(float dt);
+	bool isSelected = false;
+
+private:
+	Ogre::Real entityId;
+	Ogre::String entityName, meshFile;
+	float minSpeed, maxSpeed, speed, heading, desiredSpeed, desiredHeading;
+	float acceleration, turningRate;
+	Ogre::Vector3 position, velocity;
+	Ogre::SceneNode *ogreSceneNode;
+	Ogre::Entity *ogreEntity;
+};
+
+class Destroyer : public Entity381
+{
+public:
+	Destroyer();
+	~Destroyer();
+	bool Init();
+
+
+
+private:
+	// mesh file
+
+};
+
+class Carrier : public Entity381
+{
+public:
+	Carrier();
+	~Carrier();
+	bool Init();
+
+
+private:
+};
+
+class Speedboat : public Entity381
+{
+public:
+	Speedboat();
+	~Speedboat();
+	bool Init();
+
+private:
+};
+
+class Frigate : public Entity381
+{
+public:
+	Frigate();
+	~Frigate();
+	bool Init();
+
+private:
+};
+
+class Alien : public Entity381
+{
+public:
+	Alien();
+
+private:
+};
+
+
+
+#endif /* INCLUDE_ENTITY381_H_ */
