@@ -1248,3 +1248,902 @@ Finished building target: PA2
 19:05:24 **** Incremental Build of configuration Debug for project PA2 ****
 make all 
 make: Nothing to be done for 'all'.
+19:13:21 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::Tick(float)’:
+../src/EntityMgr.cpp:66:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i< entities.size();i++)
+                  ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+../src/as2.cpp: In member function ‘virtual void As2::createScene()’:
+../src/as2.cpp:38:31: error: ‘Des’ was not declared in this scope
+   entityManager->CreateEntity(Des,Ogre::Vector3(0,100, -200), 0.0);
+                               ^
+src/subdir.mk:30: recipe for target 'src/as2.o' failed
+make: *** [src/as2.o] Error 1
+19:13:50 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:41:22 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::CreateEntity(EntityType, Ogre::Vector3, float)’:
+../src/EntityMgr.cpp:60:7: error: expected primary-expression before ‘default’
+  case default:
+       ^
+../src/EntityMgr.cpp:60:7: error: expected ‘:’ before ‘default’
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::Tick(float)’:
+../src/EntityMgr.cpp:82:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i< entities.size();i++)
+                  ^
+src/subdir.mk:30: recipe for target 'src/EntityMgr.o' failed
+make: *** [src/EntityMgr.o] Error 1
+19:41:46 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::Tick(float)’:
+../src/EntityMgr.cpp:82:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i< entities.size();i++)
+                  ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:43:10 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:44:51 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:45:58 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:46:57 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:47:55 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:48:08 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:48:46 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:49:25 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:50:17 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:50:49 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:52:06 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:52:50 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:53:57 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:54:38 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:55:12 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:55:52 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:56:31 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:56:59 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:42:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+19:57:49 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:07:17 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:43:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:07:51 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:43:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:08:11 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:43:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:09:46 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:43:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:10:45 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:18:55 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘bool Entity381::Init()’:
+../src/Entity381.cpp:43:10: warning: variable ‘graphics’ set but not used [-Wunused-but-set-variable]
+  Aspect *graphics;
+          ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:62:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::Tick(float)’:
+../src/EntityMgr.cpp:82:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i< entities.size();i++)
+                  ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:43:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:20:59 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:21:20 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘bool Entity381::Init()’:
+../src/Entity381.cpp:43:10: warning: variable ‘graphics’ set but not used [-Wunused-but-set-variable]
+  Aspect *graphics;
+          ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:62:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:22:50 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:26:55 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:28:17 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:43:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:29:34 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:41:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+../src/as2.cpp: In member function ‘virtual bool As2::frameRenderingQueued(const Ogre::FrameEvent&)’:
+../src/as2.cpp:118:26: error: ‘CopyPositionToSceneNode’ was not declared in this scope
+  CopyPositionToSceneNode();
+                          ^
+make: *** [src/as2.o] Error 1
+src/subdir.mk:30: recipe for target 'src/as2.o' failed
+20:29:56 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:41:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:32:20 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:32:48 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:63:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:33:18 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In constructor ‘Entity381::Entity381()’:
+../src/Entity381.cpp:24:16: warning: variable ‘position’ set but not used [-Wunused-but-set-variable]
+  Ogre::Vector3 position = Ogre::Vector3::ZERO;
+                ^
+../src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../src/Entity381.cpp:63:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<listOfAspects.size();i++)
+                  ^
+Finished building: ../src/Entity381.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:35:20 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:37:25 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+make: Nothing to be done for 'all'.
+20:39:16 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+make: Nothing to be done for 'all'.
+20:40:28 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::Tick(float)’:
+../src/EntityMgr.cpp:82:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i< entities.size();i++)
+                  ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:42:12 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::Tick(float)’:
+../src/EntityMgr.cpp:78:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i< entities.size();i++)
+                  ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:50:42 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+../src/EntityMgr.cpp: In member function ‘void EntityMgr::Tick(float)’:
+../src/EntityMgr.cpp:78:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i< entities.size();i++)
+                  ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:41:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:52:06 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:41:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:53:08 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:41:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:54:13 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/BaseApplication.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/BaseApplication.d" -MT"src/BaseApplication.d" -o "src/BaseApplication.o" "../src/BaseApplication.cpp"
+In file included from ../src/BaseApplication.cpp:18:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/BaseApplication.h: In constructor ‘BaseApplication::BaseApplication()’:
+/home/randygonzalez/Desktop/CS381/PA2/include/BaseApplication.h:124:33: warning: ‘BaseApplication::mKeyboard’ will be initialized after [-Wreorder]
+     OIS::Keyboard*              mKeyboard;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA2/include/BaseApplication.h:111:33: warning:   ‘Ogre::OverlaySystem* BaseApplication::mOverlaySystem’ [-Wreorder]
+     Ogre::OverlaySystem*        mOverlaySystem;
+                                 ^
+../src/BaseApplication.cpp:25:1: warning:   when initialized here [-Wreorder]
+ BaseApplication::BaseApplication(void)
+ ^
+../src/BaseApplication.cpp: In member function ‘virtual bool BaseApplication::keyPressed(const OIS::KeyEvent&)’:
+../src/BaseApplication.cpp:378:27: warning: variable ‘pm’ set but not used [-Wunused-but-set-variable]
+         Ogre::PolygonMode pm;
+                           ^
+Finished building: ../src/BaseApplication.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
+20:54:42 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:41:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 

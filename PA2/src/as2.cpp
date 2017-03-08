@@ -33,20 +33,14 @@ void As2::createScene(void)
   Ogre::Light* light = mSceneMgr->createLight("MainLight");
   light->setPosition(20.0, 80.0, 50.0);
 
-  // a fixed point in the ocean so you can see relative motion
+  // Create all Nodes
   entityManager = new EntityMgr(mSceneMgr);
-  entityManager->CreateEntity(Des,Ogre::Vector3(0,100, -200), 0.0);
-
-  /*Ogre::Entity* ogreEntityFixed = mSceneMgr->createEntity("ddg51.mesh");
-  Ogre::SceneNode* sceneNode = mSceneMgr->getRootSceneNode()->createChildSceneNode(Ogre::Vector3(0, 100, -200));
-  ogreEntityFixed->setMaterialName("Deck");
-  sceneNode->attachObject(ogreEntityFixed);
-  sceneNode->showBoundingBox(true);*/
-
-  // The entity that we are going to control
-  Ogre::Entity* ogreEntity = mSceneMgr->createEntity("cube.mesh");
-  cubeSceneNode = mSceneMgr->getRootSceneNode()->createChildSceneNode();
-  cubeSceneNode->attachObject(ogreEntity);
+  entityManager->CreateEntity(destroyer,Ogre::Vector3(100,0,-500), 0.0);
+  entityManager->CreateEntity(carrier,Ogre::Vector3(-250,0,-500), 0.0);
+  entityManager->CreateEntity(speedboat,Ogre::Vector3(250,0,-500), 0.0);
+  entityManager->CreateEntity(frigate,Ogre::Vector3(-550,0,-500), 0.0);
+  entityManager->CreateEntity(alien,Ogre::Vector3(300,0,-500), 0.0);
+  entityManager->entities[selected]->ogreSceneNode->showBoundingBox(true);
 
   // A node to attach the camera to so we can move the camera node instead of the camera.
   cameraNode = mSceneMgr->getRootSceneNode()->createChildSceneNode();
@@ -61,7 +55,7 @@ void As2::createScene(void)
 void As2::UpdateCamera(const Ogre::FrameEvent& fe)
 {
 	float move = 400.0f;
-	float rotate = 0.1f;
+	float rotate = 0.05f;
 
 	 Ogre::Vector3 dirVec = Ogre::Vector3::ZERO;
 
@@ -71,27 +65,30 @@ void As2::UpdateCamera(const Ogre::FrameEvent& fe)
 	  if (mKeyboard->isKeyDown(OIS::KC_S))
 	    dirVec.z += move;
 
-	  if (mKeyboard->isKeyDown(OIS::KC_E))
+	  if (mKeyboard->isKeyDown(OIS::KC_R))
 	    dirVec.y += move;
 
 	  if (mKeyboard->isKeyDown(OIS::KC_F))
 	    dirVec.y -= move;
 
 	  if (mKeyboard->isKeyDown(OIS::KC_A))
-	  {
-	    if (mKeyboard->isKeyDown(OIS::KC_LSHIFT))
-		      cameraNode->yaw(Ogre::Degree(5 * rotate));
-	    else
-	      dirVec.x -= move;
-	  }
+		dirVec.x -= move;
 
 	  if (mKeyboard->isKeyDown(OIS::KC_D))
-	  {
-	    if (mKeyboard->isKeyDown(OIS::KC_LSHIFT))
-	      cameraNode->yaw(Ogre::Degree(-5 * rotate));
-	    else
-	      dirVec.x += move;
-	  }
+	    dirVec.x += move;
+
+	  if (mKeyboard->isKeyDown(OIS::KC_Q))
+		 cameraNode->yaw(Ogre::Degree(5 * rotate));
+
+	  if (mKeyboard->isKeyDown(OIS::KC_E))
+		 cameraNode->yaw(Ogre::Degree(-5 * rotate));
+
+	  if (mKeyboard->isKeyDown(OIS::KC_Z))
+		 cameraNode->pitch(Ogre::Degree(5 * rotate));
+
+	  if (mKeyboard->isKeyDown(OIS::KC_X))
+		 cameraNode->pitch(Ogre::Degree(-5 * rotate));
+
 
 	  cameraNode->translate(dirVec * fe.timeSinceLastFrame, Ogre::Node::TS_LOCAL);
 
@@ -102,19 +99,15 @@ bool As2::frameRenderingQueued(const Ogre::FrameEvent& fe)
 
 
 	mKeyboard->capture();
-	if(mKeyboard->isKeyDown(OIS::KC_Q))
+	if(mKeyboard->isKeyDown(OIS::KC_ESCAPE))
 		return false;
 
 	mTrayMgr->frameRenderingQueued(fe);
 
 	UpdateCamera(fe);
-
 	UpdateVelocity(fe);
-	UpdatePosition(fe);
-
 	entityManager->Tick(fe.timeSinceLastFrame);
 
-	CopyPositionToSceneNode();
 	return true;
 }
 
@@ -122,7 +115,7 @@ void As2::UpdateVelocity(const Ogre::FrameEvent& fe)
 {
 	keyboardTimer -= fe.timeSinceLastEvent;
 
-	selected = 0;
+	//selected = 0;
 
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD8))
 	{
@@ -167,25 +160,22 @@ void As2::UpdateVelocity(const Ogre::FrameEvent& fe)
 		//velocity = Ogre::Vector3::ZERO;
 		entityManager->entities[selected]->velocity = Ogre::Vector3::ZERO;
 	}
-	/*if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_TAB))
+	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_TAB))
 	{
-		keyboardTimer = keyTime;
-		selected += selected %5;
-	}*/
+		entityManager->entities[selected]->velocity = Ogre::Vector3::ZERO;
+		keyboardTimer = 0.1f;
+		Selected();
+	}
 
 }
 
-void As2::UpdatePosition(const Ogre::FrameEvent& fe)
+void As2::Selected(void)
 {
-	position = position + (velocity * fe.timeSinceLastFrame);
+	entityManager->entities[selected]->ogreSceneNode->showBoundingBox(false);
+	selected = (selected+1) % 5;
+	entityManager->entities[selected]->ogreSceneNode->showBoundingBox(true);
 }
 
-void As2::CopyPositionToSceneNode()
-{
-	//cubeSceneNode->setPosition(position);
-	//entityManager->entities[0]->ogreSceneNode->setPosition(position);
-
-}
 
 void As2::MakeGround()
 {

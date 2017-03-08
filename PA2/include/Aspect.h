@@ -47,6 +47,7 @@ class RenderableAspect : public Aspect
 {
 public:
 	RenderableAspect();
+	RenderableAspect(Entity381* ent);
 	~RenderableAspect();
 	void RenderBoat();
 

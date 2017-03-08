@@ -40,10 +40,13 @@ Entity381::~Entity381(void)
 bool Entity381::Init()
 {
 	Aspect *physics;
+	Aspect *graphics;
 
 	physics = new PhysicsAspect(this);
+	graphics = new RenderableAspect(this);
 
 	listOfAspects.push_back(physics);
+	listOfAspects.push_back(graphics);
 
 
 	if(listOfAspects.size() == 0)
@@ -95,7 +98,18 @@ bool Destroyer::Init(void)
 // Start Carrier class definition
 Carrier::Carrier(void)
 {
-
+	meshFile = "cvn68.mesh";
+	matFile = "DEF_2/SOLID/TEX/ecslDark.bmp/VertCol";
+	minSpeed = 0;
+	maxSpeed = 0;
+	speed = 0;
+	heading = 0;
+	desiredSpeed = 10;
+	desiredHeading = 0;
+	acceleration = 1;
+	turningRate = 0;
+	position = Ogre::Vector3::ZERO;
+	velocity = Ogre::Vector3::ZERO;
 }
 
 
@@ -114,7 +128,18 @@ bool Carrier::Init(void)
 // Start Speedboat class definition
 Speedboat::Speedboat(void)
 {
-
+	meshFile = "cigarette.mesh";
+	matFile = "SOLID/TEX/ecslHorizontal.bmp";
+	minSpeed = 0;
+	maxSpeed = 0;
+	speed = 0;
+	heading = 0;
+	desiredSpeed = 10;
+	desiredHeading = 0;
+	acceleration = 1;
+	turningRate = 0;
+	position = Ogre::Vector3::ZERO;
+	velocity = Ogre::Vector3::ZERO;
 }
 
 
@@ -133,7 +158,18 @@ bool Speedboat::Init(void)
 // Start Frigate class definition
 Frigate::Frigate(void)
 {
-
+	meshFile = "sleek.mesh";
+	matFile = "DD21-Main-Rim/SOLID/TEX/ecsl.bmp";
+	minSpeed = 0;
+	maxSpeed = 0;
+	speed = 0;
+	heading = 0;
+	desiredSpeed = 10;
+	desiredHeading = 0;
+	acceleration = 1;
+	turningRate = 0;
+	position = Ogre::Vector3::ZERO;
+	velocity = Ogre::Vector3::ZERO;
 }
 
 
@@ -152,7 +188,18 @@ bool Frigate::Init(void)
 // Start Frigate class definition
 Alien::Alien(void)
 {
-
+	meshFile = "alienship.mesh";
+	matFile = "SketchupDefault";
+	minSpeed = 0;
+	maxSpeed = 0;
+	speed = 0;
+	heading = 0;
+	desiredSpeed = 10;
+	desiredHeading = 0;
+	acceleration = 1;
+	turningRate = 0;
+	position = Ogre::Vector3::ZERO;
+	velocity = Ogre::Vector3::ZERO;
 }
 
 

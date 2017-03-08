@@ -51,20 +51,20 @@ void PhysicsAspect::UpdatePostion()
 
 void PhysicsAspect::Tick(float dt)
 {
-	if(entity->ogreSceneNode == NULL)
-	{
-		std::cerr<<"Hello\n";
-	}
-	std::cerr<<"Not Null\n";
-	//position = position + (velocity * fe.timeSinceLastFrame);
+
 	entity->position = entity->position + (entity->velocity *dt);
-	entity->ogreSceneNode->setPosition(entity->position);
+	//entity->ogreSceneNode->setPosition(entity->position);
 
 }
 
 RenderableAspect::RenderableAspect()
 {
 
+}
+
+RenderableAspect::RenderableAspect(Entity381* ent)
+{
+	entity = ent;
 }
 
 RenderableAspect::~RenderableAspect()
@@ -74,11 +74,11 @@ RenderableAspect::~RenderableAspect()
 
 void RenderableAspect::RenderBoat()
 {
-
+	entity->ogreSceneNode->setPosition(entity->position);
 }
 
 
 void RenderableAspect::Tick(float dt)
 {
-
+	RenderBoat();
 }

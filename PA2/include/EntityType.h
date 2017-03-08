@@ -8,6 +8,6 @@
 #ifndef INCLUDE_ENTITYTYPE_H_
 #define INCLUDE_ENTITYTYPE_H_
 
-enum EntityType{Des, Carrier, Speedboat, Frigate, Alien};
+enum EntityType{destroyer, carrier, speedboat, frigate, alien};
 
 #endif /* INCLUDE_ENTITYTYPE_H_ */

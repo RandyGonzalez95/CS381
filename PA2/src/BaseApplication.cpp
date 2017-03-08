@@ -392,7 +392,7 @@ bool BaseApplication::keyPressed( const OIS::KeyEvent &arg )
             pm = Ogre::PM_SOLID;
         }
 
-        mCamera->setPolygonMode(pm);
+        //mCamera->setPolygonMode(pm);
         mDetailsPanel->setParamValue(10, newVal);
     }
     else if(arg.key == OIS::KC_F5)   // refresh all textures

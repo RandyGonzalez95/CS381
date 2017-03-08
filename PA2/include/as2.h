@@ -23,8 +23,7 @@ public:
   void MakeFog();
   void UpdateCamera(const Ogre::FrameEvent& fe);
   void UpdateVelocity(const Ogre::FrameEvent& fe);
-  void UpdatePosition(const Ogre::FrameEvent& fe);
-  void CopyPositionToSceneNode();
+  void Selected();
 
 
 
