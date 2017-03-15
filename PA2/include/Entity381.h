@@ -25,7 +25,7 @@ public:
 	void Tick(float dt);
 
 	// variables
-	bool isSelected;
+	bool isSelected, isMoving;
 	Ogre::Real entityId;
 	Ogre::String entityName, meshFile, matFile;
 	float minSpeed, maxSpeed, speed, heading, desiredSpeed, desiredHeading;

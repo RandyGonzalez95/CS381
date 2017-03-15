@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="25" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
 <window height="771" maximized="true" width="1024" x="0" y="25">
 <fastViewData fastViewLocation="1024"/>
@@ -12,15 +12,16 @@
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.cdt.make.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="186" y="26"/>
-<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="142" y="26"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="36" y="26"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="80" y="26"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="62" y="26"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="88" y="26"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="212" y="26"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -29,10 +30,36 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="Aspect.cpp" partName="Aspect.cpp" path="/home/randygonzalez/Desktop/CS381/PA2/src/Aspect.cpp" title="Aspect.cpp" tooltip="PA2/src/Aspect.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/PA2/src/Aspect.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1266" selectionTopPixel="790"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="plugins.cfg" partName="plugins.cfg" path="/home/randygonzalez/Desktop/CS381/PA2/plugins.cfg" title="plugins.cfg" tooltip="PA2/plugins.cfg" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/PA2/plugins.cfg"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="as2.cpp" partName="as2.cpp" path="/home/randygonzalez/Desktop/CS381/PA2/src/as2.cpp" title="as2.cpp" tooltip="PA2/src/as2.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/PA2/src/as2.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1375" selectionTopPixel="360"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Entity381.cpp" partName="Entity381.cpp" path="/home/randygonzalez/Desktop/CS381/PA2/src/Entity381.cpp" title="Entity381.cpp" tooltip="PA2/src/Entity381.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/PA2/src/Entity381.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="174" selectionTopPixel="2605"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Entity381.h" partName="Entity381.h" path="/home/randygonzalez/Desktop/CS381/PA2/include/Entity381.h" title="Entity381.h" tooltip="PA2/include/Entity381.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/PA2/include/Entity381.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="392" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
@@ -43,6 +70,10 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="825" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -71,7 +102,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -188,9 +219,9 @@
 <new_wizard_action id="org.eclipse.cdt.ui.wizards.NewClassCreationWizard"/>
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
@@ -221,7 +252,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="478" ratioRight="1434" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.7497326" ratioLeft="701" ratioRight="234" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -249,7 +280,91 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/PA2/resources.cfg"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/PA2/src/Aspect.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/PA2/plugins.cfg"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/PA2/src/as2.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/PA2/src/Entity381.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/PA2/include/Entity381.h"/>
+</editors>
+<item historyLabel="resources.cfg" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Aspect.cpp" index="1">
+<position info="not_deleted" x="740" y="0"/>
+</item>
+<item historyLabel="plugins.cfg" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="as2.cpp" index="3">
+<position info="not_deleted" x="5054" y="0"/>
+</item>
+<item historyLabel="Aspect.cpp" index="1">
+<position info="not_deleted" x="740" y="0"/>
+</item>
+<item historyLabel="Aspect.cpp" index="1">
+<position info="not_deleted" x="530" y="0"/>
+</item>
+<item historyLabel="Entity381.cpp" index="4">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="Entity381.h" index="5">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="Aspect.cpp" index="1">
+<position info="not_deleted" x="530" y="0"/>
+</item>
+<item historyLabel="Aspect.cpp" index="1">
+<position info="not_deleted" x="1325" y="0"/>
+</item>
+<item historyLabel="Aspect.cpp" index="1">
+<position/>
+</item>
+<item historyLabel="Aspect.cpp" index="1">
+<position info="not_deleted" x="674" y="0"/>
+</item>
+<item historyLabel="Entity381.cpp" index="4">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="as2.cpp" index="3">
+<position info="not_deleted" x="5054" y="0"/>
+</item>
+<item historyLabel="Entity381.cpp" index="4">
+<position info="not_deleted" x="174" y="0"/>
+</item>
+<item historyLabel="Entity381.h" index="5">
+<position info="not_deleted" x="392" y="0"/>
+</item>
+<item historyLabel="Entity381.cpp" index="4">
+<position info="not_deleted" x="174" y="0"/>
+</item>
+<item historyLabel="Aspect.cpp" index="1">
+<position info="not_deleted" x="674" y="0"/>
+</item>
+<item historyLabel="Aspect.cpp" index="1">
+<position info="not_deleted" x="1262" y="0"/>
+</item>
+<item historyLabel="as2.cpp" index="3">
+<position info="not_deleted" x="5054" y="0"/>
+</item>
+<item historyLabel="as2.cpp" index="3">
+<position info="not_deleted" x="1375" y="0"/>
+</item>
+<item historyLabel="Entity381.cpp" index="4">
+<position info="not_deleted" x="174" y="0"/>
+</item>
+<item historyLabel="Aspect.cpp" index="1">
+<position info="not_deleted" x="1262" y="0"/>
+</item>
+<item historyLabel="Entity381.cpp" index="4">
+<position info="not_deleted" x="174" y="0"/>
+</item>
+<item active="true" historyLabel="Aspect.cpp" index="1">
+<position info="not_deleted" x="1262" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -266,6 +381,24 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Entity381.h" tooltip="PA2/include/Entity381.h">
+<persistable path="/PA2/include/Entity381.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Entity381.cpp" tooltip="PA2/src/Entity381.cpp">
+<persistable path="/PA2/src/Entity381.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="as2.cpp" tooltip="PA2/src/as2.cpp">
+<persistable path="/PA2/src/as2.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="plugins.cfg" tooltip="PA2/plugins.cfg">
+<persistable path="/PA2/plugins.cfg"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Aspect.cpp" tooltip="PA2/src/Aspect.cpp">
+<persistable path="/PA2/src/Aspect.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="resources.cfg" tooltip="PA2/resources.cfg">
+<persistable path="/PA2/resources.cfg"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="makefile" tooltip="OgreTutorial3/Debug/makefile">
 <persistable path="/OgreTutorial3/Debug/makefile"/>
 </file>

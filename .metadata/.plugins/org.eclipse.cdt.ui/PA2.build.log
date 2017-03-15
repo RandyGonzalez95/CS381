@@ -1,6 +1,19 @@
-21:41:29 **** Incremental Build of configuration Debug for project PA2 ****
+11:40:18 **** Incremental Build of configuration Debug for project PA2 ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA2/include" -I"/home/randygonzalez/Desktop/CS381/PA2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from ../src/as2.cpp:9:0:
+/home/randygonzalez/Desktop/CS381/PA2/include/as2.h:41:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+   int selected = 0;
+                  ^
+Finished building: ../src/as2.cpp
+ 
+Building target: PA2
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "PA2"  ./src/Aspect.o ./src/BaseApplication.o ./src/Entity381.o ./src/EntityMgr.o ./src/as2.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: PA2
+ 
 
-21:41:29 Build Finished (took 112ms)
+11:40:22 Build Finished (took 4s.21ms)
 

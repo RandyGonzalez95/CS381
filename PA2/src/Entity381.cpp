@@ -10,6 +10,7 @@
 Entity381::Entity381()
 {
 	isSelected = false;
+	isMoving = false;
 	entityId = 0;
 	entityName = "";
 	meshFile = "";

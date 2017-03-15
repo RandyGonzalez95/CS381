@@ -10,7 +10,7 @@
 
 As2::As2(void)
 {
-	deltaVelocity = 50.0f;
+	deltaVelocity = 50.0f/10000;
 	yaw = 0.0f;
 	position = Ogre::Vector3::ZERO;
 	velocity = Ogre::Vector3::ZERO;
@@ -41,6 +41,11 @@ void As2::createScene(void)
   entityManager->CreateEntity(frigate,Ogre::Vector3(-550,0,-500), 0.0);
   entityManager->CreateEntity(alien,Ogre::Vector3(300,0,-500), 0.0);
   entityManager->entities[selected]->ogreSceneNode->showBoundingBox(true);
+
+  if(entityManager->entities[selected]->isSelected)
+  {
+	  entityManager->entities[selected]->isMoving = true;
+  }
 
   // A node to attach the camera to so we can move the camera node instead of the camera.
   cameraNode = mSceneMgr->getRootSceneNode()->createChildSceneNode();
@@ -119,12 +124,12 @@ void As2::UpdateVelocity(const Ogre::FrameEvent& fe)
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD8))
 	{
 		keyboardTimer = keyTime;
-		entityManager->entities[selected]->velocity.z -= deltaVelocity;
+		entityManager->entities[selected]->velocity.x += deltaVelocity;
 	}
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD2))
 	{
 		keyboardTimer = keyTime;
-		entityManager->entities[selected]->velocity.z += deltaVelocity;
+		entityManager->entities[selected]->velocity.x -= deltaVelocity;
 	}
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD4))
 	{
@@ -136,21 +141,12 @@ void As2::UpdateVelocity(const Ogre::FrameEvent& fe)
 		keyboardTimer = keyTime;
 		entityManager->entities[selected]->desiredHeading = -0.04f;
 	}
-	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD9))
-	{
-		keyboardTimer = keyTime;
-		velocity.y += deltaVelocity;
-	}
-	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD3))
-	{
-		keyboardTimer = keyTime;
-		entityManager->entities[selected]->velocity.y -= deltaVelocity;
-	}
 
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_SPACE))
 	{
 		keyboardTimer = keyTime;
 		entityManager->entities[selected]->velocity = Ogre::Vector3::ZERO;
+		entityManager->entities[selected]->desiredHeading = 0.0f;
 	}
 	if((keyboardTimer < 0) && mKeyboard->isKeyDown(OIS::KC_TAB))
 	{
@@ -186,8 +182,8 @@ void As2::MakeGround()
 	  mSceneMgr->getRootSceneNode()->createChildSceneNode()->attachObject(groundEntity);
 	  groundEntity->setCastShadows(false);
 	  //	  groundEntity->setMaterialName("Ocean2_HLSL_GLSL");
-	  groundEntity->setMaterialName("OceanHLSL_GLSL");
-	  //groundEntity->setMaterialName("Ocean2_Cg");
+	  //groundEntity->setMaterialName("OceanHLSL_GLSL");
+	  groundEntity->setMaterialName("Ocean2_Cg");
 	  //groundEntity->setMaterialName("NavyCg");
 }
 
