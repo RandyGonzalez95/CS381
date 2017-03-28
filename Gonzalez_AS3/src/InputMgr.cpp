@@ -6,26 +6,41 @@
  */
 
 #include <InputMgr.h>
+#include <engine.h>
 
 InputMgr::InputMgr(Engine *eng) : Mgr(eng)
 {
 
+    mTrayMgr = 0;
+
+    //OIS Input devices
+    mInputManager = 0;
+    mMouse = 0;
+    mKeyboard = 0;
+
+    // Camera Node
+    cameraNode = 0;
 
 
 }
 
 InputMgr::~InputMgr()
 {
+    /*if (mTrayMgr) delete mTrayMgr;
 
+    // Remove ourself as a Window listener
+    Ogre::WindowEventUtilities::removeWindowEventListener(engine->gfxMgr->mWindow, this);
+    windowClosed(engine->gfxMgr->mWindow);
+    delete engine->gfxMgr->mRoot;*/
 }
 
 void InputMgr::init()
 {
 	createFrameListener();
 
-	cameraNode = engine->gfxMgr->mSceneMgr->getRootSceneNode()->createChild();
+	cameraNode = engine->gfxMgr->mSceneMgr->getRootSceneNode()->createChildSceneNode();
 	cameraNode->setPosition(0, 200, 500);
-	cameraNode->attachObject(mCamera);
+	cameraNode->attachObject(engine->gfxMgr->mCamera);
 }
 
 void InputMgr::tick(float dt)
@@ -94,7 +109,7 @@ void InputMgr::createFrameListener(void)
     size_t windowHnd = 0;
     std::ostringstream windowHndStr;
 
-    mWindow->getCustomAttribute("WINDOW", &windowHnd);
+    engine->gfxMgr->mWindow->getCustomAttribute("WINDOW", &windowHnd);
     windowHndStr << windowHnd;
     pl.insert(std::make_pair(std::string("WINDOW"), windowHndStr.str()));
 
@@ -182,38 +197,69 @@ bool InputMgr::frameRenderingQueued(const Ogre::FrameEvent& fe)
 
 bool InputMgr::keyPressed(const OIS::KeyEvent &arg)
 {
+	if (arg.key == OIS::KC_ESCAPE)
+	    {
+			engine->gfxMgr->mShutDown = true;
+			engine->keepRunning = false;
+	    }
 
+	    engine->gfxMgr->mCameraMan->injectKeyDown(arg);
+	    return true;
 }
 
 bool InputMgr::keyReleased(const OIS::KeyEvent &arg)
 {
-
+    engine->gfxMgr->mCameraMan->injectKeyUp(arg);
+    return true;
 }
 
 bool InputMgr::mouseMoved(const OIS::MouseEvent &arg)
 {
-
+    if (mTrayMgr->injectMouseMove(arg)) return true;
+    engine->gfxMgr->mCameraMan->injectMouseMove(arg);
+    return true;
 }
 
 bool InputMgr::mousePressed(const OIS::MouseEvent &arg, OIS::MouseButtonID id)
 {
-
+    if (mTrayMgr->injectMouseDown(arg, id)) return true;
+    engine->gfxMgr->mCameraMan->injectMouseDown(arg, id);
+    return true;
 }
 
 bool InputMgr::mouseReleased(const OIS::MouseEvent &arg, OIS::MouseButtonID id)
 {
-
+    if (mTrayMgr->injectMouseUp(arg, id)) return true;
+    engine->gfxMgr->mCameraMan->injectMouseUp(arg, id);
+    return true;
 }
 
 
 void InputMgr::windowResized(Ogre::RenderWindow* rw)
 {
+    unsigned int width, height, depth;
+    int left, top;
+    rw->getMetrics(width, height, depth, left, top);
 
+    const OIS::MouseState &ms = mMouse->getMouseState();
+    ms.width = width;
+    ms.height = height;
 }
 
 
 void InputMgr::windowClosed(Ogre::RenderWindow* rw)
 {
+    // Only close for window that created OIS (the main window in these demos)
+    if(rw == engine->gfxMgr->mWindow)
+    {
+        if(mInputManager)
+        {
+            mInputManager->destroyInputObject(mMouse);
+            mInputManager->destroyInputObject(mKeyboard);
 
+            OIS::InputManager::destroyInputSystem(mInputManager);
+            mInputManager = 0;
+        }
+    }
 }
 

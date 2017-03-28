@@ -1,5 +1,5 @@
 src/Entity381.d: ../src/Entity381.cpp \
- /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/Entity381.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/Entity381.h \
  /usr/local/include/OGRE/OgreVector3.h \
  /usr/local/include/OGRE/OgrePrerequisites.h \
  /usr/local/include/OGRE/OgrePlatform.h \
@@ -65,10 +65,10 @@ src/Entity381.d: ../src/Entity381.cpp \
  /usr/local/include/OGRE/OgrePose.h \
  /usr/local/include/OGRE/OgreAnimationState.h \
  /usr/local/include/OGRE/OgreController.h \
- /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/Types.h \
- /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/aspect.h
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/Types.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/aspect.h
 
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/Entity381.h:
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/Entity381.h:
 
 /usr/local/include/OGRE/OgreVector3.h:
 
@@ -202,6 +202,6 @@ src/Entity381.d: ../src/Entity381.cpp \
 
 /usr/local/include/OGRE/OgreController.h:
 
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/Types.h:
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/Types.h:
 
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/aspect.h:
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/aspect.h:

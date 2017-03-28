@@ -1,8 +1,8 @@
 src/as3.d: ../src/as3.cpp \
- /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/as3.h \
- /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/engine.h \
- /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/GfxMgr.h \
- /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/as3.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/engine.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/GfxMgr.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/mgr.h \
  /usr/local/include/OGRE/OgreCamera.h \
  /usr/local/include/OGRE/OgrePrerequisites.h \
  /usr/local/include/OGRE/OgrePlatform.h \
@@ -235,21 +235,21 @@ src/as3.d: ../src/as3.cpp \
  /usr/include/ois/OISException.h /usr/include/ois/OISEffect.h \
  /usr/include/ois/OISForceFeedback.h \
  /usr/local/include/OGRE/SdkCameraMan.h \
- /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h \
- /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h \
- /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/EntityMgr.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/mgr.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/EntityMgr.h \
  /usr/local/include/OGRE/OgreVector3.h \
- /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/Entity381.h \
- /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/Types.h \
- /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/GameMgr.h
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/Entity381.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/Types.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/GameMgr.h
 
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/as3.h:
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/as3.h:
 
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/engine.h:
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/engine.h:
 
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/GfxMgr.h:
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/GfxMgr.h:
 
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/mgr.h:
 
 /usr/local/include/OGRE/OgreCamera.h:
 
@@ -743,16 +743,16 @@ src/as3.d: ../src/as3.cpp \
 
 /usr/local/include/OGRE/SdkCameraMan.h:
 
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:
 
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/mgr.h:
 
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/EntityMgr.h:
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/EntityMgr.h:
 
 /usr/local/include/OGRE/OgreVector3.h:
 
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/Entity381.h:
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/Entity381.h:
 
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/Types.h:
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/Types.h:
 
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/GameMgr.h:
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/GameMgr.h:

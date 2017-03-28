@@ -6,6 +6,7 @@
 CPP_SRCS += \
 ../src/Entity381.cpp \
 ../src/EntityMgr.cpp \
+../src/GameMgr.cpp \
 ../src/GfxMgr.cpp \
 ../src/InputMgr.cpp \
 ../src/as3.cpp \
@@ -16,6 +17,7 @@ CPP_SRCS += \
 OBJS += \
 ./src/Entity381.o \
 ./src/EntityMgr.o \
+./src/GameMgr.o \
 ./src/GfxMgr.o \
 ./src/InputMgr.o \
 ./src/as3.o \
@@ -26,6 +28,7 @@ OBJS += \
 CPP_DEPS += \
 ./src/Entity381.d \
 ./src/EntityMgr.d \
+./src/GameMgr.d \
 ./src/GfxMgr.d \
 ./src/InputMgr.d \
 ./src/as3.d \
@@ -38,7 +41,7 @@ CPP_DEPS += \
 src/%.o: ../src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include" -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	g++ -I"/home/randy/Desktop/CS381/Gonzalez_AS3/include" -I"/home/randy/Desktop/CS381/Gonzalez_AS3/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

@@ -5,6 +5,7 @@
  *      Author: randygonzalez
  */
 #include <GfxMgr.h>
+#include <engine.h>
 
 GfxMgr::GfxMgr(Engine *eng) : Mgr(eng)
 {

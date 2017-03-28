@@ -45,9 +45,6 @@ public:
     void windowClosed(Ogre::RenderWindow* rw);
 
 
-    Ogre::SceneManager*         mSceneMgr;
-    Ogre::RenderWindow*         mWindow;
-
     // OgreBites
     OgreBites::InputContext     mInputContext;
     OgreBites::SdkTrayManager*	mTrayMgr;

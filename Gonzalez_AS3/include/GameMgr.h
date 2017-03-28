@@ -10,13 +10,26 @@
 
 #include <mgr.h>
 
+class Engine;
+
 class GameMgr : public Mgr
 {
 public:
 	GameMgr(Engine *eng);
 	virtual ~GameMgr();
 
+	// Create The Scene
 	void createScene();
+	void createEntities();
+	void MakeGround();
+	void MakeSky();
+	void MakeFog();
+
+	// Inherited Implementations
+	void tick(float dt);
+	void init();
+	void loadLevel();
+	void stop();
 
 private:
 

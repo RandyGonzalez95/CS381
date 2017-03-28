@@ -1,4 +1,5 @@
-src/mgr.d: ../src/mgr.cpp \
+src/GameMgr.d: ../src/GameMgr.cpp \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/GameMgr.h \
  /home/randy/Desktop/CS381/Gonzalez_AS3/include/mgr.h \
  /usr/local/include/OGRE/OgreCamera.h \
  /usr/local/include/OGRE/OgrePrerequisites.h \
@@ -231,7 +232,17 @@ src/mgr.d: ../src/mgr.cpp \
  /usr/include/ois/OISInputManager.h /usr/include/ois/OISFactoryCreator.h \
  /usr/include/ois/OISException.h /usr/include/ois/OISEffect.h \
  /usr/include/ois/OISForceFeedback.h \
- /usr/local/include/OGRE/SdkCameraMan.h
+ /usr/local/include/OGRE/SdkCameraMan.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/engine.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/GfxMgr.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/mgr.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/EntityMgr.h \
+ /usr/local/include/OGRE/OgreVector3.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/Entity381.h \
+ /home/randy/Desktop/CS381/Gonzalez_AS3/include/Types.h
+
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/GameMgr.h:
 
 /home/randy/Desktop/CS381/Gonzalez_AS3/include/mgr.h:
 
@@ -726,3 +737,19 @@ src/mgr.d: ../src/mgr.cpp \
 /usr/include/ois/OISForceFeedback.h:
 
 /usr/local/include/OGRE/SdkCameraMan.h:
+
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/engine.h:
+
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/GfxMgr.h:
+
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/mgr.h:
+
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:
+
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/EntityMgr.h:
+
+/usr/local/include/OGRE/OgreVector3.h:
+
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/Entity381.h:
+
+/home/randy/Desktop/CS381/Gonzalez_AS3/include/Types.h:
