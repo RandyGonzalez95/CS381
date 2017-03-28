@@ -1,0 +1,33 @@
+/*
+ * GfxMgr.h
+ *
+ *  Created on: Mar 27, 2017
+ *      Author: randygonzalez
+ */
+
+#ifndef INCLUDE_GFXMGR_H_
+#define INCLUDE_GFXMGR_H_
+
+#include "mgr.h"
+
+class GfxMgr : public Mgr
+{
+public:
+	GfxMgr();
+	GfxMgr(Engine *eng);
+	~GfxMgr();
+	virtual void tick(float dt);
+	virtual void init();
+	virtual void loadLevel();
+	virtual void stop();
+
+	Ogre::SceneManager* ogreSceneManager;
+
+private:
+
+
+};
+
+
+
+#endif /* INCLUDE_GFXMGR_H_ */

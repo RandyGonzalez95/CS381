@@ -1,0 +1,81 @@
+/*
+ * InputMgr.cpp
+ *
+ *  Created on: Mar 27, 2017
+ *      Author: randygonzalez
+ */
+
+#include <InputMgr.h>
+
+InputMgr::InputMgr(Engine *eng) : Mgr(eng)
+{
+
+}
+
+InputMgr::~InputMgr()
+{
+
+}
+
+void InputMgr::init()
+{
+
+}
+
+void InputMgr::tick(float dt)
+{
+
+}
+
+void InputMgr::loadLevel()
+{
+
+}
+
+void InputMgr::stop()
+{
+	return;
+}
+
+void InputMgr::updateCamera(const Ogre::FrameEvent& fe)
+{
+
+}
+
+void InputMgr::updateVelocity(const Ogre::FrameEvent& fe)
+{
+
+}
+
+
+void InputMgr::createFrameListener(void)
+{
+
+}
+
+void InputMgr::createViewPorts(void)
+{
+
+}
+
+bool InputMgr::frameRenderingQueued(const Ogre::FrameEvent& evt)
+{
+
+}
+
+bool InputMgr::keyPressed(const OIS::KeyEvent &arg)
+
+bool InputMgr::keyReleased(const OIS::KeyEvent &arg)
+
+bool InputMgr::mouseMoved(const OIS::MouseEvent &arg)
+
+bool InputMgr::mousePressed(const OIS::MouseEvent &arg, OIS::MouseButtonID id)
+
+bool InputMgr::mouseReleased(const OIS::MouseEvent &arg, OIS::MouseButtonID id)
+
+
+void InputMgr::windowResized(Ogre::RenderWindow* rw)
+
+
+void InputMgr::windowClosed(Ogre::RenderWindow* rw)
+

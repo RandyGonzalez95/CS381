@@ -1,0 +1,40 @@
+/*
+ * InputMgr.cpp
+ *
+ *  Created on: Mar 27, 2017
+ *      Author: randygonzalez
+ */
+
+#include <InputMgr.h>
+
+InputMgr::InputMgr(Engine *eng) : Mgr(eng)
+{
+
+}
+
+InputMgr::~InputMgr()
+{
+
+}
+
+void InputMgr::init()
+{
+
+}
+
+void InputMgr::tick(float dt)
+{
+
+}
+
+void InputMgr::loadLevel()
+{
+
+}
+
+void InputMgr::stop()
+{
+	return;
+}
+
+

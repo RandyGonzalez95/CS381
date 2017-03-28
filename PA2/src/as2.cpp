@@ -10,7 +10,7 @@
 
 As2::As2(void)
 {
-	deltaVelocity = 50.0f/10000;
+	deltaVelocity = 50.0f/1000;
 	yaw = 0.0f;
 	position = Ogre::Vector3::ZERO;
 	velocity = Ogre::Vector3::ZERO;

@@ -1,0 +1,20 @@
+/*
+ * InputMgr.h
+ *
+ *  Created on: Mar 27, 2017
+ *      Author: randygonzalez
+ */
+
+#ifndef INCLUDE_INPUTMGR_H_
+#define INCLUDE_INPUTMGR_H_
+
+
+
+class InputMgr : public Mgr
+{
+
+};
+
+
+
+#endif /* INCLUDE_INPUTMGR_H_ */

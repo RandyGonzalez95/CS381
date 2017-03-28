@@ -1,4 +1,4 @@
-14:34:25 **** Build of configuration Debug for project Gonzalez_AS2 ****
+18:58:20 **** Build of configuration Debug for project Gonzalez_AS2 ****
 make all 
 Building file: ../src/as2.cpp
 Invoking: GCC C++ Compiler
@@ -26,8 +26,8 @@ In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/as2
 /home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/BaseApplication.h:91:18: note: 	virtual void BaseApplication::createScene()
      virtual void createScene(void) = 0; // Override me!
                   ^
-src/subdir.mk:30: recipe for target 'src/as2.o' failed
 make: *** [src/as2.o] Error 1
+src/subdir.mk:30: recipe for target 'src/as2.o' failed
 
-14:34:30 Build Finished (took 5s.27ms)
+18:58:24 Build Finished (took 3s.169ms)
 

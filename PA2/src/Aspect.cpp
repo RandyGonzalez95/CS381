@@ -88,7 +88,7 @@ void RenderableAspect::RenderBoat()
 	//if(entity->isMoving)
 	//{
 		entity->ogreSceneNode->translate(entity->position, Ogre::Node::TS_LOCAL);
-		entity->ogreSceneNode->rotate(Ogre::Vector3::UNIT_Y, Ogre::Degree(entity->desiredHeading*0.1f));
+		entity->ogreSceneNode->rotate(Ogre::Vector3::UNIT_Y, Ogre::Degree(entity->desiredHeading));
 	//}
 
 	//entity->ogreSceneNode->setPosition(entity->position);
