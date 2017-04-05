@@ -1,6 +1,6 @@
 src/aspect.d: ../src/aspect.cpp \
- /home/randy/workspace/PA3/include/aspect.h \
- /home/randy/workspace/PA3/include/Entity381.h \
+ /home/randygonzalez/Desktop/CS381/PA3/include/aspect.h \
+ /home/randygonzalez/Desktop/CS381/PA3/include/Entity381.h \
  /usr/local/include/OGRE/OgreVector3.h \
  /usr/local/include/OGRE/OgrePrerequisites.h \
  /usr/local/include/OGRE/OgrePlatform.h \
@@ -66,11 +66,11 @@ src/aspect.d: ../src/aspect.cpp \
  /usr/local/include/OGRE/OgrePose.h \
  /usr/local/include/OGRE/OgreAnimationState.h \
  /usr/local/include/OGRE/OgreController.h \
- /home/randy/workspace/PA3/include/Types.h
+ /home/randygonzalez/Desktop/CS381/PA3/include/Types.h
 
-/home/randy/workspace/PA3/include/aspect.h:
+/home/randygonzalez/Desktop/CS381/PA3/include/aspect.h:
 
-/home/randy/workspace/PA3/include/Entity381.h:
+/home/randygonzalez/Desktop/CS381/PA3/include/Entity381.h:
 
 /usr/local/include/OGRE/OgreVector3.h:
 
@@ -204,4 +204,4 @@ src/aspect.d: ../src/aspect.cpp \
 
 /usr/local/include/OGRE/OgreController.h:
 
-/home/randy/workspace/PA3/include/Types.h:
+/home/randygonzalez/Desktop/CS381/PA3/include/Types.h:

@@ -45,9 +45,11 @@ public:
 	Ogre::SceneNode *ogreSceneNode;
 	Ogre::Entity* ogreEntity;
 
+
 	//Engine stuff dynamic
 	float speed, heading;
 	float desiredSpeed, desiredHeading;
+	int radius;// for selection
 
 	//selection
 	bool isSelected;

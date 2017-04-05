@@ -1,10 +1,6 @@
-18:58:19 **** Incremental Build of configuration Debug for project Gonzalez_AS0 ****
+18:15:04 **** Incremental Build of configuration Debug for project Gonzalez_AS0 ****
 make all 
-Building target: Gonzalez_AS0
-Invoking: GCC C++ Linker
-g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Gonzalez_AS0"  ./src/BaseApplication.o ./src/TutorialApplication.o   -lOgreOverlay -lOgreMain -lOIS -lboost_system
-Finished building target: Gonzalez_AS0
- 
+make: Nothing to be done for 'all'.
 
-18:58:20 Build Finished (took 1s.120ms)
+18:15:04 Build Finished (took 215ms)
 

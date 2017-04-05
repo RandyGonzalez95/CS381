@@ -37,7 +37,7 @@ public:
 	bool done();
 
 	Ogre::Vector3 targetLocation;
-	float MOVE_DISTANCE_THRESHOLD = 100;
+	float MOVE_DISTANCE_THRESHOLD = 150;
 
 	bool isFinished;
 
@@ -48,7 +48,7 @@ public:
 class Follow: public Command {
 
 public:
-	Follow(Entity381* ent, Ogre::Vector3 location);
+	Follow(Entity381* ent, Entity381* boat);
 	~Follow();
 
 	void init();
@@ -58,6 +58,8 @@ public:
 	Ogre::Vector3 targetLocation;
 	float MOVE_DISTANCE_THRESHOLD;
 
+	bool isFinished;
+	Entity381* followedBoat;
 };
 
 

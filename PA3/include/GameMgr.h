@@ -17,7 +17,7 @@ class GameMgr : public Mgr
 {
 public:
 	GameMgr(Engine *eng);
-	virtual ~GameMgr();
+	~GameMgr();
 
 	// Create The Scene
 	void createScene();

@@ -124,9 +124,6 @@ bool InputMgr::mouseMoved(const OIS::MouseEvent &arg){
 }
 bool InputMgr::mousePressed(const OIS::MouseEvent &arg, OIS::MouseButtonID id) {
 
-	Command *command;
-	MoveTo* move = new MoveTo (engine->entityMgr->selectedEntity, point);
-
 
 	//engine->entityMgr->selectedEntity->aspects[2]->AddCommand(command);
 
@@ -166,7 +163,7 @@ bool InputMgr::mousePressed(const OIS::MouseEvent &arg, OIS::MouseButtonID id) {
 		closestBoat = engine->entityMgr->closestBoat(point);
 		Ogre::Real temp = closestBoat->pos.distance(point);
 
-		if( temp <= 200 ){
+		if( temp <= 100 ){
 			engine->entityMgr->selectedEntity->isSelected = false;
 			engine->entityMgr->selectedEntity = closestBoat;
 			engine->entityMgr->selectedEntity->isSelected = true;
@@ -209,18 +206,32 @@ bool InputMgr::mousePressed(const OIS::MouseEvent &arg, OIS::MouseButtonID id) {
 			engine->entityMgr->selectedEntity->targetLocation = point;
 			//move->targetLocation = point;
 		}
-		//move->tick(dt);
-		command = new Command(engine->entityMgr->selectedEntity, COMMAND_TYPE::moveTo);
 
-		// Create a new command for our selected entity
-		UnitAI *a = new UnitAI(engine->entityMgr->selectedEntity);
-		a->AddCommand(command);
-		engine->entityMgr->selectedEntity->aspects.push_back(a);
+		// Get our closest boat position
+		closestBoat = engine->entityMgr->closestBoat(point);
+		Ogre::Real temp = closestBoat->pos.distance(point);
+
+		// if our target destination is within range of desired boat
+		if( temp <= 100 ) // follow
+		{
+
+			cout << endl << "boat following" << endl;
+
+			// assign entity to follow
+			engine->entityMgr->selectedEntity->targetLocation = closestBoat->pos;
+			Follow *follow = new Follow(engine->entityMgr->selectedEntity, closestBoat);
+			UnitAI *a = new UnitAI(engine->entityMgr->selectedEntity);
+			a->AddCommand(follow);
+			engine->entityMgr->selectedEntity->aspects.push_back(a);
+		}
+		else // move to location
+		{
+			MoveTo* move = new MoveTo (engine->entityMgr->selectedEntity, point);
+			UnitAI *a = new UnitAI(engine->entityMgr->selectedEntity);
+			a->AddCommand(move);
+			engine->entityMgr->selectedEntity->aspects.push_back(a);
+		}
 	}
-
-
-
-
 
 	return true;
 }
@@ -357,6 +368,7 @@ void InputMgr::UpdateDesiredSpeedHeading(float dt){
 			keyboardTimer = keyTime;
 			//std::cout << std::endl << engine->entityMgr->selectedEntity->heading << std::endl << std::endl;
 			engine->entityMgr->selectedEntity->desiredHeading -= 0.3f;
+			cout << endl << engine->entityMgr->selectedEntity->desiredHeading << endl << endl;
 		}
 		if((keyboardTimer < 0) && keyboard->isKeyDown(OIS::KC_NUMPAD6)){
 			keyboardTimer = keyTime;

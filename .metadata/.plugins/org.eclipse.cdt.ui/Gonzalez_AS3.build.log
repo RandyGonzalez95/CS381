@@ -1,132 +1,15 @@
-19:19:12 **** Incremental Build of configuration Debug for project Gonzalez_AS3 ****
+18:15:09 **** Incremental Build of configuration Debug for project Gonzalez_AS3 ****
 make all 
-Building file: ../src/InputMgr.cpp
+Building file: ../src/GameMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include" -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/InputMgr.d" -MT"src/InputMgr.d" -o "src/InputMgr.o" "../src/InputMgr.cpp"
-../src/InputMgr.cpp: In member function ‘virtual void InputMgr::init()’:
-../src/InputMgr.cpp:26:21: error: invalid use of incomplete type ‘class Engine’
-  cameraNode = engine->gfxMgr->mSceneMgr->getRootSceneNode()->createChild();
-                     ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:28:27: error: ‘mCamera’ was not declared in this scope
-  cameraNode->attachObject(mCamera);
-                           ^
-../src/InputMgr.cpp: In member function ‘void InputMgr::createFrameListener()’:
-../src/InputMgr.cpp:124:25: error: invalid use of incomplete type ‘class Engine’
-     windowResized(engine->gfxMgr->mWindow);
-                         ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:127:62: error: invalid use of incomplete type ‘class Engine’
-     Ogre::WindowEventUtilities::addWindowEventListener(engine->gfxMgr->mWindow, this);
-                                                              ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:131:69: error: invalid use of incomplete type ‘class Engine’
-     mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", engine->gfxMgr->mWindow, mInputContext, this);
-                                                                     ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:150:11: error: invalid use of incomplete type ‘class Engine’
-     engine->gfxMgr->mDetailsPanel = mTrayMgr->createParamsPanel(OgreBites::TL_NONE, "DetailsPanel", 200, items);
-           ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:151:11: error: invalid use of incomplete type ‘class Engine’
-     engine->gfxMgr->mDetailsPanel->setParamValue(9, "Bilinear");
-           ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:152:11: error: invalid use of incomplete type ‘class Engine’
-     engine->gfxMgr->mDetailsPanel->setParamValue(10, "Solid");
-           ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:153:11: error: invalid use of incomplete type ‘class Engine’
-     engine->gfxMgr->mDetailsPanel->hide();
-           ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:155:11: error: invalid use of incomplete type ‘class Engine’
-     engine->gfxMgr->mRoot->addFrameListener(this);
-           ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp: In member function ‘void InputMgr::createViewPorts()’:
-../src/InputMgr.cpp:161:32: error: invalid use of incomplete type ‘class Engine’
-     Ogre::Viewport* vp = engine->gfxMgr->mWindow->addViewport(engine->gfxMgr->mCamera);
-                                ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:161:69: error: invalid use of incomplete type ‘class Engine’
-     Ogre::Viewport* vp = engine->gfxMgr->mWindow->addViewport(engine->gfxMgr->mCamera);
-                                                                     ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:165:11: error: invalid use of incomplete type ‘class Engine’
-     engine->gfxMgr->mCamera->setAspectRatio(Ogre::Real(vp->getActualWidth()) / Ogre::Real(vp->getActualHeight()));
-           ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp: In member function ‘virtual bool InputMgr::keyPressed(const OIS::KeyEvent&)’:
-../src/InputMgr.cpp:186:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-../src/InputMgr.cpp: In member function ‘virtual bool InputMgr::keyReleased(const OIS::KeyEvent&)’:
-../src/InputMgr.cpp:191:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-../src/InputMgr.cpp: In member function ‘virtual bool InputMgr::mouseMoved(const OIS::MouseEvent&)’:
-../src/InputMgr.cpp:196:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-../src/InputMgr.cpp: In member function ‘virtual bool InputMgr::mousePressed(const OIS::MouseEvent&, OIS::MouseButtonID)’:
-../src/InputMgr.cpp:201:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-../src/InputMgr.cpp: In member function ‘virtual bool InputMgr::mouseReleased(const OIS::MouseEvent&, OIS::MouseButtonID)’:
-../src/InputMgr.cpp:206:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-make: *** [src/InputMgr.o] Error 1
-src/subdir.mk:39: recipe for target 'src/InputMgr.o' failed
+g++ -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include" -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GameMgr.d" -MT"src/GameMgr.d" -o "src/GameMgr.o" "../src/GameMgr.cpp"
+Finished building: ../src/GameMgr.cpp
+ 
+Building target: Gonzalez_AS3
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "Gonzalez_AS3"  ./src/Entity381.o ./src/EntityMgr.o ./src/GameMgr.o ./src/GfxMgr.o ./src/InputMgr.o ./src/as3.o ./src/aspect.o ./src/engine.o ./src/mgr.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lboost_system -lOIS
+Finished building target: Gonzalez_AS3
+ 
 
-19:19:15 Build Finished (took 3s.81ms)
+18:15:13 Build Finished (took 4s.72ms)
 

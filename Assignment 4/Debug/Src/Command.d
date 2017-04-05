@@ -1,6 +1,6 @@
 Src/Command.d: ../Src/Command.cpp \
- /home/nirmitp/workspace/Assignment\ 4/Inc/Command.h \
- /home/nirmitp/workspace/Assignment\ 4/Inc/Entity381.h \
+ /home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Command.h \
+ /home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Entity381.h \
  /usr/local/include/OGRE/OgreVector3.h \
  /usr/local/include/OGRE/OgrePrerequisites.h \
  /usr/local/include/OGRE/OgrePlatform.h \
@@ -66,20 +66,20 @@ Src/Command.d: ../Src/Command.cpp \
  /usr/local/include/OGRE/OgrePose.h \
  /usr/local/include/OGRE/OgreAnimationState.h \
  /usr/local/include/OGRE/OgreController.h \
- /home/nirmitp/workspace/Assignment\ 4/Inc/../Inc/Types.h \
- /home/nirmitp/workspace/Assignment\ 4/Inc/inputMgr.h \
+ /home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/../Inc/Types.h \
+ /home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/inputMgr.h \
  /usr/local/include/OGRE/OgreWindowEventUtilities.h \
  /usr/include/OIS/OISEvents.h /usr/include/OIS/OISPrereqs.h \
  /usr/include/OIS/OISConfig.h /usr/include/OIS/OISInputManager.h \
  /usr/include/OIS/OISKeyboard.h /usr/include/OIS/OISObject.h \
  /usr/include/OIS/OISInterface.h /usr/include/OIS/OISEvents.h \
  /usr/include/OIS/OISMouse.h \
- /home/nirmitp/workspace/Assignment\ 4/Inc/../Inc/mgr.h \
- /home/nirmitp/workspace/Assignment\ 4/Inc/Types.h
+ /home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/../Inc/mgr.h \
+ /home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Types.h
 
-/home/nirmitp/workspace/Assignment\ 4/Inc/Command.h:
+/home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Command.h:
 
-/home/nirmitp/workspace/Assignment\ 4/Inc/Entity381.h:
+/home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Entity381.h:
 
 /usr/local/include/OGRE/OgreVector3.h:
 
@@ -213,9 +213,9 @@ Src/Command.d: ../Src/Command.cpp \
 
 /usr/local/include/OGRE/OgreController.h:
 
-/home/nirmitp/workspace/Assignment\ 4/Inc/../Inc/Types.h:
+/home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/../Inc/Types.h:
 
-/home/nirmitp/workspace/Assignment\ 4/Inc/inputMgr.h:
+/home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/inputMgr.h:
 
 /usr/local/include/OGRE/OgreWindowEventUtilities.h:
 
@@ -237,6 +237,6 @@ Src/Command.d: ../Src/Command.cpp \
 
 /usr/include/OIS/OISMouse.h:
 
-/home/nirmitp/workspace/Assignment\ 4/Inc/../Inc/mgr.h:
+/home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/../Inc/mgr.h:
 
-/home/nirmitp/workspace/Assignment\ 4/Inc/Types.h:
+/home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Types.h:

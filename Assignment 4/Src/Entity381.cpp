@@ -22,14 +22,15 @@ Entity381::Entity381(EntityType entType, Ogre::Vector3 pos, float heading){
 
 	this->isSelected = false;
 
+
 	this->aspects.clear();
 	Renderable *r = new Renderable(this);
 	Physics *p = new Physics(this);
-	//UnitAI *a = new UnitAI(this);
+	UnitAI *a = new UnitAI(this);
 
 	this->aspects.push_back(r);
 	this->aspects.push_back(p);
-	//this->aspects.push_back(a);
+	this->aspects.push_back(a);
 
 	this->entityId = Entity381::nextId++;
 
@@ -70,6 +71,7 @@ Ddg::Ddg(Ogre::Vector3 pos, float heading) : Entity381(EntityType::DDG, pos, hea
 	this->meshfile = "ddg51.mesh";
 	this->acceleration = 1.0f;
 	this->turnRate = 0.1f;
+
 }
 
 Ddg::~Ddg(){
@@ -80,6 +82,7 @@ Cigarette::Cigarette(Ogre::Vector3 pos, float heading) : Entity381(EntityType::C
 	this->meshfile = "cigarette.mesh";
 	this->acceleration = 1.5f;
 	this->turnRate = 0.3f;
+
 }
 
 Cigarette::~Cigarette(){
@@ -90,6 +93,7 @@ Alien::Alien(Ogre::Vector3 pos, float heading) : Entity381(EntityType::ALIEN, po
 	this->meshfile = "alienship.mesh";
 	this->turnRate = 0.5f;
 	this->acceleration = 1.8f;
+
 }
 
 Alien::~Alien(){
@@ -100,6 +104,7 @@ Cvn::Cvn(Ogre::Vector3 pos, float heading) : Entity381(EntityType::CVN, pos, hea
 	this->meshfile = "cvn68.mesh";
 	this->turnRate = 0.05f;
 	this->acceleration = 0.75f;
+
 }
 
 Cvn::~Cvn(){
@@ -110,6 +115,7 @@ Frigate::Frigate(Ogre::Vector3 pos, float heading) : Entity381(EntityType::FRIGA
 	this->meshfile = "sleek.mesh";
 	this->turnRate = 0.15f;
 	this->acceleration = 1.1f;
+
 }
 
 Frigate::~Frigate(){

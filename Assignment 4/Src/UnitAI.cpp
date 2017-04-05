@@ -33,11 +33,19 @@ void UnitAI::Tick(float dt){
 
 	commands.pop();*/
 
+
 	for(unsigned int i = 0; i<commands.size(); i++)
 	{
 
-		commands.front()->tick(dt);
-		//commands.pop();
+		if(!commands.front()->done())
+		{
+			commands.front()->tick(dt);
+		}
+		else
+		{
+			std::cerr<<"Queue Popped"<<std::endl;
+		commands.pop();
+		}
 	}
 }
 
@@ -45,7 +53,6 @@ Command * UnitAI::GetCommand(Command *c){
 	//MoveTo(Entity381->ent, c->targetLocation);
 
 	Command *temp = new Command();
-	MoveTo *move;
 
 	// if the command doesnt exist
 	if(!c)
@@ -54,15 +61,6 @@ Command * UnitAI::GetCommand(Command *c){
 	}
 
 
-	switch(c->commandType)
-	{
-	case COMMAND_TYPE::moveTo:
-		move = new MoveTo(entity, entity->targetLocation);
-		break;
-	case COMMAND_TYPE::follow:
-		break;
-
-	}
 
 	return temp;
 }
@@ -70,9 +68,26 @@ Command * UnitAI::GetCommand(Command *c){
 
 void UnitAI::AddCommand(Command *c){
 
-	std::cerr<<"Command added to the queue"<<std::endl;
+	//MoveTo *move;
+
+	/*switch(c->commandType)
+	{
+	case COMMAND_TYPE::moveTo:
+		std::cerr<<"In the command type check"<<std::endl;
+
+		move = new MoveTo(entity, entity->targetLocation);
+		std::cerr<<"Move to instantiated"<<std::endl;
+		//c = move;
+		break;
+	case COMMAND_TYPE::follow:
+		std::cerr<<"Follow instantiated"<<std::endl;
+		break;
+
+	}*/
 
 	commands.push(c);
+
+	std::cerr<<"Number of elements in commands array is: "<< commands.size()<<std::endl;
 
 }
 

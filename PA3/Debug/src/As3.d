@@ -1,6 +1,7 @@
-src/As3.d: ../src/As3.cpp /home/randy/workspace/PA3/include/engine.h \
- /home/randy/workspace/PA3/include/gfxMgr.h \
- /home/randy/workspace/PA3/include/mgr.h \
+src/As3.d: ../src/As3.cpp \
+ /home/randygonzalez/Desktop/CS381/PA3/include/engine.h \
+ /home/randygonzalez/Desktop/CS381/PA3/include/gfxMgr.h \
+ /home/randygonzalez/Desktop/CS381/PA3/include/mgr.h \
  /usr/local/include/OGRE/OgreCamera.h \
  /usr/local/include/OGRE/OgrePrerequisites.h \
  /usr/local/include/OGRE/OgrePlatform.h \
@@ -233,18 +234,18 @@ src/As3.d: ../src/As3.cpp /home/randy/workspace/PA3/include/engine.h \
  /usr/include/ois/OISException.h /usr/include/ois/OISEffect.h \
  /usr/include/ois/OISForceFeedback.h \
  /usr/local/include/OGRE/SdkCameraMan.h \
- /home/randy/workspace/PA3/include/InputMgr.h \
- /home/randy/workspace/PA3/include/EntityMgr.h \
+ /home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h \
+ /home/randygonzalez/Desktop/CS381/PA3/include/EntityMgr.h \
  /usr/local/include/OGRE/OgreVector3.h \
- /home/randy/workspace/PA3/include/Entity381.h \
- /home/randy/workspace/PA3/include/Types.h \
- /home/randy/workspace/PA3/include/GameMgr.h
+ /home/randygonzalez/Desktop/CS381/PA3/include/Entity381.h \
+ /home/randygonzalez/Desktop/CS381/PA3/include/Types.h \
+ /home/randygonzalez/Desktop/CS381/PA3/include/GameMgr.h
 
-/home/randy/workspace/PA3/include/engine.h:
+/home/randygonzalez/Desktop/CS381/PA3/include/engine.h:
 
-/home/randy/workspace/PA3/include/gfxMgr.h:
+/home/randygonzalez/Desktop/CS381/PA3/include/gfxMgr.h:
 
-/home/randy/workspace/PA3/include/mgr.h:
+/home/randygonzalez/Desktop/CS381/PA3/include/mgr.h:
 
 /usr/local/include/OGRE/OgreCamera.h:
 
@@ -738,14 +739,14 @@ src/As3.d: ../src/As3.cpp /home/randy/workspace/PA3/include/engine.h \
 
 /usr/local/include/OGRE/SdkCameraMan.h:
 
-/home/randy/workspace/PA3/include/InputMgr.h:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:
 
-/home/randy/workspace/PA3/include/EntityMgr.h:
+/home/randygonzalez/Desktop/CS381/PA3/include/EntityMgr.h:
 
 /usr/local/include/OGRE/OgreVector3.h:
 
-/home/randy/workspace/PA3/include/Entity381.h:
+/home/randygonzalez/Desktop/CS381/PA3/include/Entity381.h:
 
-/home/randy/workspace/PA3/include/Types.h:
+/home/randygonzalez/Desktop/CS381/PA3/include/Types.h:
 
-/home/randy/workspace/PA3/include/GameMgr.h:
+/home/randygonzalez/Desktop/CS381/PA3/include/GameMgr.h:

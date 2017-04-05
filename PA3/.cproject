@@ -24,10 +24,9 @@
 								<option id="gnu.cpp.compiler.exe.debug.option.optimization.level.265718154" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.1490574282" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1342678129" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/meshes}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/scripts}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
 									<listOptionValue builtIn="false" value="/usr/local/include/OGRE/Terrain"/>
+									<listOptionValue builtIn="false" value="/home/randygonzalez/Desktop/381"/>
 									<listOptionValue builtIn="false" value="/usr/local/include/OGRE/Overlay"/>
 									<listOptionValue builtIn="false" value="/usr/include/ois"/>
 									<listOptionValue builtIn="false" value="/usr/local/include/OGRE"/>

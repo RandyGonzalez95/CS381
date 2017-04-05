@@ -1,4 +1,5 @@
-src/mgr.d: ../src/mgr.cpp /home/randy/workspace/PA3/include/mgr.h \
+src/mgr.d: ../src/mgr.cpp \
+ /home/randygonzalez/Desktop/CS381/PA3/include/mgr.h \
  /usr/local/include/OGRE/OgreCamera.h \
  /usr/local/include/OGRE/OgrePrerequisites.h \
  /usr/local/include/OGRE/OgrePlatform.h \
@@ -232,7 +233,7 @@ src/mgr.d: ../src/mgr.cpp /home/randy/workspace/PA3/include/mgr.h \
  /usr/include/ois/OISForceFeedback.h \
  /usr/local/include/OGRE/SdkCameraMan.h
 
-/home/randy/workspace/PA3/include/mgr.h:
+/home/randygonzalez/Desktop/CS381/PA3/include/mgr.h:
 
 /usr/local/include/OGRE/OgreCamera.h:
 

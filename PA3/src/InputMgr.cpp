@@ -135,10 +135,10 @@ void InputMgr::updateDesiredSpeedHeading(float dt)
 			keyboardTimer = keyTime;
 			engine->entityMgr->selectedEntity->desiredHeading -= 0.3f;
 		}
-		if((keyboardTimer<0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD8))
+		if((keyboardTimer<0) && mKeyboard->isKeyDown(OIS::KC_NUMPAD6))
 		{
 			keyboardTimer = keyTime;
-			engine->entityMgr->selectedEntity->desiredSpeed += 0.3f;
+			engine->entityMgr->selectedEntity->desiredHeading += 0.3f;
 		}
 
 	}

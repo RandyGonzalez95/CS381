@@ -1,129 +1,2274 @@
-19:19:12 **** Incremental Build of configuration Debug for project Gonzalez_AS3 ****
+13:03:27 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:03:29 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:04:11 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+Building file: ../src/As3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/As3.d" -MT"src/As3.d" -o "src/As3.o" "../src/As3.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/As3.cpp:7:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/As3.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/EntityMgr.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/GameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GameMgr.d" -MT"src/GameMgr.d" -o "src/GameMgr.o" "../src/GameMgr.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/GameMgr.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/GameMgr.cpp
+ 
+Building file: ../src/InputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/InputMgr.d" -MT"src/InputMgr.d" -o "src/InputMgr.o" "../src/InputMgr.cpp"
+In file included from ../src/InputMgr.cpp:8:0:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/InputMgr.cpp
+ 
+Building file: ../src/aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/aspect.d" -MT"src/aspect.d" -o "src/aspect.o" "../src/aspect.cpp"
+../src/aspect.cpp:63:14: warning: ‘RadToDegree’ defined but not used [-Wunused-variable]
+ static float RadToDegree = 57.2958; //180/pi
+              ^
+Finished building: ../src/aspect.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/engine.cpp:7:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/engine.cpp
+ 
+Building file: ../src/gfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gfxMgr.d" -MT"src/gfxMgr.d" -o "src/gfxMgr.o" "../src/gfxMgr.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/gfxMgr.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/gfxMgr.cpp
+ 
+Building file: ../src/mgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/mgr.d" -MT"src/mgr.d" -o "src/mgr.o" "../src/mgr.cpp"
+Finished building: ../src/mgr.cpp
+ 
+Building target: PA3
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "PA3"  ./src/As3.o ./src/Entity381.o ./src/EntityMgr.o ./src/GameMgr.o ./src/InputMgr.o ./src/aspect.o ./src/engine.o ./src/gfxMgr.o ./src/mgr.o   -lOgreMain -lOgreOverlay -lOgreTerrain -lboost_system -lOIS
+Finished building target: PA3
+ 
+13:05:24 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:55 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:06:27 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+Building file: ../src/As3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/As3.d" -MT"src/As3.d" -o "src/As3.o" "../src/As3.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/As3.cpp:7:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/As3.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/EntityMgr.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/GameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GameMgr.d" -MT"src/GameMgr.d" -o "src/GameMgr.o" "../src/GameMgr.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/GameMgr.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/GameMgr.cpp
+ 
+Building file: ../src/InputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/InputMgr.d" -MT"src/InputMgr.d" -o "src/InputMgr.o" "../src/InputMgr.cpp"
+In file included from ../src/InputMgr.cpp:8:0:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/InputMgr.cpp
+ 
+Building file: ../src/aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/aspect.d" -MT"src/aspect.d" -o "src/aspect.o" "../src/aspect.cpp"
+../src/aspect.cpp:63:14: warning: ‘RadToDegree’ defined but not used [-Wunused-variable]
+ static float RadToDegree = 57.2958; //180/pi
+              ^
+Finished building: ../src/aspect.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/engine.cpp:7:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/engine.cpp
+ 
+Building file: ../src/gfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gfxMgr.d" -MT"src/gfxMgr.d" -o "src/gfxMgr.o" "../src/gfxMgr.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/gfxMgr.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/gfxMgr.cpp
+ 
+Building file: ../src/mgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/mgr.d" -MT"src/mgr.d" -o "src/mgr.o" "../src/mgr.cpp"
+Finished building: ../src/mgr.cpp
+ 
+Building target: PA3
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "PA3"  ./src/As3.o ./src/Entity381.o ./src/EntityMgr.o ./src/GameMgr.o ./src/InputMgr.o ./src/aspect.o ./src/engine.o ./src/gfxMgr.o ./src/mgr.o   -lOgreMain -lOgreOverlay -lOgreTerrain -lboost_system -lOIS
+Finished building target: PA3
+ 
+13:07:02 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:08:38 **** Incremental Build of configuration Debug for project PA3 ****
 make all 
 Building file: ../src/InputMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include" -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/InputMgr.d" -MT"src/InputMgr.d" -o "src/InputMgr.o" "../src/InputMgr.cpp"
-../src/InputMgr.cpp: In member function ‘virtual void InputMgr::init()’:
-../src/InputMgr.cpp:26:21: error: invalid use of incomplete type ‘class Engine’
-  cameraNode = engine->gfxMgr->mSceneMgr->getRootSceneNode()->createChild();
-                     ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:28:27: error: ‘mCamera’ was not declared in this scope
-  cameraNode->attachObject(mCamera);
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/InputMgr.d" -MT"src/InputMgr.d" -o "src/InputMgr.o" "../src/InputMgr.cpp"
+In file included from ../src/InputMgr.cpp:8:0:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
                            ^
-../src/InputMgr.cpp: In member function ‘void InputMgr::createFrameListener()’:
-../src/InputMgr.cpp:124:25: error: invalid use of incomplete type ‘class Engine’
-     windowResized(engine->gfxMgr->mWindow);
+Finished building: ../src/InputMgr.cpp
+ 
+Building target: PA3
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "PA3"  ./src/As3.o ./src/Entity381.o ./src/EntityMgr.o ./src/GameMgr.o ./src/InputMgr.o ./src/aspect.o ./src/engine.o ./src/gfxMgr.o ./src/mgr.o   -lOgreMain -lOgreOverlay -lOgreTerrain -lboost_system -lOIS
+Finished building target: PA3
+ 
+13:09:52 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+Building file: ../src/InputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/InputMgr.d" -MT"src/InputMgr.d" -o "src/InputMgr.o" "../src/InputMgr.cpp"
+In file included from ../src/InputMgr.cpp:8:0:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/InputMgr.cpp
+ 
+Building target: PA3
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "PA3"  ./src/As3.o ./src/Entity381.o ./src/EntityMgr.o ./src/GameMgr.o ./src/InputMgr.o ./src/aspect.o ./src/engine.o ./src/gfxMgr.o ./src/mgr.o   -lOgreMain -lOgreOverlay -lOgreTerrain -lboost_system -lOIS
+Finished building target: PA3
+ 
+13:14:03 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:16:08 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:26:54 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:27:33 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:27:40 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:27:47 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+13:44:13 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/aspect.d" -MT"src/aspect.d" -o "src/aspect.o" "../src/aspect.cpp"
+../src/aspect.cpp:63:14: warning: ‘RadToDegree’ defined but not used [-Wunused-variable]
+ static float RadToDegree = 57.2958; //180/pi
+              ^
+Finished building: ../src/aspect.cpp
+ 
+Building target: PA3
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "PA3"  ./src/As3.o ./src/Entity381.o ./src/EntityMgr.o ./src/GameMgr.o ./src/InputMgr.o ./src/aspect.o ./src/engine.o ./src/gfxMgr.o ./src/mgr.o   -lOgreMain -lOgreOverlay -lOgreTerrain -lboost_system -lOIS
+Finished building target: PA3
+ 
+13:44:41 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+Building file: ../src/As3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/As3.d" -MT"src/As3.d" -o "src/As3.o" "../src/As3.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/As3.cpp:7:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/As3.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/EntityMgr.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/GameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GameMgr.d" -MT"src/GameMgr.d" -o "src/GameMgr.o" "../src/GameMgr.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/GameMgr.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/GameMgr.cpp
+ 
+Building file: ../src/InputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/InputMgr.d" -MT"src/InputMgr.d" -o "src/InputMgr.o" "../src/InputMgr.cpp"
+In file included from ../src/InputMgr.cpp:8:0:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/InputMgr.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/engine.cpp:7:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/engine.cpp
+ 
+Building file: ../src/gfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/PA3/include" -I/usr/local/include/OGRE/Terrain -I/home/randygonzalez/Desktop/381 -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gfxMgr.d" -MT"src/gfxMgr.d" -o "src/gfxMgr.o" "../src/gfxMgr.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/PA3/include/engine.h:11:0,
+                 from ../src/gfxMgr.cpp:8:
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:62:33: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float selectionTime = 0.2f;
+                                 ^
+/home/randygonzalez/Desktop/CS381/PA3/include/InputMgr.h:63:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const float keyTime = 0.2f;
+                           ^
+Finished building: ../src/gfxMgr.cpp
+ 
+Building target: PA3
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "PA3"  ./src/As3.o ./src/Entity381.o ./src/EntityMgr.o ./src/GameMgr.o ./src/InputMgr.o ./src/aspect.o ./src/engine.o ./src/gfxMgr.o ./src/mgr.o   -lOgreMain -lOgreOverlay -lOgreTerrain -lboost_system -lOIS
+Finished building target: PA3
+ 
+13:49:09 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+17:30:35 **** Clean-only build of configuration Debug for project Assignment 4 ****
+make clean 
+rm -rf  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o  ./Src/Aspect.d ./Src/Command.d ./Src/Entity381.d ./Src/EntityMgr.d ./Src/GfxMgr.d ./Src/UnitAI.d ./Src/as3.d ./Src/engine.d ./Src/gameMgr.d ./Src/inputMgr.d ./Src/mgr.d  "Assignment 4"
+ 
+17:30:36 **** Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Aspect.d" -MT"Src/Aspect.d" -o "Src/Aspect.o" "../Src/Aspect.cpp"
+../Src/Aspect.cpp:57:14: warning: ‘RadToDegree’ defined but not used [-Wunused-variable]
+ static float RadToDegree = 57.2958; //180/pi
+              ^
+Finished building: ../Src/Aspect.cpp
+ 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool MoveTo::done()’:
+../Src/Command.cpp:108:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:146:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building file: ../Src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/EntityMgr.d" -MT"Src/EntityMgr.d" -o "Src/EntityMgr.o" "../Src/EntityMgr.cpp"
+Finished building: ../Src/EntityMgr.cpp
+ 
+Building file: ../Src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/GfxMgr.d" -MT"Src/GfxMgr.d" -o "Src/GfxMgr.o" "../Src/GfxMgr.cpp"
+Finished building: ../Src/GfxMgr.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+../Src/UnitAI.cpp: In member function ‘Command* UnitAI::GetCommand(Command*)’:
+../Src/UnitAI.cpp:48:10: warning: variable ‘move’ set but not used [-Wunused-but-set-variable]
+  MoveTo *move;
+          ^
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/as3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/as3.d" -MT"Src/as3.d" -o "Src/as3.o" "../Src/as3.cpp"
+Finished building: ../Src/as3.cpp
+ 
+Building file: ../Src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/engine.d" -MT"Src/engine.d" -o "Src/engine.o" "../Src/engine.cpp"
+Finished building: ../Src/engine.cpp
+ 
+Building file: ../Src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/gameMgr.d" -MT"Src/gameMgr.d" -o "Src/gameMgr.o" "../Src/gameMgr.cpp"
+Finished building: ../Src/gameMgr.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+../Src/inputMgr.cpp: In member function ‘virtual bool InputMgr::mousePressed(const OIS::MouseEvent&, OIS::MouseButtonID)’:
+../Src/inputMgr.cpp:128:10: warning: unused variable ‘move’ [-Wunused-variable]
+  MoveTo* move = new MoveTo (engine->entityMgr->selectedEntity, point);
+          ^
+Finished building: ../Src/inputMgr.cpp
+ 
+Building file: ../Src/mgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/mgr.d" -MT"Src/mgr.d" -o "Src/mgr.o" "../Src/mgr.cpp"
+Finished building: ../Src/mgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+17:41:38 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:147:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+../Src/UnitAI.cpp: In member function ‘void UnitAI::AddCommand(Command*)’:
+../Src/UnitAI.cpp:65:11: warning: unused variable ‘temp’ [-Wunused-variable]
+  Command *temp = new Command();
+           ^
+Finished building: ../Src/UnitAI.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+17:43:57 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+../Src/UnitAI.cpp: In member function ‘void UnitAI::AddCommand(Command*)’:
+../Src/UnitAI.cpp:69:11: warning: unused variable ‘temp’ [-Wunused-variable]
+  Command *temp = new Command();
+           ^
+Finished building: ../Src/UnitAI.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+17:45:00 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+../Src/UnitAI.cpp: In member function ‘void UnitAI::AddCommand(Command*)’:
+../Src/UnitAI.cpp:70:11: warning: unused variable ‘temp’ [-Wunused-variable]
+  Command *temp = new Command();
+           ^
+Finished building: ../Src/UnitAI.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+17:46:07 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:147:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+../Src/UnitAI.cpp: In member function ‘void UnitAI::AddCommand(Command*)’:
+../Src/UnitAI.cpp:69:11: warning: unused variable ‘temp’ [-Wunused-variable]
+  Command *temp = new Command();
+           ^
+Finished building: ../Src/UnitAI.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+17:48:09 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:147:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+17:50:40 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+17:54:59 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+17:58:49 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+../Src/inputMgr.cpp: In member function ‘virtual bool InputMgr::mousePressed(const OIS::MouseEvent&, OIS::MouseButtonID)’:
+../Src/inputMgr.cpp:127:11: warning: unused variable ‘command’ [-Wunused-variable]
+  Command *command;
+           ^
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:00:14 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+../Src/UnitAI.cpp: In member function ‘virtual void UnitAI::Tick(float)’:
+../Src/UnitAI.cpp:44:31: error: ‘stdl’ has not been declared
+   std::cerr<<"Pop the front"<<stdl::endl;
+                               ^
+make: *** [Src/UnitAI.o] Error 1
+Src/subdir.mk:48: recipe for target 'Src/UnitAI.o' failed
+18:00:36 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:01:54 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:149:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:06:02 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:08:17 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:151:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:10:31 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+18:12:19 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:151:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:14:53 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:151:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:15:04 **** Incremental Build of configuration Debug for project Gonzalez_AS0 ****
+make all 
+make: Nothing to be done for 'all'.
+18:15:05 **** Incremental Build of configuration Debug for project Gonzalez_AS1 ****
+make all 
+make: Nothing to be done for 'all'.
+18:15:05 **** Incremental Build of configuration Debug for project Gonzalez_AS2 ****
+make all 
+Building file: ../src/as2.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include" -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS2/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/as2.d" -MT"src/as2.d" -o "src/as2.o" "../src/as2.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/EntityMgr.h:11:0,
+                 from /home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/as2.h:12,
+                 from ../src/as2.cpp:8:
+/home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/Entity381.h:22:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+  bool isSelected = false;
+                    ^
+../src/as2.cpp: In member function ‘virtual bool AS2::frameRenderingQueued(const Ogre::FrameEvent&)’:
+../src/as2.cpp:41:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/as2.cpp: In function ‘int main(int, char**)’:
+../src/as2.cpp:84:6: error: cannot declare variable ‘app’ to be of abstract type ‘AS2’
+  AS2 app;
+      ^
+In file included from ../src/as2.cpp:8:0:
+/home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/as2.h:14:7: note:   because the following virtual functions are pure within ‘AS2’:
+ class AS2 : public BaseApplication
+       ^
+In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/as2.h:11:0,
+                 from ../src/as2.cpp:8:
+/home/randygonzalez/Desktop/CS381/Gonzalez_AS2/include/BaseApplication.h:91:18: note: 	virtual void BaseApplication::createScene()
+     virtual void createScene(void) = 0; // Override me!
+                  ^
+src/subdir.mk:30: recipe for target 'src/as2.o' failed
+make: *** [src/as2.o] Error 1
+18:15:09 **** Incremental Build of configuration Debug for project Gonzalez_AS3 ****
+make all 
+Building file: ../src/GameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include" -I"/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/materials" -I/usr/local/include/OGRE/Terrain -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GameMgr.d" -MT"src/GameMgr.d" -o "src/GameMgr.o" "../src/GameMgr.cpp"
+Finished building: ../src/GameMgr.cpp
+ 
+Building target: Gonzalez_AS3
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib/OGRE -L/usr/lib/x86_64-linux-gnu -o "Gonzalez_AS3"  ./src/Entity381.o ./src/EntityMgr.o ./src/GameMgr.o ./src/GfxMgr.o ./src/InputMgr.o ./src/as3.o ./src/aspect.o ./src/engine.o ./src/mgr.o   -lOgreTerrain -lOgreMain -lOgreOverlay -lboost_system -lOIS
+Finished building target: Gonzalez_AS3
+ 
+18:15:14 **** Incremental Build of configuration Debug for project OgreTutorial3 ****
+make all 
+make: Nothing to be done for 'all'.
+18:15:15 **** Incremental Build of configuration Debug for project PA1 ****
+make all 
+make: Nothing to be done for 'all'.
+18:15:16 **** Incremental Build of configuration Debug for project PA2 ****
+make all 
+Building file: ../material/programs/Example_FresnelPS.asm
+Invoking: GCC Assembler
+as  -o "material/programs/Example_FresnelPS.o" "../material/programs/Example_FresnelPS.asm"
+../material/programs/Example_FresnelPS.asm: Assembler messages:
+../material/programs/Example_FresnelPS.asm:1: Error: no such instruction: `ps.1.4 '
+../material/programs/Example_FresnelPS.asm:14: Error: no such instruction: `def c2,2,1,0,0'
+../material/programs/Example_FresnelPS.asm:20: Error: no such instruction: `texld r0,t0.xyz'
+../material/programs/Example_FresnelPS.asm:25: Error: no such instruction: `texcrd r1.xy,t1_dw.xyw'
+../material/programs/Example_FresnelPS.asm:26: Error: too many memory references for `mov'
+../material/programs/Example_FresnelPS.asm:46: Error: no such instruction: `mad r0.xyz,r0_bx2,c0.x,r1'
+../material/programs/Example_FresnelPS.asm:48: Error: no such instruction: `phase '
+../material/programs/Example_FresnelPS.asm:55: Error: no such instruction: `texld r1,r0.xyz'
+../material/programs/Example_FresnelPS.asm:61: Error: no such instruction: `texld r2,r0.xyz'
+../material/programs/Example_FresnelPS.asm:66: Error: too many memory references for `add'
+../material/programs/Example_FresnelPS.asm:72: Error: no such instruction: `lrp r0,v0.x,r1,r2'
+material/programs/subdir.mk:17: recipe for target 'material/programs/Example_FresnelPS.o' failed
+make: *** [material/programs/Example_FresnelPS.o] Error 1
+18:15:16 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+18:15:17 **** Incremental Build of configuration Debug for project Tutorial4 ****
+make all 
+make: Nothing to be done for 'all'.
+18:15:50 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+18:15:54 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+18:20:07 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:151:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:20:22 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+18:21:44 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:152:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:21:55 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+18:25:45 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:152:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:25:57 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+18:26:12 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+18:26:35 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+18:26:46 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+18:32:20 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:152:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+../Src/inputMgr.cpp: In member function ‘virtual bool InputMgr::mousePressed(const OIS::MouseEvent&, OIS::MouseButtonID)’:
+../Src/inputMgr.cpp:127:11: warning: unused variable ‘command’ [-Wunused-variable]
+  Command *command;
+           ^
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:32:39 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+18:38:48 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Aspect.d" -MT"Src/Aspect.d" -o "Src/Aspect.o" "../Src/Aspect.cpp"
+../Src/Aspect.cpp:57:14: warning: ‘RadToDegree’ defined but not used [-Wunused-variable]
+ static float RadToDegree = 57.2958; //180/pi
+              ^
+Finished building: ../Src/Aspect.cpp
+ 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:152:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building file: ../Src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/EntityMgr.d" -MT"Src/EntityMgr.d" -o "Src/EntityMgr.o" "../Src/EntityMgr.cpp"
+Finished building: ../Src/EntityMgr.cpp
+ 
+Building file: ../Src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/GfxMgr.d" -MT"Src/GfxMgr.d" -o "Src/GfxMgr.o" "../Src/GfxMgr.cpp"
+Finished building: ../Src/GfxMgr.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/as3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/as3.d" -MT"Src/as3.d" -o "Src/as3.o" "../Src/as3.cpp"
+Finished building: ../Src/as3.cpp
+ 
+Building file: ../Src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/engine.d" -MT"Src/engine.d" -o "Src/engine.o" "../Src/engine.cpp"
+Finished building: ../Src/engine.cpp
+ 
+Building file: ../Src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/gameMgr.d" -MT"Src/gameMgr.d" -o "Src/gameMgr.o" "../Src/gameMgr.cpp"
+Finished building: ../Src/gameMgr.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+../Src/inputMgr.cpp: In member function ‘virtual bool InputMgr::mousePressed(const OIS::MouseEvent&, OIS::MouseButtonID)’:
+../Src/inputMgr.cpp:127:11: warning: unused variable ‘command’ [-Wunused-variable]
+  Command *command;
+           ^
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:42:42 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:152:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:44:41 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:153:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:45:44 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:154:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:47:00 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:156:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:48:22 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual void MoveTo::tick(float)’:
+../Src/Command.cpp:105:25: error: cannot convert ‘Ogre::Radian’ to ‘float’ in assignment
+  entity->desiredHeading = angle;
                          ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:127:62: error: invalid use of incomplete type ‘class Engine’
-     Ogre::WindowEventUtilities::addWindowEventListener(engine->gfxMgr->mWindow, this);
-                                                              ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:131:69: error: invalid use of incomplete type ‘class Engine’
-     mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", engine->gfxMgr->mWindow, mInputContext, this);
-                                                                     ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:150:11: error: invalid use of incomplete type ‘class Engine’
-     engine->gfxMgr->mDetailsPanel = mTrayMgr->createParamsPanel(OgreBites::TL_NONE, "DetailsPanel", 200, items);
-           ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:151:11: error: invalid use of incomplete type ‘class Engine’
-     engine->gfxMgr->mDetailsPanel->setParamValue(9, "Bilinear");
-           ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:152:11: error: invalid use of incomplete type ‘class Engine’
-     engine->gfxMgr->mDetailsPanel->setParamValue(10, "Solid");
-           ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:153:11: error: invalid use of incomplete type ‘class Engine’
-     engine->gfxMgr->mDetailsPanel->hide();
-           ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:155:11: error: invalid use of incomplete type ‘class Engine’
-     engine->gfxMgr->mRoot->addFrameListener(this);
-           ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp: In member function ‘void InputMgr::createViewPorts()’:
-../src/InputMgr.cpp:161:32: error: invalid use of incomplete type ‘class Engine’
-     Ogre::Viewport* vp = engine->gfxMgr->mWindow->addViewport(engine->gfxMgr->mCamera);
-                                ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:161:69: error: invalid use of incomplete type ‘class Engine’
-     Ogre::Viewport* vp = engine->gfxMgr->mWindow->addViewport(engine->gfxMgr->mCamera);
-                                                                     ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp:165:11: error: invalid use of incomplete type ‘class Engine’
-     engine->gfxMgr->mCamera->setAspectRatio(Ogre::Real(vp->getActualWidth()) / Ogre::Real(vp->getActualHeight()));
-           ^
-In file included from /home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/InputMgr.h:11:0,
-                 from ../src/InputMgr.cpp:8:
-/home/randygonzalez/Desktop/CS381/Gonzalez_AS3/include/mgr.h:59:7: note: forward declaration of ‘class Engine’
- class Engine;
-       ^
-../src/InputMgr.cpp: In member function ‘virtual bool InputMgr::keyPressed(const OIS::KeyEvent&)’:
-../src/InputMgr.cpp:186:1: warning: no return statement in function returning non-void [-Wreturn-type]
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:156:1: warning: no return statement in function returning non-void [-Wreturn-type]
  }
  ^
-../src/InputMgr.cpp: In member function ‘virtual bool InputMgr::keyReleased(const OIS::KeyEvent&)’:
-../src/InputMgr.cpp:191:1: warning: no return statement in function returning non-void [-Wreturn-type]
+Src/subdir.mk:48: recipe for target 'Src/Command.o' failed
+make: *** [Src/Command.o] Error 1
+18:49:17 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
  }
  ^
-../src/InputMgr.cpp: In member function ‘virtual bool InputMgr::mouseMoved(const OIS::MouseEvent&)’:
-../src/InputMgr.cpp:196:1: warning: no return statement in function returning non-void [-Wreturn-type]
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:156:1: warning: no return statement in function returning non-void [-Wreturn-type]
  }
  ^
-../src/InputMgr.cpp: In member function ‘virtual bool InputMgr::mousePressed(const OIS::MouseEvent&, OIS::MouseButtonID)’:
-../src/InputMgr.cpp:201:1: warning: no return statement in function returning non-void [-Wreturn-type]
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:56:15 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+18:57:57 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:00:26 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
  }
  ^
-../src/InputMgr.cpp: In member function ‘virtual bool InputMgr::mouseReleased(const OIS::MouseEvent&, OIS::MouseButtonID)’:
-../src/InputMgr.cpp:206:1: warning: no return statement in function returning non-void [-Wreturn-type]
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:156:1: warning: no return statement in function returning non-void [-Wreturn-type]
  }
  ^
-make: *** [src/InputMgr.o] Error 1
-src/subdir.mk:39: recipe for target 'src/InputMgr.o' failed
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+19:02:25 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:157:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+19:04:41 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:05:58 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:158:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+19:10:59 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:14:08 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+19:14:20 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:15:56 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:158:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building file: ../Src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/EntityMgr.d" -MT"Src/EntityMgr.d" -o "Src/EntityMgr.o" "../Src/EntityMgr.cpp"
+Finished building: ../Src/EntityMgr.cpp
+ 
+Building file: ../Src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/GfxMgr.d" -MT"Src/GfxMgr.d" -o "Src/GfxMgr.o" "../Src/GfxMgr.cpp"
+Finished building: ../Src/GfxMgr.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/as3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/as3.d" -MT"Src/as3.d" -o "Src/as3.o" "../Src/as3.cpp"
+Finished building: ../Src/as3.cpp
+ 
+Building file: ../Src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/engine.d" -MT"Src/engine.d" -o "Src/engine.o" "../Src/engine.cpp"
+Finished building: ../Src/engine.cpp
+ 
+Building file: ../Src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/gameMgr.d" -MT"Src/gameMgr.d" -o "Src/gameMgr.o" "../Src/gameMgr.cpp"
+Finished building: ../Src/gameMgr.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+19:17:17 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:18:06 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:20:21 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:158:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building file: ../Src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/EntityMgr.d" -MT"Src/EntityMgr.d" -o "Src/EntityMgr.o" "../Src/EntityMgr.cpp"
+Finished building: ../Src/EntityMgr.cpp
+ 
+Building file: ../Src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/GfxMgr.d" -MT"Src/GfxMgr.d" -o "Src/GfxMgr.o" "../Src/GfxMgr.cpp"
+Finished building: ../Src/GfxMgr.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/as3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/as3.d" -MT"Src/as3.d" -o "Src/as3.o" "../Src/as3.cpp"
+Finished building: ../Src/as3.cpp
+ 
+Building file: ../Src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/engine.d" -MT"Src/engine.d" -o "Src/engine.o" "../Src/engine.cpp"
+Finished building: ../Src/engine.cpp
+ 
+Building file: ../Src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/gameMgr.d" -MT"Src/gameMgr.d" -o "Src/gameMgr.o" "../Src/gameMgr.cpp"
+Finished building: ../Src/gameMgr.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+19:25:08 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:26:21 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:158:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+19:29:34 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:146:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building file: ../Src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/EntityMgr.d" -MT"Src/EntityMgr.d" -o "Src/EntityMgr.o" "../Src/EntityMgr.cpp"
+Finished building: ../Src/EntityMgr.cpp
+ 
+Building file: ../Src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/GfxMgr.d" -MT"Src/GfxMgr.d" -o "Src/GfxMgr.o" "../Src/GfxMgr.cpp"
+Finished building: ../Src/GfxMgr.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/as3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/as3.d" -MT"Src/as3.d" -o "Src/as3.o" "../Src/as3.cpp"
+Finished building: ../Src/as3.cpp
+ 
+Building file: ../Src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/engine.d" -MT"Src/engine.d" -o "Src/engine.o" "../Src/engine.cpp"
+Finished building: ../Src/engine.cpp
+ 
+Building file: ../Src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/gameMgr.d" -MT"Src/gameMgr.d" -o "Src/gameMgr.o" "../Src/gameMgr.cpp"
+Finished building: ../Src/gameMgr.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+19:33:19 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:35:43 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:146:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building file: ../Src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/EntityMgr.d" -MT"Src/EntityMgr.d" -o "Src/EntityMgr.o" "../Src/EntityMgr.cpp"
+Finished building: ../Src/EntityMgr.cpp
+ 
+Building file: ../Src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/GfxMgr.d" -MT"Src/GfxMgr.d" -o "Src/GfxMgr.o" "../Src/GfxMgr.cpp"
+Finished building: ../Src/GfxMgr.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/as3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/as3.d" -MT"Src/as3.d" -o "Src/as3.o" "../Src/as3.cpp"
+Finished building: ../Src/as3.cpp
+ 
+Building file: ../Src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/engine.d" -MT"Src/engine.d" -o "Src/engine.o" "../Src/engine.cpp"
+Finished building: ../Src/engine.cpp
+ 
+Building file: ../Src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/gameMgr.d" -MT"Src/gameMgr.d" -o "Src/gameMgr.o" "../Src/gameMgr.cpp"
+Finished building: ../Src/gameMgr.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+19:38:59 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:146:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+19:40:17 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:45:58 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:15 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+19:50:14 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:51:39 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+19:53:14 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:56:52 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:140:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+19:57:41 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+20:00:21 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:140:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+20:00:57 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:140:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+20:19:35 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:141:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+20:22:35 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:141:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+20:23:07 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:141:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+20:37:53 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:142:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+20:38:45 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:142:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+20:40:08 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:142:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building file: ../Src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/EntityMgr.d" -MT"Src/EntityMgr.d" -o "Src/EntityMgr.o" "../Src/EntityMgr.cpp"
+Finished building: ../Src/EntityMgr.cpp
+ 
+Building file: ../Src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/GfxMgr.d" -MT"Src/GfxMgr.d" -o "Src/GfxMgr.o" "../Src/GfxMgr.cpp"
+Finished building: ../Src/GfxMgr.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/as3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/as3.d" -MT"Src/as3.d" -o "Src/as3.o" "../Src/as3.cpp"
+Finished building: ../Src/as3.cpp
+ 
+Building file: ../Src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/engine.d" -MT"Src/engine.d" -o "Src/engine.o" "../Src/engine.cpp"
+Finished building: ../Src/engine.cpp
+ 
+Building file: ../Src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/gameMgr.d" -MT"Src/gameMgr.d" -o "Src/gameMgr.o" "../Src/gameMgr.cpp"
+Finished building: ../Src/gameMgr.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+20:41:56 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:142:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+20:57:25 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:153:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:60:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building file: ../Src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/EntityMgr.d" -MT"Src/EntityMgr.d" -o "Src/EntityMgr.o" "../Src/EntityMgr.cpp"
+Finished building: ../Src/EntityMgr.cpp
+ 
+Building file: ../Src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/GfxMgr.d" -MT"Src/GfxMgr.d" -o "Src/GfxMgr.o" "../Src/GfxMgr.cpp"
+Finished building: ../Src/GfxMgr.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/as3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/as3.d" -MT"Src/as3.d" -o "Src/as3.o" "../Src/as3.cpp"
+Finished building: ../Src/as3.cpp
+ 
+Building file: ../Src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/engine.d" -MT"Src/engine.d" -o "Src/engine.o" "../Src/engine.cpp"
+Finished building: ../Src/engine.cpp
+ 
+Building file: ../Src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/gameMgr.d" -MT"Src/gameMgr.d" -o "Src/gameMgr.o" "../Src/gameMgr.cpp"
+Finished building: ../Src/gameMgr.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+21:00:42 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+21:03:02 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+21:03:51 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+21:07:31 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Aspect.d" -MT"Src/Aspect.d" -o "Src/Aspect.o" "../Src/Aspect.cpp"
+../Src/Aspect.cpp:57:14: warning: ‘RadToDegree’ defined but not used [-Wunused-variable]
+ static float RadToDegree = 57.2958; //180/pi
+              ^
+Finished building: ../Src/Aspect.cpp
+ 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:153:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:61:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building file: ../Src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/EntityMgr.d" -MT"Src/EntityMgr.d" -o "Src/EntityMgr.o" "../Src/EntityMgr.cpp"
+Finished building: ../Src/EntityMgr.cpp
+ 
+Building file: ../Src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/GfxMgr.d" -MT"Src/GfxMgr.d" -o "Src/GfxMgr.o" "../Src/GfxMgr.cpp"
+Finished building: ../Src/GfxMgr.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/as3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/as3.d" -MT"Src/as3.d" -o "Src/as3.o" "../Src/as3.cpp"
+Finished building: ../Src/as3.cpp
+ 
+Building file: ../Src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/engine.d" -MT"Src/engine.d" -o "Src/engine.o" "../Src/engine.cpp"
+Finished building: ../Src/engine.cpp
+ 
+Building file: ../Src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/gameMgr.d" -MT"Src/gameMgr.d" -o "Src/gameMgr.o" "../Src/gameMgr.cpp"
+Finished building: ../Src/gameMgr.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+21:10:54 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:61:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+21:14:32 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:61:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+21:15:21 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:61:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+21:16:13 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:61:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+21:29:04 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:170:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+21:32:03 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+21:33:54 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+21:35:38 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+21:36:14 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+21:37:29 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Src/Command.cpp: In member function ‘virtual bool Follow::done()’:
+../Src/Command.cpp:170:9: error: ‘isFinished’ was not declared in this scope
+  return isFinished;
+         ^
+Src/subdir.mk:48: recipe for target 'Src/Command.o' failed
+make: *** [Src/Command.o] Error 1
+21:37:53 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:61:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building file: ../Src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/EntityMgr.d" -MT"Src/EntityMgr.d" -o "Src/EntityMgr.o" "../Src/EntityMgr.cpp"
+Finished building: ../Src/EntityMgr.cpp
+ 
+Building file: ../Src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/GfxMgr.d" -MT"Src/GfxMgr.d" -o "Src/GfxMgr.o" "../Src/GfxMgr.cpp"
+Finished building: ../Src/GfxMgr.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/as3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/as3.d" -MT"Src/as3.d" -o "Src/as3.o" "../Src/as3.cpp"
+Finished building: ../Src/as3.cpp
+ 
+Building file: ../Src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/engine.d" -MT"Src/engine.d" -o "Src/engine.o" "../Src/engine.cpp"
+Finished building: ../Src/engine.cpp
+ 
+Building file: ../Src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/gameMgr.d" -MT"Src/gameMgr.d" -o "Src/gameMgr.o" "../Src/gameMgr.cpp"
+Finished building: ../Src/gameMgr.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+21:39:19 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+21:39:50 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+make: Nothing to be done for 'all'.
+21:44:26 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+21:57:50 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:61:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building file: ../Src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/EntityMgr.d" -MT"Src/EntityMgr.d" -o "Src/EntityMgr.o" "../Src/EntityMgr.cpp"
+Finished building: ../Src/EntityMgr.cpp
+ 
+Building file: ../Src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/GfxMgr.d" -MT"Src/GfxMgr.d" -o "Src/GfxMgr.o" "../Src/GfxMgr.cpp"
+Finished building: ../Src/GfxMgr.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/as3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/as3.d" -MT"Src/as3.d" -o "Src/as3.o" "../Src/as3.cpp"
+Finished building: ../Src/as3.cpp
+ 
+Building file: ../Src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/engine.d" -MT"Src/engine.d" -o "Src/engine.o" "../Src/engine.cpp"
+Finished building: ../Src/engine.cpp
+ 
+Building file: ../Src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/gameMgr.d" -MT"Src/gameMgr.d" -o "Src/gameMgr.o" "../Src/gameMgr.cpp"
+Finished building: ../Src/gameMgr.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 

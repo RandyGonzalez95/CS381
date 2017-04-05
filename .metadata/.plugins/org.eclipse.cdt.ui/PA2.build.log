@@ -1,6 +1,22 @@
-18:58:49 **** Incremental Build of configuration Debug for project PA2 ****
+18:15:16 **** Incremental Build of configuration Debug for project PA2 ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../material/programs/Example_FresnelPS.asm
+Invoking: GCC Assembler
+as  -o "material/programs/Example_FresnelPS.o" "../material/programs/Example_FresnelPS.asm"
+../material/programs/Example_FresnelPS.asm: Assembler messages:
+../material/programs/Example_FresnelPS.asm:1: Error: no such instruction: `ps.1.4 '
+../material/programs/Example_FresnelPS.asm:14: Error: no such instruction: `def c2,2,1,0,0'
+../material/programs/Example_FresnelPS.asm:20: Error: no such instruction: `texld r0,t0.xyz'
+../material/programs/Example_FresnelPS.asm:25: Error: no such instruction: `texcrd r1.xy,t1_dw.xyw'
+../material/programs/Example_FresnelPS.asm:26: Error: too many memory references for `mov'
+../material/programs/Example_FresnelPS.asm:46: Error: no such instruction: `mad r0.xyz,r0_bx2,c0.x,r1'
+../material/programs/Example_FresnelPS.asm:48: Error: no such instruction: `phase '
+../material/programs/Example_FresnelPS.asm:55: Error: no such instruction: `texld r1,r0.xyz'
+../material/programs/Example_FresnelPS.asm:61: Error: no such instruction: `texld r2,r0.xyz'
+../material/programs/Example_FresnelPS.asm:66: Error: too many memory references for `add'
+../material/programs/Example_FresnelPS.asm:72: Error: no such instruction: `lrp r0,v0.x,r1,r2'
+material/programs/subdir.mk:17: recipe for target 'material/programs/Example_FresnelPS.o' failed
+make: *** [material/programs/Example_FresnelPS.o] Error 1
 
-18:58:49 Build Finished (took 122ms)
+18:15:16 Build Finished (took 364ms)
 

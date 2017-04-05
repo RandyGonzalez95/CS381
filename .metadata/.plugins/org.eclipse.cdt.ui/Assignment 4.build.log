@@ -1,0 +1,63 @@
+21:57:50 **** Incremental Build of configuration Debug for project Assignment 4 ****
+make all 
+Building file: ../Src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Command.d" -MT"Src/Command.d" -o "Src/Command.o" "../Src/Command.cpp"
+../Src/Command.cpp: In member function ‘virtual bool Command::done()’:
+../Src/Command.cpp:40:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Src/Command.cpp
+ 
+Building file: ../Src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/Entity381.d" -MT"Src/Entity381.d" -o "Src/Entity381.o" "../Src/Entity381.cpp"
+../Src/Entity381.cpp: In member function ‘void Entity381::Tick(float)’:
+../Src/Entity381.cpp:61:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for(int i = 0; i<aspects.size();i++)
+                  ^
+Finished building: ../Src/Entity381.cpp
+ 
+Building file: ../Src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/EntityMgr.d" -MT"Src/EntityMgr.d" -o "Src/EntityMgr.o" "../Src/EntityMgr.cpp"
+Finished building: ../Src/EntityMgr.cpp
+ 
+Building file: ../Src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/GfxMgr.d" -MT"Src/GfxMgr.d" -o "Src/GfxMgr.o" "../Src/GfxMgr.cpp"
+Finished building: ../Src/GfxMgr.cpp
+ 
+Building file: ../Src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/UnitAI.d" -MT"Src/UnitAI.d" -o "Src/UnitAI.o" "../Src/UnitAI.cpp"
+Finished building: ../Src/UnitAI.cpp
+ 
+Building file: ../Src/as3.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/as3.d" -MT"Src/as3.d" -o "Src/as3.o" "../Src/as3.cpp"
+Finished building: ../Src/as3.cpp
+ 
+Building file: ../Src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/engine.d" -MT"Src/engine.d" -o "Src/engine.o" "../Src/engine.cpp"
+Finished building: ../Src/engine.cpp
+ 
+Building file: ../Src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/gameMgr.d" -MT"Src/gameMgr.d" -o "Src/gameMgr.o" "../Src/gameMgr.cpp"
+Finished building: ../Src/gameMgr.cpp
+ 
+Building file: ../Src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/randygonzalez/Desktop/CS381/Assignment 4/Inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/OIS -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -std=gnu++11 -MMD -MP -MF"Src/inputMgr.d" -MT"Src/inputMgr.d" -o "Src/inputMgr.o" "../Src/inputMgr.cpp"
+Finished building: ../Src/inputMgr.cpp
+ 
+Building target: Assignment 4
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
+Finished building target: Assignment 4
+ 
+
+21:59:07 Build Finished (took 1m:17s.526ms)
+

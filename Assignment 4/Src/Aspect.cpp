@@ -45,15 +45,15 @@ Physics::~Physics(){
 
 }
 
-//static float FixAngle(float radiansAngle){
-//
-//	while (radiansAngle > Ogre::Math::TWO_PI)
-//		radiansAngle -= Ogre::Math::TWO_PI;
-//	while (radiansAngle < 0)
-//		radiansAngle += Ogre::Math::TWO_PI;
-//
-//	return radiansAngle;
-//}
+/*static float FixAngle(float radiansAngle){
+
+ while (radiansAngle > Ogre::Math::TWO_PI)
+	radiansAngle -= Ogre::Math::TWO_PI;
+	while (radiansAngle < 0)
+		radiansAngle += Ogre::Math::TWO_PI;
+
+	return radiansAngle;
+}*/
 static float RadToDegree = 57.2958; //180/pi
 
 void Physics::Tick(float dt){

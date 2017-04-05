@@ -144,14 +144,14 @@ Src/EntityMgr.d: ../Src/EntityMgr.cpp ../Src/../Inc/EntityMgr.h \
  /usr/local/include/OGRE/OgreRenderWindow.h \
  /usr/local/include/OGRE/OgreCamera.h \
  /usr/local/include/OGRE/OgreViewport.h ../Src/../Inc/../Inc/inputMgr.h \
- /home/nirmitp/workspace/Assignment\ 4/Inc/Entity381.h \
+ /home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Entity381.h \
  ../Src/../Inc/../Inc/Command.h \
- /home/nirmitp/workspace/Assignment\ 4/Inc/inputMgr.h \
- /home/nirmitp/workspace/Assignment\ 4/Inc/Types.h \
+ /home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/inputMgr.h \
+ /home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Types.h \
  ../Src/../Inc/../Inc/UnitAI.h \
- /home/nirmitp/workspace/Assignment\ 4/Inc/Aspect.h \
- /home/nirmitp/workspace/Assignment\ 4/Inc/../Inc/Entity381.h \
- /home/nirmitp/workspace/Assignment\ 4/Inc/Command.h
+ /home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Aspect.h \
+ /home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/../Inc/Entity381.h \
+ /home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Command.h
 
 ../Src/../Inc/EntityMgr.h:
 
@@ -469,18 +469,18 @@ Src/EntityMgr.d: ../Src/EntityMgr.cpp ../Src/../Inc/EntityMgr.h \
 
 ../Src/../Inc/../Inc/inputMgr.h:
 
-/home/nirmitp/workspace/Assignment\ 4/Inc/Entity381.h:
+/home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Entity381.h:
 
 ../Src/../Inc/../Inc/Command.h:
 
-/home/nirmitp/workspace/Assignment\ 4/Inc/inputMgr.h:
+/home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/inputMgr.h:
 
-/home/nirmitp/workspace/Assignment\ 4/Inc/Types.h:
+/home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Types.h:
 
 ../Src/../Inc/../Inc/UnitAI.h:
 
-/home/nirmitp/workspace/Assignment\ 4/Inc/Aspect.h:
+/home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Aspect.h:
 
-/home/nirmitp/workspace/Assignment\ 4/Inc/../Inc/Entity381.h:
+/home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/../Inc/Entity381.h:
 
-/home/nirmitp/workspace/Assignment\ 4/Inc/Command.h:
+/home/randygonzalez/Desktop/CS381/Assignment\ 4/Inc/Command.h:

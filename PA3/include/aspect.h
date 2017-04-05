@@ -28,7 +28,7 @@ class Renderable: public Aspect
 public:
 	Renderable(Entity381* ent);
 	~Renderable();
-	virtual void Tick(float dt);
+	void Tick(float dt);
 };
 
 
@@ -37,7 +37,7 @@ class Physics: public Aspect
 public:
 	Physics(Entity381* ent);
 	~Physics();
-	virtual void Tick(float dt);
+	void Tick(float dt);
 };
 
 
