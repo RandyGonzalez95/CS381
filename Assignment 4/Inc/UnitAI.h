@@ -8,7 +8,6 @@
 #ifndef INC_UNITAI_H_
 #define INC_UNITAI_H_
 #include <Aspect.h>
-#include <Command.h>
 #include <inputMgr.h>
 #include <queue>
 #include <Types.h>

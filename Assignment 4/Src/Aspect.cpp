@@ -18,6 +18,11 @@ Aspect::~Aspect(){
 
 }
 
+void Aspect::AddCommand(Command *c)
+{
+ // override
+}
+
 
 Renderable::Renderable(Entity381 * ent): Aspect(ent){
 	return;

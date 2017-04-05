@@ -22,17 +22,10 @@ UnitAI::~UnitAI(){
 
 void UnitAI::Tick(float dt){
 
-
-	/*Command *currentCommand = GetCommand(commands.front());
-
-	if(!currentCommand)
-		currentCommand->tick(dt);
-	else
+	if(commands.front() == NULL)
+	{
 		return;
-
-
-	commands.pop();*/
-
+	}
 
 	for(unsigned int i = 0; i<commands.size(); i++)
 	{
@@ -44,7 +37,7 @@ void UnitAI::Tick(float dt){
 		else
 		{
 			std::cerr<<"Queue Popped"<<std::endl;
-		commands.pop();
+			commands.pop();
 		}
 	}
 }
@@ -85,9 +78,11 @@ void UnitAI::AddCommand(Command *c){
 
 	}*/
 
+	std::cout<<"command added to queue"<<std::endl;
+
 	commands.push(c);
 
-	std::cerr<<"Number of elements in commands array is: "<< commands.size()<<std::endl;
+
 
 }
 

@@ -73,8 +73,11 @@ public:
 
 
 
+
     Entity381* closestBoat;
     Ogre::Vector3 point;
+
+    //UnitAI *a = new UnitAI(engine->entityMgr->selectedEntity);
 };
 
 

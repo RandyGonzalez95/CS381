@@ -42,7 +42,9 @@ bool Command::done(){
 
 
 MoveTo::MoveTo(Entity381* ent, Ogre::Vector3 location) : Command(ent, commandType){
-	//std::cout << "Constuctor moveto created" << std::endl << std::endl;
+
+
+	std::cerr<<"Move to instantiated"<<std::endl;
 	targetLocation = location;
 	isFinished = false;
 }
@@ -67,18 +69,12 @@ void MoveTo::init(){/*
 
 
 void MoveTo::tick(float dt){
-	// Vector difference
-	/*cout << endl << "1" << endl << endl;
-	cout << targetLocation << endl;
-	cout << "boat: " << entity->pos << endl;*/
-	//Ogre::Vector3 deltaVec = targetLocation - entity->pos;
-	//cout << endl << "2" << endl << endl;
-
-	//std::cerr<<"Move To tick being called"<<std::endl;
 
 	// Calculate distance
 	//Ogre::Real distance = Ogre::Math::Sqrt(deltaVec.x * deltaVec.x + deltaVec.y * deltaVec.y);
 	Ogre::Real distance = targetLocation.distance(entity->pos);
+
+	//std::cerr<<"Our target location is: "<< targetLocation<<std::endl;
 
 	//std::cerr<<"The distance between the ship and dest is: "<<distance<<std::endl;
 
@@ -100,10 +96,39 @@ void MoveTo::tick(float dt){
 	//Ogre::Radian angle = Ogre::Math::ATan2(targetLocation.z, targetLocation.x);
 	Ogre::Vector3 difference = targetLocation - entity->pos;
 	Ogre::Radian angle = Ogre::Math::ATan2(difference.z, difference.x);
+	float heading = angle.valueRadians();
+	//cout << "This is the distance: " << distance << endl;
+	//entity->desiredSpeed = entity->maxSpeed;
+
+	/*if(angle >= Ogre::Math::TWO_PI)
+	{
+		angle -= Ogre::Math::TWO_PI;
+	}
+	else if(angle <= Ogre::Math::TWO_PI)
+	{
+		angle += Ogre::Math::TWO_PI;
+	}*/
+
+	if(heading < 0)
+	{
+		heading += Ogre::Math::TWO_PI;
+	}
+	else if (heading >= Ogre::Math::TWO_PI)
+	{
+		heading -= Ogre::Math::TWO_PI;
+	}
+
 
 	// set the proper heading
-	entity->desiredHeading = angle.valueRadians();
+	//if(angle.valueRadians() < 0)
+			//entity->desiredHeading = angle.valueRadians() * -1;
+	//else
+	entity->desiredHeading = heading;
+
 	//std::cerr<<"Desired Heading: "<<entity->desiredHeading<<std::endl;
+	//cout << "our angle is " << heading << endl;
+	//cout << targetLocation << endl;
+
 
 	// accelerate to max speed possible toward the destination
 	entity->desiredSpeed = entity->maxSpeed;
@@ -117,8 +142,10 @@ bool MoveTo::done(){
 
 
 Follow::Follow(Entity381* ent, Entity381* boat) : Command(ent, commandType){
-
+	isFinished = false;
 	followedBoat = boat;
+
+	std::cerr<<"Follow instantiated"<<std::endl;
 }
 
 
@@ -135,6 +162,8 @@ void Follow::init(){
 
 void Follow::tick(float dt){
 
+
+
 	targetLocation = followedBoat->pos;
 
 	Ogre::Real distance = targetLocation.distance(entity->pos);
@@ -150,6 +179,7 @@ void Follow::tick(float dt){
 		entity->vel = Ogre::Vector3::ZERO;
 
 		// and now command is finished
+		isFinished = true;
 		return;
 	}
 	//std::cerr<<"The position of our entity is "<< entity->pos<<std::endl;

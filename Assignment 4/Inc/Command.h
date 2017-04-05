@@ -56,7 +56,7 @@ public:
 	bool done();
 
 	Ogre::Vector3 targetLocation;
-	float MOVE_DISTANCE_THRESHOLD;
+	float MOVE_DISTANCE_THRESHOLD = 100;
 
 	bool isFinished;
 	Entity381* followedBoat;

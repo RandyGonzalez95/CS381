@@ -13,6 +13,8 @@
 using namespace std;
 
 InputMgr::InputMgr(Engine *engine) : Mgr(engine){
+
+	// Keyboard
 	keyboardTimer = keyTime;
 	selectionTimer = selectionTime;
 
@@ -214,22 +216,19 @@ bool InputMgr::mousePressed(const OIS::MouseEvent &arg, OIS::MouseButtonID id) {
 		// if our target destination is within range of desired boat
 		if( temp <= 100 ) // follow
 		{
-
-			cout << endl << "boat following" << endl;
-
 			// assign entity to follow
 			engine->entityMgr->selectedEntity->targetLocation = closestBoat->pos;
 			Follow *follow = new Follow(engine->entityMgr->selectedEntity, closestBoat);
-			UnitAI *a = new UnitAI(engine->entityMgr->selectedEntity);
-			a->AddCommand(follow);
-			engine->entityMgr->selectedEntity->aspects.push_back(a);
+
+			engine->entityMgr->selectedEntity->aspects[2]->AddCommand(follow);
+			//engine->entityMgr->selectedEntity->aspects.push_back(a);
 		}
 		else // move to location
 		{
 			MoveTo* move = new MoveTo (engine->entityMgr->selectedEntity, point);
-			UnitAI *a = new UnitAI(engine->entityMgr->selectedEntity);
-			a->AddCommand(move);
-			engine->entityMgr->selectedEntity->aspects.push_back(a);
+			//UnitAI *a = new UnitAI(engine->entityMgr->selectedEntity);
+			engine->entityMgr->selectedEntity->aspects[2]->AddCommand(move);
+			//engine->entityMgr->selectedEntity->aspects.push_back(a);
 		}
 	}
 
