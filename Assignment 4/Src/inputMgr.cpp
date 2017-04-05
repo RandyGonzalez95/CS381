@@ -76,7 +76,6 @@ void InputMgr::tick(float dt){
 
 	UpdateCamera(dt);
 	UpdateDesiredSpeedHeading(dt);
-	//UpdateSelection(dt);
 
 }
 
@@ -126,10 +125,6 @@ bool InputMgr::mouseMoved(const OIS::MouseEvent &arg){
 }
 bool InputMgr::mousePressed(const OIS::MouseEvent &arg, OIS::MouseButtonID id) {
 
-
-	//engine->entityMgr->selectedEntity->aspects[2]->AddCommand(command);
-
-
 	if (mouse->getMouseState().buttonDown (OIS::MB_Left)){
 
 		// get window height and width
@@ -151,24 +146,19 @@ bool InputMgr::mousePressed(const OIS::MouseEvent &arg, OIS::MouseButtonID id) {
 		std::pair<bool, float> result = mouseRay.intersects(engine->gameMgr->mPlane);
 		if(result.first)
 		{
-			//if the ray intersects the plane, we have a distance value
-			// telling us how far from the ray origin the intersection occurred
-			// the last thing we need is the point of the intersection
-			// Ray provides us getPoint() function which returns the point
-			// along the ray, supplying it with a distance value
-			// get the point where the intersection is
 
-		point = mouseRay.getPoint(result.second);
-		cerr << "Left mouse click: "<<point << endl;
+			point = mouseRay.getPoint(result.second);
+			cerr << "Left mouse click: "<<point << endl;
 
 
-		closestBoat = engine->entityMgr->closestBoat(point);
-		Ogre::Real temp = closestBoat->pos.distance(point);
+			closestBoat = engine->entityMgr->closestBoat(point);
+			Ogre::Real temp = closestBoat->pos.distance(point);
 
-		if( temp <= 100 ){
-			engine->entityMgr->selectedEntity->isSelected = false;
-			engine->entityMgr->selectedEntity = closestBoat;
-			engine->entityMgr->selectedEntity->isSelected = true;
+			if( temp <= 100 )
+			{
+				engine->entityMgr->selectedEntity->isSelected = false;
+				engine->entityMgr->selectedEntity = closestBoat;
+				engine->entityMgr->selectedEntity->isSelected = true;
 			}
 		}
 	}
@@ -197,12 +187,7 @@ bool InputMgr::mousePressed(const OIS::MouseEvent &arg, OIS::MouseButtonID id) {
 		std::pair<bool, float> result = mouseRay.intersects(engine->gameMgr->mPlane);
 		if(result.first)
 		{
-			//if the ray intersects the plane, we have a distance value
-			// telling us how far from the ray origin the intersection occurred
-			// the last thing we need is the point of the intersection
-			// Ray provides us getPoint() function which returns the point
-			// along the ray, supplying it with a distance value
-			// get the point where the intersection is
+
 			point = mouseRay.getPoint(result.second);
 			cerr << "Right mouse click: "<<point << endl;
 			engine->entityMgr->selectedEntity->targetLocation = point;

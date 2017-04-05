@@ -22,7 +22,7 @@ public:
 	~UnitAI();
 
 	void Tick(float dt);
-	Command* GetCommand(Command *c);
+	Command* GetCommand();
 	void AddCommand(Command *c);
 
 };
