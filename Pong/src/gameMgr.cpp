@@ -70,6 +70,7 @@ void GameMgr::createGround(){
 	  //	  groundEntity->setMaterialName("Ocean2_HLSL_GLSL");
 	  //groundEntity->setMaterialName("OceanHLSL_GLSL");
 	  groundEntity->setMaterialName("Ocean2_Cg");
+	 // groundEntity->setMaterialName("Island");
 	  //groundEntity->setMaterialName("NavyCg");
 
 }

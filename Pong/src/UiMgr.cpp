@@ -7,6 +7,7 @@
 
 #include <UiMgr.h>
 #include <engine.h>
+#include <vector>
 
 UiMgr::UiMgr(Engine* eng): Mgr(eng), mTrayMgr(0)
 {
@@ -28,9 +29,11 @@ void UiMgr::init()
     mInputContext.mKeyboard = engine->inputMgr->keyboard;
     mInputContext.mMouse = engine->inputMgr->mouse;
     mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", engine->gfxMgr->ogreRenderWindow, mInputContext, this);
-    mTrayMgr->showFrameStats(OgreBites::TL_BOTTOMLEFT);
-    mTrayMgr->showLogo(OgreBites::TL_BOTTOMRIGHT);
-    mTrayMgr->hideCursor();
+    //mTrayMgr->showFrameStats(OgreBites::TL_BOTTOMLEFT);
+    //mTrayMgr->showLogo(OgreBites::TL_BOTTOMRIGHT);
+    //mTrayMgr->showCursor();
+    //mTrayMgr->showBackdrop();
+    //mTrayMgr->hideCursor();
 }
 
 void UiMgr::stop()
@@ -40,8 +43,21 @@ void UiMgr::stop()
 
 void UiMgr::loadLevel()
 {
-	mTrayMgr->createButton(OgreBites::TL_TOPLEFT, "MyButton", "Click Me!");
-	mTrayMgr->createLongSelectMenu(OgreBites::TL_TOPRIGHT, "MyMenu", "Menu", 100, 20, 10);
+
+	Ogre::MaterialPtr material = Ogre::MaterialManager::getSingleton().create("Background", "General");
+	material->getTechnique(0)->getPass(0)->createTextureUnitState("pong.png");
+	material->getTechnique(0)->getPass(0)->setDepthCheckEnabled(false);
+	material->getTechnique(0)->getPass(0)->setDepthWriteEnabled(false);
+	material->getTechnique(0)->getPass(0)->setLightingEnabled(false);
+
+	mTrayMgr->showBackdrop("Background");
+
+	//OgreBites::SelectMenu* menu = mTrayMgr->createThickSelectMenu(OgreBites::TL_CENTER, "MyMenu", "Menu", 200, 3);
+	//OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_TOPLEFT, "MyButton", "Click Me!");
+	//OgreBites::SelectMenu* menu = mTrayMgr->createLongSelectMenu(OgreBites::TL_CENTER, "MyMenu", "Menu", 200, 100, 400);
+	//Ogre::Bites SelectMenu *menu = mTrayMgr->createThickSelectMenu(OgreBites::TL_CENTER, "MyMenu", "Menu", 300, 3);
+
+	//OgreBites::Label *label = mTrayMgr->createLabel(OgreBites::TL_NONE, "Label", "Caption", 200);
 }
 
 void UiMgr::tick(float dt)
@@ -99,6 +115,7 @@ void UiMgr::buttonHit(OgreBites::Button *b)
     if(b->getName()=="MyButton")
     {
         std::cout <<"Click Me!" << std::endl;
+        //mTrayMgr->hideBackdrop();
     }
 
 }
