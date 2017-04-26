@@ -1,56 +1,14 @@
-!SESSION 2017-04-04 17:29:22.929 -----------------------------------------------
+!SESSION 2017-04-25 14:53:44.090 -----------------------------------------------
 eclipse.buildId=debbuild
 java.version=1.8.0_121
 java.vendor=Oracle Corporation
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Command-line arguments:  -os linux -ws gtk -arch x86_64
 
-This is a continuation of log file /home/randygonzalez/Desktop/CS381/.metadata/.bak_1.log
-Created Time: 2017-04-04 21:00:41.857
+This is a continuation of log file /home/randygonzalez/Desktop/CS381/.metadata/.bak_0.log
+Created Time: 2017-04-25 16:33:57.343
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:00:41.859
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:00:41.861
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:33:57.345
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -92,7 +50,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:00:42.424
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:33:58.342
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -143,7 +101,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:00:42.427
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:33:58.348
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -194,7 +152,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:00:52.318
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:38:02.958
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -255,7 +213,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:03:02.363
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:41:12.105
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -297,7 +255,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:03:02.368
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:41:12.112
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -339,7 +297,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:03:02.795
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:41:13.091
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -390,7 +348,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:03:02.798
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:41:13.097
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -441,7 +399,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:03:12.550
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:41:13.344
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -502,7 +460,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:03:51.739
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:43:57.170
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -544,7 +502,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:03:51.743
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:43:57.177
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -586,7 +544,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:03:51.935
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:43:58.147
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -637,7 +595,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:03:51.938
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:43:58.154
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -688,7 +646,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:03:52.141
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:44:09.709
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -749,7 +707,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:07:31.268
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:46:11.475
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -791,7 +749,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:07:31.274
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:46:11.483
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -833,7 +791,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:07:31.676
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:46:11.957
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -884,7 +842,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:07:31.679
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:46:11.964
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -935,7 +893,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:08:52.525
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:46:23.326
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -996,7 +954,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:10:53.995
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:53:06.475
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1038,7 +996,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:10:53.999
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:53:06.484
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1080,7 +1038,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:10:54.454
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:53:06.954
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1131,7 +1089,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:10:54.457
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:53:06.965
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1182,7 +1140,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:11:03.971
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:53:28.338
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1243,7 +1201,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:14:31.838
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:54:32.844
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1285,7 +1243,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:14:31.842
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:54:32.852
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1327,7 +1285,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:14:32.307
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:54:33.337
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1378,7 +1336,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:14:32.311
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:54:33.347
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1429,7 +1387,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:14:42.105
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:54:44.615
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1490,7 +1448,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:15:21.316
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:56:20.535
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1532,7 +1490,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:15:21.320
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:56:20.539
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1574,7 +1532,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:15:21.533
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:56:21.437
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1625,7 +1583,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:15:21.537
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:56:21.441
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1676,7 +1634,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:15:31.198
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:56:21.700
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1737,7 +1695,10 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:16:12.783
+!ENTRY org.eclipse.cdt.core 1 0 2017-04-25 16:56:23.795
+!MESSAGE Indexed 'As3_UI' (10 sources, 1,177 headers) in 10.8 sec: 79,632 declarations; 238,138 references; 0 unresolved inclusions; 0 syntax errors; 22 unresolved names (0.0069%)
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:56:37.190
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1779,7 +1740,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:16:12.788
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:56:37.196
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1821,7 +1782,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:16:13.034
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:56:37.425
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1872,7 +1833,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:16:13.037
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:56:37.430
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1923,7 +1884,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:16:31.457
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:56:37.656
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -1984,7 +1945,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:29:04.255
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:57:00.884
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -2026,7 +1987,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:29:04.279
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:57:00.889
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -2068,7 +2029,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:29:04.707
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:57:01.081
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -2119,7 +2080,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:29:04.712
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:57:01.086
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -2170,7 +2131,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:29:23.559
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:57:01.295
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -2231,7 +2192,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:32:02.907
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:57:26.642
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -2273,7 +2234,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:32:02.912
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:57:26.649
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -2315,7 +2276,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:32:03.311
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:57:27.730
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -2366,7 +2327,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:32:03.314
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:57:27.734
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -2417,7 +2378,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:32:03.524
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:57:27.965
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7
@@ -2478,1887 +2439,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -7
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:33:53.575
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:33:53.580
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:951)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:33:54.043
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:93)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:33:54.046
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:94)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:33:54.245
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.saveRebuildState(ToolChain.java:2073)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.serialize(ToolChain.java:878)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.serialize(FolderInfo.java:393)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.serialize(Configuration.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.writeConfiguration(ConfigurationDataProvider.java:132)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.applyConfiguration(ConfigurationDataProvider.java:166)
-	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.applyData(CConfigurationDescriptionCache.java:187)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.applyDatas(CProjectDescription.java:216)
-	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:98)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
-	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:885)
-	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:211)
-	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.updateCoreSettings(ManagedBuildManager.java:1574)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager$1.run(CfgDiscoveredPathManager.java:154)
-	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1220)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1181)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.updateCoreSettings(CfgDiscoveredPathManager.java:157)
-	at org.eclipse.cdt.build.core.scannerconfig.ScannerConfigBuilder.build(ScannerConfigBuilder.java:125)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:35:37.544
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:35:37.548
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:951)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:35:38.000
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:93)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:35:38.003
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:94)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:35:38.208
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.saveRebuildState(ToolChain.java:2073)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.serialize(ToolChain.java:878)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.serialize(FolderInfo.java:393)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.serialize(Configuration.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.writeConfiguration(ConfigurationDataProvider.java:132)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.applyConfiguration(ConfigurationDataProvider.java:166)
-	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.applyData(CConfigurationDescriptionCache.java:187)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.applyDatas(CProjectDescription.java:216)
-	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:98)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
-	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:885)
-	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:211)
-	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.updateCoreSettings(ManagedBuildManager.java:1574)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager$1.run(CfgDiscoveredPathManager.java:154)
-	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1220)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1181)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.updateCoreSettings(CfgDiscoveredPathManager.java:157)
-	at org.eclipse.cdt.build.core.scannerconfig.ScannerConfigBuilder.build(ScannerConfigBuilder.java:125)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:36:13.959
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:36:13.964
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:951)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:36:14.180
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:93)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:36:14.183
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:94)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:36:14.376
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.saveRebuildState(ToolChain.java:2073)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.serialize(ToolChain.java:878)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.serialize(FolderInfo.java:393)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.serialize(Configuration.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.writeConfiguration(ConfigurationDataProvider.java:132)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.applyConfiguration(ConfigurationDataProvider.java:166)
-	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.applyData(CConfigurationDescriptionCache.java:187)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.applyDatas(CProjectDescription.java:216)
-	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:98)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
-	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:885)
-	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:211)
-	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.updateCoreSettings(ManagedBuildManager.java:1574)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager$1.run(CfgDiscoveredPathManager.java:154)
-	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1220)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1181)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.updateCoreSettings(CfgDiscoveredPathManager.java:157)
-	at org.eclipse.cdt.build.core.scannerconfig.ScannerConfigBuilder.build(ScannerConfigBuilder.java:125)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:37:28.727
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
-	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:513)
-	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:422)
-	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:37:28.732
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:951)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
-	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:513)
-	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:422)
-	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:37:29.180
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:93)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
-	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:513)
-	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:422)
-	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:37:29.183
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:94)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
-	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:513)
-	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:422)
-	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:39:12.021
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.saveRebuildState(ToolChain.java:2073)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.serialize(ToolChain.java:878)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.serialize(FolderInfo.java:393)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.serialize(Configuration.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.writeConfiguration(ConfigurationDataProvider.java:132)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.applyConfiguration(ConfigurationDataProvider.java:166)
-	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.applyData(CConfigurationDescriptionCache.java:187)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.applyDatas(CProjectDescription.java:216)
-	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:98)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
-	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:885)
-	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:211)
-	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.updateCoreSettings(ManagedBuildManager.java:1574)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager$1.run(CfgDiscoveredPathManager.java:154)
-	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1220)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1181)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.updateCoreSettings(CfgDiscoveredPathManager.java:157)
-	at org.eclipse.cdt.build.core.scannerconfig.ScannerConfigBuilder.build(ScannerConfigBuilder.java:125)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
-	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:513)
-	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:422)
-	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:39:19.376
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:39:19.382
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:951)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:39:19.582
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:93)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:39:19.586
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:94)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:39:19.842
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.saveRebuildState(ToolChain.java:2073)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.serialize(ToolChain.java:878)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.serialize(FolderInfo.java:393)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.serialize(Configuration.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.writeConfiguration(ConfigurationDataProvider.java:132)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.applyConfiguration(ConfigurationDataProvider.java:166)
-	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.applyData(CConfigurationDescriptionCache.java:187)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.applyDatas(CProjectDescription.java:216)
-	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:98)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
-	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:885)
-	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:211)
-	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.updateCoreSettings(ManagedBuildManager.java:1574)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager$1.run(CfgDiscoveredPathManager.java:154)
-	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1220)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1181)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.updateCoreSettings(CfgDiscoveredPathManager.java:157)
-	at org.eclipse.cdt.build.core.scannerconfig.ScannerConfigBuilder.build(ScannerConfigBuilder.java:125)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:39:49.906
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:39:49.910
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:951)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:39:50.154
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:93)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:39:50.158
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:94)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:39:50.380
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.saveRebuildState(ToolChain.java:2073)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.serialize(ToolChain.java:878)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.serialize(FolderInfo.java:393)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.serialize(Configuration.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.writeConfiguration(ConfigurationDataProvider.java:132)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.applyConfiguration(ConfigurationDataProvider.java:166)
-	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.applyData(CConfigurationDescriptionCache.java:187)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.applyDatas(CProjectDescription.java:216)
-	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:98)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
-	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:885)
-	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:211)
-	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.updateCoreSettings(ManagedBuildManager.java:1574)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager$1.run(CfgDiscoveredPathManager.java:154)
-	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1220)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1181)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.updateCoreSettings(CfgDiscoveredPathManager.java:157)
-	at org.eclipse.cdt.build.core.scannerconfig.ScannerConfigBuilder.build(ScannerConfigBuilder.java:125)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:44:26.389
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:44:26.395
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:951)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:44:26.844
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:93)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:44:26.847
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:94)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:44:36.380
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.saveRebuildState(ToolChain.java:2073)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.serialize(ToolChain.java:878)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.serialize(FolderInfo.java:393)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.serialize(Configuration.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.writeConfiguration(ConfigurationDataProvider.java:132)
-	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.applyConfiguration(ConfigurationDataProvider.java:166)
-	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.applyData(CConfigurationDescriptionCache.java:187)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.applyDatas(CProjectDescription.java:216)
-	at org.eclipse.cdt.internal.core.settings.model.SetCProjectDescriptionOperation.executeOperation(SetCProjectDescriptionOperation.java:98)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
-	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
-	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:885)
-	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:211)
-	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.updateCoreSettings(ManagedBuildManager.java:1574)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager$1.run(CfgDiscoveredPathManager.java:154)
-	at org.eclipse.cdt.internal.core.model.BatchOperation.executeOperation(BatchOperation.java:36)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:341)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:607)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1220)
-	at org.eclipse.cdt.core.model.CoreModel.run(CoreModel.java:1181)
-	at org.eclipse.cdt.build.internal.core.scannerconfig.CfgDiscoveredPathManager.updateCoreSettings(CfgDiscoveredPathManager.java:157)
-	at org.eclipse.cdt.build.core.scannerconfig.ScannerConfigBuilder.build(ScannerConfigBuilder.java:125)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:57:49.654
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:945)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:57:49.671
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.core.ToolChain.needsRebuild(ToolChain.java:2043)
-	at org.eclipse.cdt.managedbuilder.internal.core.FolderInfo.needsRebuild(FolderInfo.java:348)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1625)
-	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.needsRebuild(Configuration.java:1608)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:951)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:57:50.133
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:93)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:57:50.136
-!MESSAGE String index out of range: -7
-!STACK 0
-java.lang.StringIndexOutOfBoundsException: String index out of range: -7
-	at java.lang.String.substring(String.java:1931)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput$1LibFilter.accept(AdditionalInput.java:498)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.findLibrary(AdditionalInput.java:532)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.getDepLibs(AdditionalInput.java:467)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.dependencyChanged(AdditionalInput.java:415)
-	at org.eclipse.cdt.managedbuilder.internal.core.AdditionalInput.needsRebuild(AdditionalInput.java:353)
-	at org.eclipse.cdt.managedbuilder.internal.core.InputType.needsRebuild(InputType.java:1674)
-	at org.eclipse.cdt.managedbuilder.internal.core.Tool.needsRebuild(Tool.java:3395)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildStep.needsRebuild(BuildStep.java:94)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription$RebuildStateSynchronizer.visit(BuildDescription.java:303)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.synchRebuildState(BuildDescription.java:429)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:765)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:815)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:45)
-	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:37)
-	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performCleanning(CommonBuilder.java:961)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:867)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
-	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
-	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
-	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
-	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
-	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:394)
-	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
-	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
-	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
-	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
-	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:619)
-	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.buildForLaunch(LocalCDILaunchDelegate.java:474)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:823)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
-
-!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-04 21:59:07.810
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2017-04-25 16:59:29.273
 !MESSAGE String index out of range: -7
 !STACK 0
 java.lang.StringIndexOutOfBoundsException: String index out of range: -7

@@ -1,0 +1,26 @@
+/*
+ * MenuMgr.h
+ *
+ *  Created on: Apr 25, 2017
+ *      Author: randygonzalez
+ */
+
+#ifndef INCLUDE_MENUMGR_H_
+#define INCLUDE_MENUMGR_H_
+
+#include <mgr.h>
+
+class MenuMgr : public Mgr
+{
+public:
+	MenuMgr();
+	~MenuMgr();
+
+private:
+
+
+};
+
+
+
+#endif /* INCLUDE_MENUMGR_H_ */

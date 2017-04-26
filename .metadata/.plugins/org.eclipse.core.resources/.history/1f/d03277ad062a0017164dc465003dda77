@@ -1,0 +1,33 @@
+/*
+ * MenuMgr.h
+ *
+ *  Created on: Apr 25, 2017
+ *      Author: randygonzalez
+ */
+
+#ifndef INCLUDE_MENUMGR_H_
+#define INCLUDE_MENUMGR_H_
+
+#include <mgr.h>
+#include <SdkTrays.h>
+
+class MenuMgr : public Mgr, OgreBites::SdkTrayListener
+{
+public:
+	MenuMgr(Engine *engine);
+	~MenuMgr();
+	void init();
+	void tick(float dt);
+	void loadLevel();
+	void stop();
+
+	OgreBites::SdkTrayManager *mTrayMgr;
+
+private:
+
+
+};
+
+
+
+#endif /* INCLUDE_MENUMGR_H_ */

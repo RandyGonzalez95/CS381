@@ -1,0 +1,44 @@
+/*
+ * MenuMgr.cpp
+ *
+ *  Created on: Apr 25, 2017
+ *      Author: randygonzalez
+ */
+
+#include <MenuMgr.h>
+
+MenuMgr::MenuMgr(Engine *engine): Mgr(engine), mTrayMgr(0)
+{
+
+}
+
+MenuMgr::~MenuMgr()
+{
+
+}
+
+void MenuMgr::init()
+{
+	mTrayMgr = new SdkTrayManager("InterfaceName", engine->inputMgr->window)
+
+}
+
+void MenuMgr::tick(float dt)
+{
+
+}
+
+void MenuMgr::loadLevel()
+{
+
+
+}
+
+void MenuMgr::stop()
+{
+
+}
+
+
+
+

@@ -1,0 +1,15 @@
+16:54:33 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/UI.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/UI.d" -MT"src/UI.d" -o "src/UI.o" "../src/UI.cpp"
+Finished building: ../src/UI.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UI.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+
+16:54:44 Build Finished (took 11s.194ms)
+

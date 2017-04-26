@@ -1,0 +1,43 @@
+/*
+ * MenuMgr.cpp
+ *
+ *  Created on: Apr 25, 2017
+ *      Author: randygonzalez
+ */
+
+#include <MenuMgr.h>
+
+MenuMgr::MenuMgr(): Mgr(eng), mTrayMgr(0)
+{
+
+}
+
+MenuMgr::~MenuMgr()
+{
+
+}
+
+void MenuMgr::init()
+{
+
+}
+
+void MenuMgr::tick(float dt)
+{
+
+}
+
+void MenuMgr::loadLevel()
+{
+
+
+}
+
+void MenuMgr::stop()
+{
+
+}
+
+
+
+

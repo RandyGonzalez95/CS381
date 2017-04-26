@@ -2272,3 +2272,861 @@ Invoking: GCC C++ Linker
 g++ -L/usr/local/lib -L/usr/lib/x86_64-linux-gnu -o "Assignment 4"  ./Src/Aspect.o ./Src/Command.o ./Src/Entity381.o ./Src/EntityMgr.o ./Src/GfxMgr.o ./Src/UnitAI.o ./Src/as3.o ./Src/engine.o ./Src/gameMgr.o ./Src/inputMgr.o ./Src/mgr.o   -lOgreOverlay -lOgreMain -lboost_system -lOIS
 Finished building target: Assignment 4
  
+14:54:13 **** Clean-only build of configuration Debug for project Pong ****
+make clean 
+rm -rf  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o  ./src/Aspect.d ./src/Command.d ./src/Entity381.d ./src/EntityMgr.d ./src/GfxMgr.d ./src/UnitAI.d ./src/engine.d ./src/gameMgr.d ./src/inputMgr.d ./src/mgr.d ./src/pong.d  Pong
+ 
+14:54:13 **** Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Command.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Command.d" -MT"src/Command.d" -o "src/Command.o" "../src/Command.cpp"
+Finished building: ../src/Command.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
+Finished building: ../src/GfxMgr.cpp
+ 
+Building file: ../src/UnitAI.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/UnitAI.d" -MT"src/UnitAI.d" -o "src/UnitAI.o" "../src/UnitAI.cpp"
+Finished building: ../src/UnitAI.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+../src/gameMgr.cpp: In member function ‘void GameMgr::createEnts()’:
+../src/gameMgr.cpp:51:14: warning: unused variable ‘ent’ [-Wunused-variable]
+  Entity381 * ent;
+              ^
+Finished building: ../src/gameMgr.cpp
+ 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building file: ../src/mgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/mgr.d" -MT"src/mgr.d" -o "src/mgr.o" "../src/mgr.cpp"
+Finished building: ../src/mgr.cpp
+ 
+Building file: ../src/pong.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pong.d" -MT"src/pong.d" -o "src/pong.o" "../src/pong.cpp"
+Finished building: ../src/pong.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+15:31:25 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+In file included from ../src/EntityMgr.cpp:10:0:
+/home/randygonzalez/Desktop/CS381/Pong/include/engine.h:27:2: error: ‘MenuMgr’ does not name a type
+  MenuMgr*  menuMgr;
+  ^
+src/subdir.mk:51: recipe for target 'src/EntityMgr.o' failed
+make: *** [src/EntityMgr.o] Error 1
+15:31:58 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
+../src/GfxMgr.cpp: In constructor ‘GfxMgr::GfxMgr(Engine*)’:
+../src/GfxMgr.cpp:11:40: error: class ‘GfxMgr’ does not have any field named ‘mTrayMgr’
+ GfxMgr::GfxMgr(Engine *eng): Mgr(eng), mTrayMgr(0)
+                                        ^
+src/subdir.mk:51: recipe for target 'src/GfxMgr.o' failed
+make: *** [src/GfxMgr.o] Error 1
+15:32:40 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
+Finished building: ../src/GfxMgr.cpp
+ 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+../src/MenuMgr.cpp: In member function ‘virtual void MenuMgr::init()’:
+../src/MenuMgr.cpp:22:17: error: expected type-specifier before ‘SdkTrayManager’
+  mTrayMgr = new SdkTrayManager("InterfaceName", engine->gfxMgr->ogreRenderWindow, engine->inputMgr->mouse, this);
+                 ^
+make: *** [src/MenuMgr.o] Error 1
+src/subdir.mk:51: recipe for target 'src/MenuMgr.o' failed
+15:33:20 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+../src/MenuMgr.cpp: In member function ‘virtual void MenuMgr::init()’:
+../src/MenuMgr.cpp:22:66: error: invalid use of incomplete type ‘class Engine’
+  mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", engine->gfxMgr->ogreRenderWindow, engine->inputMgr->mouse, this);
+                                                                  ^
+In file included from /home/randygonzalez/Desktop/CS381/Pong/include/MenuMgr.h:11:0,
+                 from ../src/MenuMgr.cpp:8:
+/home/randygonzalez/Desktop/CS381/Pong/include/mgr.h:11:7: note: forward declaration of ‘class Engine’
+ class Engine;
+       ^
+../src/MenuMgr.cpp:22:100: error: invalid use of incomplete type ‘class Engine’
+  mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", engine->gfxMgr->ogreRenderWindow, engine->inputMgr->mouse, this);
+                                                                                                    ^
+In file included from /home/randygonzalez/Desktop/CS381/Pong/include/MenuMgr.h:11:0,
+                 from ../src/MenuMgr.cpp:8:
+/home/randygonzalez/Desktop/CS381/Pong/include/mgr.h:11:7: note: forward declaration of ‘class Engine’
+ class Engine;
+       ^
+src/subdir.mk:51: recipe for target 'src/MenuMgr.o' failed
+make: *** [src/MenuMgr.o] Error 1
+15:34:02 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+../src/MenuMgr.cpp: In member function ‘virtual void MenuMgr::init()’:
+../src/MenuMgr.cpp:22:66: error: invalid use of incomplete type ‘class Engine’
+  mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", engine->gfxMgr->ogreRenderWindow, engine->inputMgr->mouse, this);
+                                                                  ^
+In file included from /home/randygonzalez/Desktop/CS381/Pong/include/MenuMgr.h:11:0,
+                 from ../src/MenuMgr.cpp:8:
+/home/randygonzalez/Desktop/CS381/Pong/include/mgr.h:11:7: note: forward declaration of ‘class Engine’
+ class Engine;
+       ^
+../src/MenuMgr.cpp:22:100: error: invalid use of incomplete type ‘class Engine’
+  mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", engine->gfxMgr->ogreRenderWindow, engine->inputMgr->mouse, this);
+                                                                                                    ^
+In file included from /home/randygonzalez/Desktop/CS381/Pong/include/MenuMgr.h:11:0,
+                 from ../src/MenuMgr.cpp:8:
+/home/randygonzalez/Desktop/CS381/Pong/include/mgr.h:11:7: note: forward declaration of ‘class Engine’
+ class Engine;
+       ^
+src/subdir.mk:51: recipe for target 'src/MenuMgr.o' failed
+make: *** [src/MenuMgr.o] Error 1
+15:35:00 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+../src/MenuMgr.cpp: In member function ‘virtual void MenuMgr::init()’:
+../src/MenuMgr.cpp:23:123: error: no matching function for call to ‘OgreBites::SdkTrayManager::SdkTrayManager(const char [14], Ogre::RenderWindow*&, OIS::Mouse*&, MenuMgr*)’
+  mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", engine->gfxMgr->ogreRenderWindow, engine->inputMgr->mouse, this);
+                                                                                                                           ^
+In file included from /home/randygonzalez/Desktop/CS381/Pong/include/MenuMgr.h:12:0,
+                 from ../src/MenuMgr.cpp:8:
+/usr/local/include/OGRE/SdkTrays.h:1708:3: note: candidate: OgreBites::SdkTrayManager::SdkTrayManager(const String&, Ogre::RenderWindow*, OgreBites::InputContext, OgreBites::SdkTrayListener*)
+   SdkTrayManager(const Ogre::String& name, Ogre::RenderWindow* window, InputContext inputContext, SdkTrayListener* listener = 0) :
+   ^
+/usr/local/include/OGRE/SdkTrays.h:1708:3: note:   no known conversion for argument 3 from ‘OIS::Mouse*’ to ‘OgreBites::InputContext’
+/usr/local/include/OGRE/SdkTrays.h:1701:8: note: candidate: OgreBites::SdkTrayManager::SdkTrayManager(const OgreBites::SdkTrayManager&)
+  class SdkTrayManager : public SdkTrayListener, public Ogre::ResourceGroupListener
+        ^
+/usr/local/include/OGRE/SdkTrays.h:1701:8: note:   candidate expects 1 argument, 4 provided
+make: *** [src/MenuMgr.o] Error 1
+src/subdir.mk:51: recipe for target 'src/MenuMgr.o' failed
+15:36:04 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+../src/MenuMgr.cpp: In member function ‘virtual void MenuMgr::init()’:
+../src/MenuMgr.cpp:23:119: error: ‘null’ was not declared in this scope
+  mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", engine->gfxMgr->ogreRenderWindow, engine->inputMgr->mouse, null);
+                                                                                                                       ^
+src/subdir.mk:51: recipe for target 'src/MenuMgr.o' failed
+make: *** [src/MenuMgr.o] Error 1
+15:36:21 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+../src/MenuMgr.cpp: In member function ‘virtual void MenuMgr::init()’:
+../src/MenuMgr.cpp:23:123: error: no matching function for call to ‘OgreBites::SdkTrayManager::SdkTrayManager(const char [14], Ogre::RenderWindow*&, OIS::Mouse*&, MenuMgr*)’
+  mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", engine->gfxMgr->ogreRenderWindow, engine->inputMgr->mouse, this);
+                                                                                                                           ^
+In file included from /home/randygonzalez/Desktop/CS381/Pong/include/MenuMgr.h:12:0,
+                 from ../src/MenuMgr.cpp:8:
+/usr/local/include/OGRE/SdkTrays.h:1708:3: note: candidate: OgreBites::SdkTrayManager::SdkTrayManager(const String&, Ogre::RenderWindow*, OgreBites::InputContext, OgreBites::SdkTrayListener*)
+   SdkTrayManager(const Ogre::String& name, Ogre::RenderWindow* window, InputContext inputContext, SdkTrayListener* listener = 0) :
+   ^
+/usr/local/include/OGRE/SdkTrays.h:1708:3: note:   no known conversion for argument 3 from ‘OIS::Mouse*’ to ‘OgreBites::InputContext’
+/usr/local/include/OGRE/SdkTrays.h:1701:8: note: candidate: OgreBites::SdkTrayManager::SdkTrayManager(const OgreBites::SdkTrayManager&)
+  class SdkTrayManager : public SdkTrayListener, public Ogre::ResourceGroupListener
+        ^
+/usr/local/include/OGRE/SdkTrays.h:1701:8: note:   candidate expects 1 argument, 4 provided
+src/subdir.mk:51: recipe for target 'src/MenuMgr.o' failed
+make: *** [src/MenuMgr.o] Error 1
+15:41:38 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/Pong/include/engine.h:12:0,
+                 from ../src/EntityMgr.cpp:10:
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:57:5: error: ‘OgreBites’ does not name a type
+     OgreBites::InputContext     mInputContext;
+     ^
+src/subdir.mk:51: recipe for target 'src/EntityMgr.o' failed
+make: *** [src/EntityMgr.o] Error 1
+15:43:52 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
+Finished building: ../src/GfxMgr.cpp
+ 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+Finished building: ../src/MenuMgr.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+../src/gameMgr.cpp: In member function ‘void GameMgr::createEnts()’:
+../src/gameMgr.cpp:51:14: warning: unused variable ‘ent’ [-Wunused-variable]
+  Entity381 * ent;
+              ^
+Finished building: ../src/gameMgr.cpp
+ 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building file: ../src/pong.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pong.d" -MT"src/pong.d" -o "src/pong.o" "../src/pong.cpp"
+Finished building: ../src/pong.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/MenuMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+15:45:19 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+make: Nothing to be done for 'all'.
+15:45:48 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+Finished building: ../src/MenuMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/MenuMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+15:46:27 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+Finished building: ../src/MenuMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/MenuMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+15:47:20 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/MenuMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+15:47:52 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/MenuMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+15:48:23 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/MenuMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+15:49:02 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+Finished building: ../src/MenuMgr.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/MenuMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+15:49:37 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+Finished building: ../src/MenuMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/MenuMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+15:50:36 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+Finished building: ../src/MenuMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/MenuMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+15:51:50 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+../src/MenuMgr.cpp: In member function ‘virtual void MenuMgr::init()’:
+../src/MenuMgr.cpp:35:5: error: could not convert ‘((MenuMgr*)this)->MenuMgr::mInputContext’ from ‘OgreBites::InputContext’ to ‘bool’
+  if(mInputContext)
+     ^
+make: *** [src/MenuMgr.o] Error 1
+src/subdir.mk:51: recipe for target 'src/MenuMgr.o' failed
+15:52:32 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/MenuMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MenuMgr.d" -MT"src/MenuMgr.d" -o "src/MenuMgr.o" "../src/MenuMgr.cpp"
+Finished building: ../src/MenuMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/MenuMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+15:58:20 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/Pong/include/engine.h:12:0,
+                 from ../src/EntityMgr.cpp:10:
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:22:116: error: ‘OgreBites’ has not been declared
+ class InputMgr : public Mgr, public OIS::KeyListener, public OIS::MouseListener, public Ogre::WindowEventListener, OgreBites::SdkTrayListener
+                                                                                                                    ^
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:22:127: error: expected ‘{’ before ‘SdkTrayListener’
+ class InputMgr : public Mgr, public OIS::KeyListener, public OIS::MouseListener, public Ogre::WindowEventListener, OgreBites::SdkTrayListener
+                                                                                                                               ^
+In file included from /home/randygonzalez/Desktop/CS381/Pong/include/engine.h:12:0,
+                 from ../src/EntityMgr.cpp:10:
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:24:1: error: expected primary-expression before ‘private’
+ private:
+ ^
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:24:1: error: expected ‘}’ before ‘private’
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:24:1: error: expected ‘,’ or ‘;’ before ‘private’
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:34:1: error: expected unqualified-id before ‘protected’
+ protected:
+ ^
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:36:50: error: ‘virtual’ outside class declaration
+  virtual void windowClosed(Ogre::RenderWindow *rw);
+                                                  ^
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:38:53: error: ‘virtual’ outside class declaration
+     virtual bool keyPressed(const OIS::KeyEvent &arg);
+                                                     ^
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:39:54: error: ‘virtual’ outside class declaration
+     virtual bool keyReleased(const OIS::KeyEvent &arg);
+                                                      ^
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:40:55: error: ‘virtual’ outside class declaration
+     virtual bool mouseMoved(const OIS::MouseEvent &arg);
+                                                       ^
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:41:80: error: ‘virtual’ outside class declaration
+     virtual bool mousePressed(const OIS::MouseEvent &arg, OIS::MouseButtonID id);
+                                                                                ^
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:42:81: error: ‘virtual’ outside class declaration
+     virtual bool mouseReleased(const OIS::MouseEvent &arg, OIS::MouseButtonID id);
+                                                                                 ^
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:44:1: error: expected unqualified-id before ‘public’
+ public:
+ ^
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:47:13: error: expected constructor, destructor, or type conversion before ‘;’ token
+  ~InputMgr();
+             ^
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:59:2: error: ‘OgreBites’ does not name a type
+  OgreBites::SdkTrayManager *mTrayMgr;
+  ^
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:60:2: error: ‘OgreBites’ does not name a type
+  OgreBites::InputContext    mInputContext;
+  ^
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:63:1: error: expected declaration before ‘}’ token
+ };
+ ^
+src/subdir.mk:48: recipe for target 'src/EntityMgr.o' failed
+make: *** [src/EntityMgr.o] Error 1
+15:59:07 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
+Finished building: ../src/GfxMgr.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+../src/engine.cpp: In constructor ‘Engine::Engine()’:
+../src/engine.cpp:17:2: error: ‘menuMgr’ was not declared in this scope
+  menuMgr = 0;
+  ^
+src/subdir.mk:48: recipe for target 'src/engine.o' failed
+make: *** [src/engine.o] Error 1
+15:59:47 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+../src/engine.cpp: In constructor ‘Engine::Engine()’:
+../src/engine.cpp:17:2: error: expected ‘;’ before ‘keepRunning’
+  keepRunning = true;
+  ^
+src/subdir.mk:48: recipe for target 'src/engine.o' failed
+make: *** [src/engine.o] Error 1
+16:00:06 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+../src/gameMgr.cpp: In member function ‘void GameMgr::createEnts()’:
+../src/gameMgr.cpp:51:14: warning: unused variable ‘ent’ [-Wunused-variable]
+  Entity381 * ent;
+              ^
+Finished building: ../src/gameMgr.cpp
+ 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building file: ../src/pong.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pong.d" -MT"src/pong.d" -o "src/pong.o" "../src/pong.cpp"
+Finished building: ../src/pong.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+16:00:59 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+16:03:52 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+../src/inputMgr.cpp: In constructor ‘InputMgr::InputMgr(Engine*)’:
+../src/inputMgr.cpp:64:60: error: ‘mWindow’ was not declared in this scope
+  mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", mWindow, mInputContext, this);
+                                                            ^
+src/subdir.mk:48: recipe for target 'src/inputMgr.o' failed
+make: *** [src/inputMgr.o] Error 1
+16:04:20 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+16:11:47 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+16:14:07 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
+Finished building: ../src/GfxMgr.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+../src/gameMgr.cpp: In member function ‘void GameMgr::createEnts()’:
+../src/gameMgr.cpp:51:14: warning: unused variable ‘ent’ [-Wunused-variable]
+  Entity381 * ent;
+              ^
+Finished building: ../src/gameMgr.cpp
+ 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building file: ../src/pong.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pong.d" -MT"src/pong.d" -o "src/pong.o" "../src/pong.cpp"
+Finished building: ../src/pong.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+16:15:26 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+make: Nothing to be done for 'all'.
+16:15:45 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+16:33:58 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
+Finished building: ../src/GfxMgr.cpp
+ 
+Building file: ../src/UI.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/UI.d" -MT"src/UI.d" -o "src/UI.o" "../src/UI.cpp"
+Finished building: ../src/UI.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+../src/gameMgr.cpp: In member function ‘void GameMgr::createEnts()’:
+../src/gameMgr.cpp:51:14: warning: unused variable ‘ent’ [-Wunused-variable]
+  Entity381 * ent;
+              ^
+Finished building: ../src/gameMgr.cpp
+ 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+In file included from ../src/inputMgr.cpp:8:0:
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:27:19: error: field ‘posUnderMouse’ has incomplete type ‘Ogre::Vector3’
+     Ogre::Vector3 posUnderMouse;
+                   ^
+In file included from /usr/local/include/OGRE/OgreWindowEventUtilities.h:31:0,
+                 from /home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:11,
+                 from ../src/inputMgr.cpp:8:
+/usr/local/include/OGRE/OgrePrerequisites.h:293:11: note: forward declaration of ‘class Ogre::Vector3’
+     class Vector3;
+           ^
+make: *** [src/inputMgr.o] Error 1
+src/subdir.mk:51: recipe for target 'src/inputMgr.o' failed
+16:35:48 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+In file included from /home/randygonzalez/Desktop/CS381/Pong/include/engine.h:12:0,
+                 from ../src/EntityMgr.cpp:10:
+/home/randygonzalez/Desktop/CS381/Pong/include/inputMgr.h:14:24: fatal error: OgreVector.h: No such file or directory
+compilation terminated.
+make: *** [src/EntityMgr.o] Error 1
+src/subdir.mk:51: recipe for target 'src/EntityMgr.o' failed
+16:36:50 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
+Finished building: ../src/GfxMgr.cpp
+ 
+Building file: ../src/UI.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/UI.d" -MT"src/UI.d" -o "src/UI.o" "../src/UI.cpp"
+Finished building: ../src/UI.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+../src/gameMgr.cpp: In member function ‘void GameMgr::createEnts()’:
+../src/gameMgr.cpp:51:14: warning: unused variable ‘ent’ [-Wunused-variable]
+  Entity381 * ent;
+              ^
+Finished building: ../src/gameMgr.cpp
+ 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building file: ../src/pong.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pong.d" -MT"src/pong.d" -o "src/pong.o" "../src/pong.cpp"
+Finished building: ../src/pong.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UI.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+16:41:13 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+make: Nothing to be done for 'all'.
+16:43:58 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/UI.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/UI.d" -MT"src/UI.d" -o "src/UI.o" "../src/UI.cpp"
+Finished building: ../src/UI.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UI.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+16:46:12 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/UI.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/UI.d" -MT"src/UI.d" -o "src/UI.o" "../src/UI.cpp"
+Finished building: ../src/UI.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UI.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+16:53:07 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/UI.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/UI.d" -MT"src/UI.d" -o "src/UI.o" "../src/UI.cpp"
+Finished building: ../src/UI.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UI.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+16:54:33 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/UI.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/UI.d" -MT"src/UI.d" -o "src/UI.o" "../src/UI.cpp"
+Finished building: ../src/UI.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UI.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+Finished building target: Pong
+ 
+16:56:21 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+16:56:37 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+16:57:01 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+16:57:27 **** Incremental Build of configuration Debug for project PA3 ****
+make all 
+make: Nothing to be done for 'all'.
+16:58:14 **** Clean-only build of configuration Debug for project As3_UI ****
+make clean 
+rm -rf  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UiMgr.o ./src/as3.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o  ./src/Aspect.d ./src/Entity381.d ./src/EntityMgr.d ./src/GfxMgr.d ./src/UiMgr.d ./src/as3.d ./src/engine.d ./src/gameMgr.d ./src/inputMgr.d ./src/mgr.d  As3_UI
+ 
+16:58:14 **** Build of configuration Debug for project As3_UI ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I"/home/randygonzalez/workspace/As3_UI/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+../src/Aspect.cpp:56:14: warning: ‘RadToDegree’ defined but not used [-Wunused-variable]
+ static float RadToDegree = 57.2958; //180/pi
+              ^
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I"/home/randygonzalez/workspace/As3_UI/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I"/home/randygonzalez/workspace/As3_UI/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I"/home/randygonzalez/workspace/As3_UI/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
+Finished building: ../src/GfxMgr.cpp
+ 
+Building file: ../src/UiMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I"/home/randygonzalez/workspace/As3_UI/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
+Finished building: ../src/UiMgr.cpp
+ 
+Building file: ../src/as3.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I"/home/randygonzalez/workspace/As3_UI/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/as3.d" -MT"src/as3.d" -o "src/as3.o" "../src/as3.cpp"
+Finished building: ../src/as3.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I"/home/randygonzalez/workspace/As3_UI/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I"/home/randygonzalez/workspace/As3_UI/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
+ 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I"/home/randygonzalez/workspace/As3_UI/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building file: ../src/mgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I"/home/randygonzalez/workspace/As3_UI/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/mgr.d" -MT"src/mgr.d" -o "src/mgr.o" "../src/mgr.cpp"
+Finished building: ../src/mgr.cpp
+ 
+Building target: As3_UI
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "As3_UI"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UiMgr.o ./src/as3.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreOverlay -lOIS -lboost_system
+Finished building target: As3_UI
+ 

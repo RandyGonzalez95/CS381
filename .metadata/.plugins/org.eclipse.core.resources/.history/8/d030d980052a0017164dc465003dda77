@@ -1,0 +1,27 @@
+/*
+ * MenuMgr.cpp
+ *
+ *  Created on: Apr 25, 2017
+ *      Author: randygonzalez
+ */
+
+#include <MenuMgr.h>
+
+MenuMgr(){}
+
+~MenuMgr()
+{
+
+}
+
+void init();
+
+void tick(float dt);
+
+void loadLevel();
+
+void stop();
+
+
+
+

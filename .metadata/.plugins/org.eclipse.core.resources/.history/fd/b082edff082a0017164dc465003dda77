@@ -1,0 +1,46 @@
+/*
+ * MenuMgr.cpp
+ *
+ *  Created on: Apr 25, 2017
+ *      Author: randygonzalez
+ */
+
+#include <MenuMgr.h>
+#include <engine.h>
+
+MenuMgr::MenuMgr(Engine *engine): Mgr(engine), mTrayMgr(0)
+{
+	mInputContext.mKeyboard = engine->inputMgr->keyboard;
+	mInputContext.mMouse = engine->inputMgr->mouse;
+}
+
+MenuMgr::~MenuMgr()
+{
+
+}
+
+void MenuMgr::init()
+{
+	//mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", engine->gfxMgr->ogreRenderWindow, mInputContext, this);
+
+}
+
+void MenuMgr::tick(float dt)
+{
+
+}
+
+void MenuMgr::loadLevel()
+{
+
+
+}
+
+void MenuMgr::stop()
+{
+
+}
+
+
+
+

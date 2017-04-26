@@ -1,0 +1,33 @@
+/*
+ * UI.h
+ *
+ *  Created on: Apr 25, 2017
+ *      Author: randygonzalez
+ */
+
+#ifndef INCLUDE_UI_H_
+#define INCLUDE_UI_H_
+
+#include <mgr.h>
+#include <SdkTrays.h>
+
+class UI : public Mgr, public OgreBites::SdkTrayListener
+{
+public:
+	UI();
+	~UI();
+	void init();
+	void tick(float dt);
+	void loadLevel();
+	void stop();
+
+    // OgreBites
+	OgreBites::SdkTrayManager *mTrayMgr;
+	OgreBites::InputContext    mInputContext;
+
+
+};
+
+
+
+#endif /* INCLUDE_UI_H_ */
