@@ -53,8 +53,13 @@ void UiMgr::loadLevel()
 	mTrayMgr->showBackdrop("Background");
 
 	//OgreBites::SelectMenu* menu = mTrayMgr->createThickSelectMenu(OgreBites::TL_CENTER, "MyMenu", "Menu", 200, 3);
-	//OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_TOPLEFT, "MyButton", "Click Me!");
-	//OgreBites::SelectMenu* menu = mTrayMgr->createLongSelectMenu(OgreBites::TL_CENTER, "MyMenu", "Menu", 200, 100, 400);
+	OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_BOTTOM, "StartButton", "Start");
+
+	OgreBites::SelectMenu* menu = mTrayMgr->createLongSelectMenu(OgreBites::TL_BOTTOM, "MyMenu", "Options Menu", 300, 170, 5);
+	menu->addItem("How To Play");
+	menu->addItem("Single Player");
+	menu->addItem("Two Player");
+	menu->addItem("Choose Difficulty");
 	//Ogre::Bites SelectMenu *menu = mTrayMgr->createThickSelectMenu(OgreBites::TL_CENTER, "MyMenu", "Menu", 300, 3);
 
 	//OgreBites::Label *label = mTrayMgr->createLabel(OgreBites::TL_NONE, "Label", "Caption", 200);
@@ -112,10 +117,28 @@ bool UiMgr::mouseReleased(const OIS::MouseEvent &arg, OIS::MouseButtonID id)
 
 void UiMgr::buttonHit(OgreBites::Button *b)
 {
-    if(b->getName()=="MyButton")
+    if(b->getName()=="StartButton")
     {
-        std::cout <<"Click Me!" << std::endl;
-        //mTrayMgr->hideBackdrop();
+        //std::cout <<"Click Me!" << std::endl;
+        mTrayMgr->hideBackdrop();
+        mTrayMgr->destroyWidget(b->getName());
+        mTrayMgr->destroyWidget("MyMenu");
+        mTrayMgr->showLogo(OgreBites::TL_BOTTOMRIGHT);
+        mTrayMgr->showCursor();
+
+        Ogre::DisplayString helpText = "Player1: \n";
+        helpText.append("Player2: \n");
+
+
+        //mTrayMgr->createLabel(OgreBites::TL_BOTTOMLEFT, "Label", "", 200);
+        OgreBites::TextBox *text = mTrayMgr->createTextBox(OgreBites::TL_BOTTOMLEFT, "text", "Scores", 250, 100);
+        text->setText(helpText);
+
+
+        /*mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label2", "Caption", 200);
+        mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label3", "Caption", 200);
+        mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label4", "Caption", 200);
+        mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label5", "Caption", 200);*/
     }
 
 }
