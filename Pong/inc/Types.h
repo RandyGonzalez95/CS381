@@ -8,6 +8,9 @@
 #ifndef TYPES_H_
 #define TYPES_H_
 
-// Enumarated Classes
+enum class EntityType {
+	Ball,
+	Paddle
+};
 
 #endif /* TYPES_H_ */

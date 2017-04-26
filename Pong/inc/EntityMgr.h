@@ -16,6 +16,7 @@
 
 #include <Entity381.h>
 #include <mgr.h>
+#include <vector>
 
 class Engine;
 
@@ -33,8 +34,10 @@ public:
 	void loadLevel();
 	void stop();
 
-	Entity381 *CreateEntity();
+	Entity381 *CreateEntity(EntityType entityType, Ogre::Vector3 position);
 	void CreateOgreEntityAndNode(Entity381 *ent);
+
+	std::vector<Entity381*> entities;
 
 };
 

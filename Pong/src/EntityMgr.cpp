@@ -23,6 +23,9 @@ EntityMgr::~EntityMgr()
 void EntityMgr::tick(float dt)
 {
 	// Loop through list of entities
+	for(unsigned int i = 0; i<entities.size();i++)
+		entities[i]->Tick(dt);
+
 
 }
 
@@ -44,23 +47,35 @@ void EntityMgr::stop()
 void EntityMgr::CreateOgreEntityAndNode(Entity381 *ent)
 {
 
-	/*if(ent) {
+	if(ent)
+	{
 		ent->ogreEntity = engine->gfxMgr->ogreSceneManager->createEntity(ent->meshfile);
-		ent->ogreSceneNode = engine->gfxMgr->ogreSceneManager->getRootSceneNode()->createChildSceneNode(ent->pos);
+		ent->ogreSceneNode = engine->gfxMgr->ogreSceneManager->getRootSceneNode()->createChildSceneNode(ent->position);
 		ent->ogreSceneNode->attachObject(ent->ogreEntity);
-		ent->ogreSceneNode->yaw(Ogre::Radian(ent->heading));
-	}*/
+	}
 
 }
 
-Entity381* EntityMgr::CreateEntity()
+Entity381* EntityMgr::CreateEntity(EntityType entityType, Ogre::Vector3 position)
 {
 
 	Entity381 *ent = 0;// = new Entity381(entityType, position, heading);
 
+	switch(entityType)
+	{
+	case EntityType::Ball:
+		ent = new Ball(position);
+		break;
+	case EntityType::Paddle:
+		ent = new Paddle(position);
+		break;
+	}
 
 	CreateOgreEntityAndNode(ent);
+
 	// push back entity to list
+	entities.push_back(ent);
+
 	return ent;
 }
 

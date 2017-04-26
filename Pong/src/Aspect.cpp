@@ -47,5 +47,19 @@ void Physics::Tick(float dt)
 {
 
 
+}
+
+UnitAI::UnitAI(Entity381* ent): Aspect(ent)
+{
+
+}
+
+UnitAI::~UnitAI()
+{
+
+}
+
+void UnitAI::Tick(float dt)
+{
 
 }

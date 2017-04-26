@@ -39,4 +39,15 @@ public:
 	~Physics();
 	void Tick(float dt);
 };
+
+class UnitAI: public Aspect
+{
+public:
+	UnitAI(Entity381* ent);
+	~UnitAI();
+
+	void Tick(float dt); // follows the ball every tick
+
+
+};
 #endif /* ASPECT_H_ */

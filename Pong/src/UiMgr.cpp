@@ -29,11 +29,7 @@ void UiMgr::init()
     mInputContext.mKeyboard = engine->inputMgr->keyboard;
     mInputContext.mMouse = engine->inputMgr->mouse;
     mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", engine->gfxMgr->ogreRenderWindow, mInputContext, this);
-    //mTrayMgr->showFrameStats(OgreBites::TL_BOTTOMLEFT);
-    //mTrayMgr->showLogo(OgreBites::TL_BOTTOMRIGHT);
-    //mTrayMgr->showCursor();
-    //mTrayMgr->showBackdrop();
-    //mTrayMgr->hideCursor();
+
 }
 
 void UiMgr::stop()
@@ -43,7 +39,7 @@ void UiMgr::stop()
 
 void UiMgr::loadLevel()
 {
-
+	// Create new Ogre Material for my splash screen
 	Ogre::MaterialPtr material = Ogre::MaterialManager::getSingleton().create("Background", "General");
 	material->getTechnique(0)->getPass(0)->createTextureUnitState("pong.png");
 	material->getTechnique(0)->getPass(0)->setDepthCheckEnabled(false);

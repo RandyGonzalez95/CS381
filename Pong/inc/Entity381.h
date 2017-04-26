@@ -18,19 +18,51 @@ class Aspect;
 
 class Entity381
 {
-private:
-
-protected:
 
 public:
 
-	Entity381();
-	~Entity381();
-	void Tick(float dt);
-	void DefaultInit();
+	Entity381(EntityType type, Ogre::Vector3 pos);
+	virtual ~Entity381();
+	void Tick(float dt); // loops through list of aspects
+
+	std::vector<Aspect*> aspects;
+
+	// Ogre Stuff
+	Ogre::SceneNode *ogreSceneNode;
+	Ogre::Entity* ogreEntity;
 
 
-	std::list<Aspect*> aspects;
+	// Identifying type
+	EntityType entityType;
+
+
+	// material file
+	std::string meshfile;
+
+	// Static
+	Ogre::Vector3 position;
+	float speed;
+};
+
+class Ball : public Entity381
+{
+public:
+	Ball(Ogre::Vector3 pos);
+	~Ball();
+
+	void MoveBall();
+	void UpdateSpeed();
+
+};
+
+class Paddle : public Entity381
+{
+public:
+	Paddle(Ogre::Vector3 pos);
+	~Paddle();
+
+	void MovePaddle(Ogre::Vector3 dir);
+
 };
 
 
