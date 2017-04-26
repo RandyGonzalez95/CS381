@@ -9,7 +9,8 @@
 #include <engine.h>
 
 
-InputMgr::InputMgr(Engine *engine) : Mgr(engine){
+InputMgr::InputMgr(Engine *engine) : Mgr(engine)
+{
 	keyboardTimer = keyTime;
 	selectionTimer = selectionTime;
 
@@ -54,15 +55,18 @@ InputMgr::~InputMgr(){ // before gfxMgr destructor
 
 }
 
-void InputMgr::init(){
+void InputMgr::init()
+{
 
 }
 
-void InputMgr::loadLevel(){
+void InputMgr::loadLevel()
+{
 
 }
 
-void InputMgr::tick(float dt){
+void InputMgr::tick(float dt)
+{
 
 	keyboard->capture();
 	mouse->capture();
@@ -70,7 +74,6 @@ void InputMgr::tick(float dt){
 		engine->stop();
 
 	UpdateCamera(dt);
-	UpdateDesiredSpeedHeading(dt);
 	//UpdateSelection(dt);
 
 }
@@ -107,9 +110,7 @@ bool InputMgr::keyPressed(const OIS::KeyEvent &arg) {
 }
 bool InputMgr::keyReleased(const OIS::KeyEvent &arg){
 	std::cout << "Checking key release" << std::endl;
-	if (arg.key == OIS::KC_TAB){
-		engine->entityMgr->SelectNextEntity();
-	}
+
 	return true;
 }
 bool InputMgr::mouseMoved(const OIS::MouseEvent &arg){
@@ -164,47 +165,6 @@ void InputMgr::UpdateCamera(float dt){
 	  engine->gfxMgr->cameraNode->translate(dirVec * dt, Ogre::Node::TS_LOCAL);
 
 }
-
-void InputMgr::UpdateDesiredSpeedHeading(float dt){
-	keyboardTimer -= dt;
-
-	if(engine->entityMgr->selectedEntity){
-
-		if((keyboardTimer < 0) && keyboard->isKeyDown(OIS::KC_NUMPAD8)){
-			keyboardTimer = keyTime;
-			engine->entityMgr->selectedEntity->desiredSpeed += 10;
-		}
-		if((keyboardTimer < 0) && keyboard->isKeyDown(OIS::KC_NUMPAD2)){
-			keyboardTimer = keyTime;
-			engine->entityMgr->selectedEntity->desiredSpeed -= 10;
-		}
-		engine->entityMgr->selectedEntity->desiredSpeed =
-				std::max(engine->entityMgr->selectedEntity->minSpeed,
-						std::min(engine->entityMgr->selectedEntity->maxSpeed,
-								engine->entityMgr->selectedEntity->desiredSpeed));
-
-
-		if((keyboardTimer < 0) && keyboard->isKeyDown(OIS::KC_NUMPAD4)){
-			keyboardTimer = keyTime;
-			engine->entityMgr->selectedEntity->desiredHeading -= 0.3f;
-		}
-		if((keyboardTimer < 0) && keyboard->isKeyDown(OIS::KC_NUMPAD6)){
-			keyboardTimer = keyTime;
-			engine->entityMgr->selectedEntity->desiredHeading += 0.3f;
-		}
-		//entityMgr->selectedEntity->desiredHeading = FixAngle(entityMgr->selectedEntity->desiredHeading);
-	}
-
-}
-
-void InputMgr::UpdateSelection(float dt){
-	selectionTimer -= dt;
-	if(selectionTimer < 0 && keyboard->isKeyDown(OIS::KC_TAB)){
-		selectionTimer = this->selectionTime;
-		engine->entityMgr->SelectNextEntity();
-	}
-}
-
 
 
 

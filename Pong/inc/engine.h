@@ -14,7 +14,8 @@
 #include <gameMgr.h>
 #include <UiMgr.h>
 
-class Engine {
+class Engine
+{
 private:
 public:
 	Engine();

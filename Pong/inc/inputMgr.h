@@ -19,8 +19,6 @@ class InputMgr : public Mgr, public OIS::KeyListener, public OIS::MouseListener,
 {
 private:
 	void UpdateCamera(float dt);
-	void UpdateDesiredSpeedHeading(float dt);
-	void UpdateSelection(float dt);
 	float keyboardTimer;
 	float selectionTimer;
 	const float keyTime = 0.2f;
@@ -40,10 +38,10 @@ public:
 
 	InputMgr(Engine *engine);
 	~InputMgr();
-	virtual void init();
-	virtual void tick(float dt);
-	virtual void loadLevel();
-	virtual void stop();
+	void init();
+	void tick(float dt);
+	void loadLevel();
+	void stop();
 
 	//OIS Input devices
 	OIS::InputManager* oisInputManager;

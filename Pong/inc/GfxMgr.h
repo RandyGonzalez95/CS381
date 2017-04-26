@@ -21,7 +21,8 @@
 #include <OgreWindowEventUtilities.h>
 
 
-class GfxMgr : public Mgr {
+class GfxMgr : public Mgr
+{
 
 private:
 	//Ogre variables
@@ -44,10 +45,10 @@ public:
 	GfxMgr(Engine *eng);
 	~GfxMgr();
 
-	virtual void tick(float dt);
-	virtual void init();
-	virtual void loadLevel();
-	virtual void stop();
+	void tick(float dt);
+	void init();
+	void loadLevel();
+	void stop();
 
 	Ogre::RenderWindow* ogreRenderWindow;
 	Ogre::SceneManager* ogreSceneManager;

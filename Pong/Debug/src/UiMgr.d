@@ -1,5 +1,4 @@
-src/UiMgr.d: ../src/UiMgr.cpp \
- /home/randygonzalez/workspace/As3_UI/inc/UiMgr.h \
+src/UiMgr.d: ../src/UiMgr.cpp /home/randy/Desktop/CS381/Pong/inc/UiMgr.h \
  /usr/local/include/OGRE/OgreWindowEventUtilities.h \
  /usr/local/include/OGRE/OgrePrerequisites.h \
  /usr/local/include/OGRE/OgrePlatform.h \
@@ -18,7 +17,7 @@ src/UiMgr.d: ../src/UiMgr.cpp \
  /usr/include/ois/OISInputManager.h /usr/include/ois/OISKeyboard.h \
  /usr/include/ois/OISObject.h /usr/include/ois/OISInterface.h \
  /usr/include/ois/OISEvents.h /usr/include/ois/OISMouse.h \
- /home/randygonzalez/workspace/As3_UI/inc/mgr.h \
+ /home/randy/Desktop/CS381/Pong/inc/mgr.h \
  /usr/local/include/OGRE/SdkTrays.h /usr/local/include/OGRE/Ogre.h \
  /usr/local/include/OGRE/OgreAnimation.h \
  /usr/local/include/OGRE/OgreIteratorWrappers.h \
@@ -226,8 +225,8 @@ src/UiMgr.d: ../src/UiMgr.cpp \
  /usr/include/ois/OISInputManager.h /usr/include/ois/OISFactoryCreator.h \
  /usr/include/ois/OISException.h /usr/include/ois/OISEffect.h \
  /usr/include/ois/OISForceFeedback.h \
- /home/randygonzalez/workspace/As3_UI/inc/engine.h \
- /home/randygonzalez/workspace/As3_UI/inc/GfxMgr.h \
+ /home/randy/Desktop/CS381/Pong/inc/engine.h \
+ /home/randy/Desktop/CS381/Pong/inc/GfxMgr.h \
  /usr/local/include/OGRE/OgreRoot.h \
  /usr/local/include/OGRE/OgreConfigFile.h \
  /usr/local/include/OGRE/OgreRenderWindow.h \
@@ -235,14 +234,14 @@ src/UiMgr.d: ../src/UiMgr.cpp \
  /usr/local/include/OGRE/OgreCamera.h \
  /usr/local/include/OGRE/OgreViewport.h \
  /usr/local/include/OGRE/OgreEntity.h \
- /home/randygonzalez/workspace/As3_UI/inc/inputMgr.h \
- /home/randygonzalez/workspace/As3_UI/inc/EntityMgr.h \
+ /home/randy/Desktop/CS381/Pong/inc/inputMgr.h \
+ /home/randy/Desktop/CS381/Pong/inc/EntityMgr.h \
  /usr/local/include/OGRE/OgreVector3.h \
- /home/randygonzalez/workspace/As3_UI/inc/Entity381.h \
- /home/randygonzalez/workspace/As3_UI/inc/Types.h \
- /home/randygonzalez/workspace/As3_UI/inc/gameMgr.h
+ /home/randy/Desktop/CS381/Pong/inc/Entity381.h \
+ /home/randy/Desktop/CS381/Pong/inc/Types.h \
+ /home/randy/Desktop/CS381/Pong/inc/gameMgr.h
 
-/home/randygonzalez/workspace/As3_UI/inc/UiMgr.h:
+/home/randy/Desktop/CS381/Pong/inc/UiMgr.h:
 
 /usr/local/include/OGRE/OgreWindowEventUtilities.h:
 
@@ -290,7 +289,7 @@ src/UiMgr.d: ../src/UiMgr.cpp \
 
 /usr/include/ois/OISMouse.h:
 
-/home/randygonzalez/workspace/As3_UI/inc/mgr.h:
+/home/randy/Desktop/CS381/Pong/inc/mgr.h:
 
 /usr/local/include/OGRE/SdkTrays.h:
 
@@ -722,9 +721,9 @@ src/UiMgr.d: ../src/UiMgr.cpp \
 
 /usr/include/ois/OISForceFeedback.h:
 
-/home/randygonzalez/workspace/As3_UI/inc/engine.h:
+/home/randy/Desktop/CS381/Pong/inc/engine.h:
 
-/home/randygonzalez/workspace/As3_UI/inc/GfxMgr.h:
+/home/randy/Desktop/CS381/Pong/inc/GfxMgr.h:
 
 /usr/local/include/OGRE/OgreRoot.h:
 
@@ -740,14 +739,14 @@ src/UiMgr.d: ../src/UiMgr.cpp \
 
 /usr/local/include/OGRE/OgreEntity.h:
 
-/home/randygonzalez/workspace/As3_UI/inc/inputMgr.h:
+/home/randy/Desktop/CS381/Pong/inc/inputMgr.h:
 
-/home/randygonzalez/workspace/As3_UI/inc/EntityMgr.h:
+/home/randy/Desktop/CS381/Pong/inc/EntityMgr.h:
 
 /usr/local/include/OGRE/OgreVector3.h:
 
-/home/randygonzalez/workspace/As3_UI/inc/Entity381.h:
+/home/randy/Desktop/CS381/Pong/inc/Entity381.h:
 
-/home/randygonzalez/workspace/As3_UI/inc/Types.h:
+/home/randy/Desktop/CS381/Pong/inc/Types.h:
 
-/home/randygonzalez/workspace/As3_UI/inc/gameMgr.h:
+/home/randy/Desktop/CS381/Pong/inc/gameMgr.h:

@@ -10,17 +10,18 @@
 
 class Engine;
 
-class Mgr {
+class Mgr
+{
 public:
 	Engine *engine;
 
 	Mgr(Engine *eng);
 	virtual ~Mgr();
 
-	virtual void tick(float dt);
-	virtual void init();
-	virtual void loadLevel();
-	virtual void stop();
+	virtual void tick(float dt) = 0 ;
+	virtual void init() = 0;
+	virtual void loadLevel() = 0;
+	virtual void stop() = 0;
 };
 
 

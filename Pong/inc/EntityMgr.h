@@ -9,7 +9,6 @@
 #define ENTITYMGR_H_
 
 
-#include <list>
 #include <OgreVector3.h>
 #include <OgreSceneManager.h>
 #include <OgreSceneNode.h>
@@ -20,30 +19,22 @@
 
 class Engine;
 
-class EntityMgr: public Mgr {
+class EntityMgr: public Mgr
+{
 
 private:
-	std::list<Entity381 *> entities;
-	//
+
 public:
-
-//	Ogre::SceneManager *ogreSceneMgr;
-	Entity381* selectedEntity;
-
 	EntityMgr(Engine *eng);
-	//EntityMgr(Ogre::SceneManager *ogreSceneMgr);
 	~EntityMgr();
 
-	virtual void init();
-	virtual void tick(float dt);
-	virtual void loadLevel();
-	virtual void stop();
+	void init();
+	void tick(float dt);
+	void loadLevel();
+	void stop();
 
-	Entity381 *CreateEntity(EntityType entityType, Ogre::Vector3 pos, float yaw = 0);
+	Entity381 *CreateEntity();
 	void CreateOgreEntityAndNode(Entity381 *ent);
-	//void Tick(float dt);
-	void SelectNextEntity();
-
 
 };
 

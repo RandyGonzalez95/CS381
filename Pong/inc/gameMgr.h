@@ -11,7 +11,8 @@
 #include <mgr.h>
 
 
-class GameMgr : public Mgr {
+class GameMgr : public Mgr
+{
 
 private:
 	void createEnts();
@@ -22,10 +23,10 @@ private:
 public:
 	GameMgr(Engine *engine);
 	~GameMgr();
-	virtual void init();
-	virtual void tick(float dt);
-	virtual void loadLevel();
-	virtual void stop();
+	void init();
+	void tick(float dt);
+	void loadLevel();
+	void stop();
 
 };
 

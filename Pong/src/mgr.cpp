@@ -7,6 +7,7 @@
 
 #include <mgr.h>
 
+// Abstract Class
 Mgr::Mgr(Engine *eng){
 	engine = eng;
 }

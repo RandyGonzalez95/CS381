@@ -8,7 +8,8 @@
 #include <GfxMgr.h>
 #include <engine.h>
 #include <unistd.h>
-GfxMgr::GfxMgr(Engine *eng): Mgr(eng) {
+GfxMgr::GfxMgr(Engine *eng): Mgr(eng)
+{
 
 	resources = "resources.cfg";
 	plugins   = "plugins.cfg";
@@ -26,7 +27,8 @@ GfxMgr::GfxMgr(Engine *eng): Mgr(eng) {
 
 }
 
-void GfxMgr::loadConfig(Ogre::ConfigFile cf){
+void GfxMgr::loadConfig(Ogre::ConfigFile cf)
+{
 	Ogre::String name, locType;
 	Ogre::ConfigFile::SectionIterator secIt = cf.getSectionIterator();
 	while(secIt.hasMoreElements()){
@@ -40,21 +42,25 @@ void GfxMgr::loadConfig(Ogre::ConfigFile cf){
 	}
 }
 
-void GfxMgr::configureRenderSystem(){
+void GfxMgr::configureRenderSystem()
+{
 	if(!(ogreRoot->restoreConfig() || ogreRoot->showConfigDialog()))
 		engine->stop();
 }
 
-void GfxMgr::initResources(){
+void GfxMgr::initResources()
+{
 	Ogre::TextureManager::getSingleton().setDefaultNumMipmaps(5);
 	Ogre::ResourceGroupManager::getSingleton().initialiseAllResourceGroups();
 }
 
-void GfxMgr::createSceneManager(){
+void GfxMgr::createSceneManager()
+{
 	ogreSceneManager = ogreRoot->createSceneManager(Ogre::ST_GENERIC);
 }
 
-void GfxMgr::createCamera(){
+void GfxMgr::createCamera()
+{
 	ogreCamera = ogreSceneManager->createCamera("MainCam");
 	ogreCamera->setPosition(0, 0, 0);
 	ogreCamera->setNearClipDistance(5);
@@ -66,14 +72,16 @@ void GfxMgr::createCamera(){
 
 }
 
-void GfxMgr::createViewport(){
+void GfxMgr::createViewport()
+{
 	ogreViewport = ogreRenderWindow->addViewport(ogreCamera);
 	ogreViewport->setBackgroundColour(Ogre::ColourValue(0, 0, 0));
 	ogreCamera->setAspectRatio(Ogre::Real(ogreViewport->getActualWidth()) /
 											Ogre::Real(ogreViewport->getActualHeight()));
 }
 
-void GfxMgr::testScene(){
+void GfxMgr::testScene()
+{
 	Ogre::Entity *ent = ogreSceneManager->createEntity("ogrehead.mesh");
 	Ogre::SceneNode* node = ogreSceneManager->getRootSceneNode()->createChildSceneNode();
 	node->attachObject(ent);
@@ -86,29 +94,34 @@ void GfxMgr::testScene(){
 
 
 
-GfxMgr::~GfxMgr() {
+GfxMgr::~GfxMgr()
+{
 	delete ogreRoot; //after inputMgr destructor
 }
 
-void GfxMgr::init(){
-	std::cout << "Initialize gfx" << std::endl;
+void GfxMgr::init()
+{
+
 	initResources();
 	//testScene();
 }
 
-void GfxMgr::loadLevel(){
+void GfxMgr::loadLevel()
+{
 
 }
 
 
-void GfxMgr::tick(float dt){
+void GfxMgr::tick(float dt)
+{
 	Ogre::WindowEventUtilities::messagePump();
 	//if(ogreRenderWindow->isClosed()) engine->stop();
 	if(!ogreRoot->renderOneFrame()) engine->stop();
 	return;
 }
 
-void GfxMgr::stop(){
+void GfxMgr::stop()
+{
 	std::cout << "stopping engine and ogre" << std::endl;
 	ogreRoot->shutdown();
 	return;

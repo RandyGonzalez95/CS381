@@ -10,7 +10,8 @@
 
 #include <Entity381.h>
 
-class Aspect {
+class Aspect
+{
 
 public:
 	Aspect(Entity381* ent);
@@ -22,18 +23,20 @@ public:
 
 };
 
-class Renderable: public Aspect {
+class Renderable: public Aspect
+{
 public:
 	Renderable(Entity381* ent);
 	~Renderable();
-	virtual void Tick(float dt);
+	void Tick(float dt);
 };
 
 
-class Physics: public Aspect {
+class Physics: public Aspect
+{
 public:
 	Physics(Entity381* ent);
 	~Physics();
-	virtual void Tick(float dt);
+	void Tick(float dt);
 };
 #endif /* ASPECT_H_ */

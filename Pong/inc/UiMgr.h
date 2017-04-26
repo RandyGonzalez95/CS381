@@ -39,10 +39,10 @@ public:
 
 	UiMgr(Engine *engine);
 	~UiMgr();
-	virtual void init();
-	virtual void tick(float dt);
-	virtual void loadLevel();
-	virtual void stop();
+	void init();
+	void tick(float dt);
+	void loadLevel();
+	void stop();
 
 	OgreBites::InputContext mInputContext;
 	OgreBites::SdkTrayManager* mTrayMgr;
