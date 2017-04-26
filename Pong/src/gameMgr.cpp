@@ -48,7 +48,13 @@ void GameMgr::tick(float dt)
 
 void GameMgr::createEnts()
 {
+	Entity381 * ent;
+	int x = -200;
 
+	ent = engine->entityMgr->CreateEntity(EntityType::Paddle, Ogre::Vector3(x, 0, 0));
+	x += 600;
+	ent = engine->entityMgr->CreateEntity(EntityType::Paddle, Ogre::Vector3(x, 0, 0));
+	ent = engine->entityMgr->CreateEntity(EntityType::Ball, Ogre::Vector3(0, 0, 0));
 }
 
 void GameMgr::createGround(){

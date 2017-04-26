@@ -38,7 +38,7 @@ void Entity381::Tick(float dt)
 
 Ball::Ball(Ogre::Vector3 pos) : Entity381(EntityType::Ball, pos)
 {
-
+	this->meshfile = "sphere.mesh";
 }
 
 Ball::~Ball(){}
