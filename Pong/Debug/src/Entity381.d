@@ -1,5 +1,5 @@
 src/Entity381.d: ../src/Entity381.cpp \
- /home/randy/Desktop/CS381/Pong/inc/Entity381.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/Entity381.h \
  /usr/local/include/OGRE/OgreVector3.h \
  /usr/local/include/OGRE/OgrePrerequisites.h \
  /usr/local/include/OGRE/OgrePlatform.h \
@@ -65,10 +65,10 @@ src/Entity381.d: ../src/Entity381.cpp \
  /usr/local/include/OGRE/OgrePose.h \
  /usr/local/include/OGRE/OgreAnimationState.h \
  /usr/local/include/OGRE/OgreController.h \
- /home/randy/Desktop/CS381/Pong/inc/Types.h \
- /home/randy/Desktop/CS381/Pong/inc/Aspect.h
+ /home/randygonzalez/Desktop/CS381/Pong/inc/Types.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/Aspect.h
 
-/home/randy/Desktop/CS381/Pong/inc/Entity381.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/Entity381.h:
 
 /usr/local/include/OGRE/OgreVector3.h:
 
@@ -202,6 +202,6 @@ src/Entity381.d: ../src/Entity381.cpp \
 
 /usr/local/include/OGRE/OgreController.h:
 
-/home/randy/Desktop/CS381/Pong/inc/Types.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/Types.h:
 
-/home/randy/Desktop/CS381/Pong/inc/Aspect.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/Aspect.h:

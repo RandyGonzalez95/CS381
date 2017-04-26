@@ -19,6 +19,7 @@ class InputMgr : public Mgr, public OIS::KeyListener, public OIS::MouseListener,
 {
 private:
 	void UpdateCamera(float dt);
+	void MovePaddle(float dt);
 	float keyboardTimer;
 	float selectionTimer;
 	const float keyTime = 0.2f;

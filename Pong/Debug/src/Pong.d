@@ -1,7 +1,8 @@
-src/Pong.d: ../src/Pong.cpp /home/randy/Desktop/CS381/Pong/inc/Pong.h \
- /home/randy/Desktop/CS381/Pong/inc/engine.h \
- /home/randy/Desktop/CS381/Pong/inc/GfxMgr.h \
- /home/randy/Desktop/CS381/Pong/inc/mgr.h \
+src/Pong.d: ../src/Pong.cpp \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/Pong.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/engine.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/GfxMgr.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/mgr.h \
  /usr/local/include/OGRE/OgreRoot.h \
  /usr/local/include/OGRE/OgrePrerequisites.h \
  /usr/local/include/OGRE/OgrePlatform.h \
@@ -134,18 +135,18 @@ src/Pong.d: ../src/Pong.cpp /home/randy/Desktop/CS381/Pong/inc/Pong.h \
  /usr/local/include/OGRE/OgreHardwareUniformBuffer.h \
  /usr/local/include/OGRE/OgreRenderToVertexBuffer.h \
  /usr/local/include/OGRE/OgreWindowEventUtilities.h \
- /home/randy/Desktop/CS381/Pong/inc/inputMgr.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/inputMgr.h \
  /usr/include/ois/OISEvents.h /usr/include/ois/OISPrereqs.h \
  /usr/include/ois/OISConfig.h /usr/include/ois/OISInputManager.h \
  /usr/include/ois/OISKeyboard.h /usr/include/ois/OISObject.h \
  /usr/include/ois/OISInterface.h /usr/include/ois/OISEvents.h \
  /usr/include/ois/OISMouse.h \
- /home/randy/Desktop/CS381/Pong/inc/EntityMgr.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/EntityMgr.h \
  /usr/local/include/OGRE/OgreVector3.h \
- /home/randy/Desktop/CS381/Pong/inc/Entity381.h \
- /home/randy/Desktop/CS381/Pong/inc/Types.h \
- /home/randy/Desktop/CS381/Pong/inc/gameMgr.h \
- /home/randy/Desktop/CS381/Pong/inc/UiMgr.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/Entity381.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/Types.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/gameMgr.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/UiMgr.h \
  /usr/local/include/OGRE/SdkTrays.h /usr/local/include/OGRE/Ogre.h \
  /usr/local/include/OGRE/OgreArchiveManager.h \
  /usr/local/include/OGRE/OgreBillboardChain.h \
@@ -242,13 +243,13 @@ src/Pong.d: ../src/Pong.cpp /home/randy/Desktop/CS381/Pong/inc/Pong.h \
  /usr/include/ois/OISException.h /usr/include/ois/OISEffect.h \
  /usr/include/ois/OISForceFeedback.h
 
-/home/randy/Desktop/CS381/Pong/inc/Pong.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/Pong.h:
 
-/home/randy/Desktop/CS381/Pong/inc/engine.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/engine.h:
 
-/home/randy/Desktop/CS381/Pong/inc/GfxMgr.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/GfxMgr.h:
 
-/home/randy/Desktop/CS381/Pong/inc/mgr.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/mgr.h:
 
 /usr/local/include/OGRE/OgreRoot.h:
 
@@ -520,7 +521,7 @@ src/Pong.d: ../src/Pong.cpp /home/randy/Desktop/CS381/Pong/inc/Pong.h \
 
 /usr/local/include/OGRE/OgreWindowEventUtilities.h:
 
-/home/randy/Desktop/CS381/Pong/inc/inputMgr.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/inputMgr.h:
 
 /usr/include/ois/OISEvents.h:
 
@@ -540,17 +541,17 @@ src/Pong.d: ../src/Pong.cpp /home/randy/Desktop/CS381/Pong/inc/Pong.h \
 
 /usr/include/ois/OISMouse.h:
 
-/home/randy/Desktop/CS381/Pong/inc/EntityMgr.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/EntityMgr.h:
 
 /usr/local/include/OGRE/OgreVector3.h:
 
-/home/randy/Desktop/CS381/Pong/inc/Entity381.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/Entity381.h:
 
-/home/randy/Desktop/CS381/Pong/inc/Types.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/Types.h:
 
-/home/randy/Desktop/CS381/Pong/inc/gameMgr.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/gameMgr.h:
 
-/home/randy/Desktop/CS381/Pong/inc/UiMgr.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/UiMgr.h:
 
 /usr/local/include/OGRE/SdkTrays.h:
 

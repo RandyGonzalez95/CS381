@@ -74,7 +74,7 @@ void InputMgr::tick(float dt)
 		engine->stop();
 
 	UpdateCamera(dt);
-	//UpdateSelection(dt);
+	MovePaddle(dt);
 
 }
 
@@ -128,7 +128,8 @@ bool InputMgr::mouseReleased(const OIS::MouseEvent &arg, OIS::MouseButtonID id){
 }
 
 // Game specific input handling
-void InputMgr::UpdateCamera(float dt){
+void InputMgr::UpdateCamera(float dt)
+{
 	float move = 100.0f;
 	float rotate = 0.1f;
 
@@ -163,6 +164,39 @@ void InputMgr::UpdateCamera(float dt){
 	  }
 
 	  engine->gfxMgr->cameraNode->translate(dirVec * dt, Ogre::Node::TS_LOCAL);
+
+}
+
+void InputMgr::MovePaddle(float dt)
+{
+	 Ogre::Vector3 dirVec = Ogre::Vector3::ZERO;
+	 Ogre::Vector3 dirVec2 = Ogre::Vector3::ZERO;
+	 float move = 150.0f, move2 = 150.0f;
+
+	// Move Right Paddle
+	if(keyboard->isKeyDown(OIS::KC_I))
+	{
+		dirVec.y += move;
+	}
+	if(keyboard->isKeyDown(OIS::KC_K))
+	{
+		dirVec.y -= move;
+	}
+
+	//engine->entityMgr->entities[0]->position = Ogre::Vector3(0, dirVec.y, 0);
+	engine->entityMgr->entities[0]->ogreSceneNode->translate(dirVec *dt, Ogre::Node::TS_LOCAL);
+
+	// Move Left Paddle
+	if(keyboard->isKeyDown(OIS::KC_UP))
+	{
+		dirVec2.y += move2;
+	}
+	if(keyboard->isKeyDown(OIS::KC_DOWN))
+	{
+		dirVec2.y -= move2;
+	}
+
+	engine->entityMgr->entities[1]->ogreSceneNode->translate(dirVec2 *dt, Ogre::Node::TS_LOCAL);
 
 }
 

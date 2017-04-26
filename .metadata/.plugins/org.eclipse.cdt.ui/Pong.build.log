@@ -1,15 +1,15 @@
-16:54:33 **** Incremental Build of configuration Debug for project Pong ****
+11:39:18 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-Building file: ../src/UI.cpp
+Building file: ../src/inputMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++11 -I"/home/randygonzalez/Desktop/CS381/Pong/include" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -I/usr/local/include/OGRE -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/UI.d" -MT"src/UI.d" -o "src/UI.o" "../src/UI.cpp"
-Finished building: ../src/UI.cpp
+g++ -I/usr/local/include/OGRE -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
  
 Building target: Pong
 Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Command.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/UI.o ./src/UnitAI.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o ./src/pong.o   -lOIS -lboost_system -lOgreMain -lOgreOverlay
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreOverlay -lOIS -lboost_system
 Finished building target: Pong
  
 
-16:54:44 Build Finished (took 11s.194ms)
+11:39:30 Build Finished (took 11s.186ms)
 
