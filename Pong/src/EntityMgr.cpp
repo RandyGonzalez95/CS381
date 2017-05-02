@@ -63,12 +63,15 @@ Entity381* EntityMgr::CreateEntity(EntityType entityType, Ogre::Vector3 position
 
 	switch(entityType)
 	{
-	case EntityType::Ball:
-		ent = new Ball(position);
-		break;
-	case EntityType::Paddle:
-		ent = new Paddle(position);
-		break;
+		case EntityType::Ball:
+			ent = new Ball(position);
+			break;
+		case EntityType::Paddle:
+			ent = new Paddle(position);
+			break;
+		case EntityType::Wall:
+			ent = new Wall(position);
+			break;
 	}
 
 	CreateOgreEntityAndNode(ent);

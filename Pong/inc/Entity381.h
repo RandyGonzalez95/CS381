@@ -23,7 +23,7 @@ public:
 
 	Entity381(EntityType type, Ogre::Vector3 pos);
 	virtual ~Entity381();
-	void Tick(float dt); // loops through list of aspects
+	virtual void Tick(float dt); // loops through list of aspects
 	void DefaultInit();
 	std::vector<Aspect*> aspects;
 
@@ -62,8 +62,12 @@ public:
 	Ball(Ogre::Vector3 pos);
 	~Ball();
 
-	void MoveBall();
+	void Tick(float dt);
+	void MoveBall(float dt);
 	void UpdateSpeed();
+	void hitPaddle();
+
+	Ogre::Vector3 direction;
 
 };
 
@@ -74,6 +78,14 @@ public:
 	~Paddle();
 
 	void MovePaddle(Ogre::Vector3 dir);
+
+};
+
+class Wall : public Entity381
+{
+public:
+	Wall(Ogre::Vector3 pos);
+	~Wall();
 
 };
 

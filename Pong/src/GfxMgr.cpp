@@ -67,7 +67,7 @@ void GfxMgr::createCamera()
 	cameraNode = ogreSceneManager->getRootSceneNode()->createChildSceneNode();
 	pitchNode = cameraNode->createChildSceneNode();
 	pitchNode->attachObject(ogreCamera);
-	cameraNode->setPosition(400, 100, 800);
+	cameraNode->setPosition(400, 100, 1500);
 	ogreCamera->lookAt(400, 0, 0);
 
 }

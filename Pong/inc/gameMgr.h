@@ -18,6 +18,7 @@ private:
 	void createEnts();
 	void createSky();
 	void createGround();
+	void createWall();
 
 
 public:
@@ -27,6 +28,7 @@ public:
 	void tick(float dt);
 	void loadLevel();
 	void stop();
+
 
 };
 

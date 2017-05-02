@@ -122,13 +122,17 @@ void UiMgr::buttonHit(OgreBites::Button *b)
         mTrayMgr->showLogo(OgreBites::TL_BOTTOMRIGHT);
         mTrayMgr->showCursor();
 
-        Ogre::DisplayString helpText = "Randy: \n\n";
-        helpText.append("Nirmit: \n");
+        Ogre::DisplayString helpText = "Randy: 0\n";
+        Ogre::DisplayString helpText2 = "Nirmit: 0\n";
+
 
 
         //mTrayMgr->createLabel(OgreBites::TL_BOTTOMLEFT, "Label", "", 200);
-        OgreBites::TextBox *text = mTrayMgr->createTextBox(OgreBites::TL_BOTTOMLEFT, "text", "Player Stats", 300, 150);
+        OgreBites::TextBox *text = mTrayMgr->createTextBox(OgreBites::TL_TOPLEFT, "text", "Player 1", 150, 75);
         text->setText(helpText);
+
+        OgreBites::TextBox *text2 = mTrayMgr->createTextBox(OgreBites::TL_TOPRIGHT, "text2", "Player 2", 150, 75);
+        text2->setText(helpText2);
 
 
         /*mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label2", "Caption", 200);

@@ -32,8 +32,9 @@ void GameMgr::loadLevel()
 	light->setPosition(20.0, 80.0, 50.0);
 
 	createEnts();
-	createSky();
-	createGround();
+	createWall();
+	//createSky();
+	//createGround();
 }
 
 void GameMgr::stop()
@@ -60,7 +61,12 @@ void GameMgr::createEnts()
 	// Entity[2] ball
 	engine->entityMgr->CreateEntity(EntityType::Ball, Ogre::Vector3(400, 0, 0));
 
-	engine->entityMgr->entities[2]->ogreSceneNode->setScale(0.5, 0.5, 0.5);
+
+	engine->entityMgr->entities[0]->ogreSceneNode->setScale(0.5, 2.5, 1);
+	engine->entityMgr->entities[1]->ogreSceneNode->setScale(0.5, 2.5, 1);
+
+
+	engine->entityMgr->entities[2]->ogreSceneNode->setScale(0.2, 0.2, 0.2);
 
 }
 
@@ -92,6 +98,31 @@ void GameMgr::createSky()
 {
 	engine->gfxMgr->ogreSceneManager->setSkyBox(true, "Examples/MorningSkyBox");
 
+}
+
+void GameMgr::createWall()
+{
+	Entity381 * ent;
+
+	// Entity[3] Top Wall
+	ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(400, 400, 50));
+	ent->ogreEntity->setMaterialName("Examples/Rockwall");
+	engine->entityMgr->entities[3]->ogreSceneNode->setScale(12, 0.5, 1);
+
+	// Entity[4] Bottom Wall
+	ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(400, -400, 50));
+	ent->ogreEntity->setMaterialName("Examples/Rockwall");
+	engine->entityMgr->entities[4]->ogreSceneNode->setScale(12, 0.5, 1);
+
+	// Entity[5] Left Wall
+	ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(-250, 0, 0));
+	ent->ogreEntity->setMaterialName("Examples/Rockwall");
+	engine->entityMgr->entities[5]->ogreSceneNode->setScale(0.5, 9, 1);
+
+	// Entity[6] Right Wall
+	ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(1050, 0, 0));
+	ent->ogreEntity->setMaterialName("Examples/Rockwall");
+	engine->entityMgr->entities[6]->ogreSceneNode->setScale(0.5, 9, 1);
 }
 
 

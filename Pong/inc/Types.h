@@ -10,7 +10,8 @@
 
 enum class EntityType {
 	Ball,
-	Paddle
+	Paddle,
+	Wall
 };
 
 #endif /* TYPES_H_ */

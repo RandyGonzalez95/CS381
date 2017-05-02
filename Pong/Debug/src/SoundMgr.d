@@ -1,5 +1,5 @@
 src/SoundMgr.d: ../src/SoundMgr.cpp \
- /home/nirmitp/workspace/CS381/Pong/inc/SoundMgr.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/SoundMgr.h \
  /usr/local/include/OGRE/OgreVector3.h \
  /usr/local/include/OGRE/OgrePrerequisites.h \
  /usr/local/include/OGRE/OgrePlatform.h \
@@ -17,9 +17,9 @@ src/SoundMgr.d: ../src/SoundMgr.cpp \
  /usr/local/include/OGRE/OgreQuaternion.h \
  /usr/local/include/OGRE/OgreFrameListener.h /usr/include/audio/wave.h \
  /usr/include/AL/al.h /usr/include/AL/alc.h \
- /home/nirmitp/workspace/CS381/Pong/inc/mgr.h \
- /home/nirmitp/workspace/CS381/Pong/inc/engine.h \
- /home/nirmitp/workspace/CS381/Pong/inc/GfxMgr.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/mgr.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/engine.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/GfxMgr.h \
  /usr/local/include/OGRE/OgreRoot.h \
  /usr/local/include/OGRE/OgreSingleton.h \
  /usr/local/include/OGRE/OgreString.h \
@@ -140,17 +140,17 @@ src/SoundMgr.d: ../src/SoundMgr.cpp \
  /usr/local/include/OGRE/OgreHardwareUniformBuffer.h \
  /usr/local/include/OGRE/OgreRenderToVertexBuffer.h \
  /usr/local/include/OGRE/OgreWindowEventUtilities.h \
- /home/nirmitp/workspace/CS381/Pong/inc/inputMgr.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/inputMgr.h \
  /usr/include/ois/OISEvents.h /usr/include/ois/OISPrereqs.h \
  /usr/include/ois/OISConfig.h /usr/include/ois/OISInputManager.h \
  /usr/include/ois/OISKeyboard.h /usr/include/ois/OISObject.h \
  /usr/include/ois/OISInterface.h /usr/include/ois/OISEvents.h \
  /usr/include/ois/OISMouse.h \
- /home/nirmitp/workspace/CS381/Pong/inc/EntityMgr.h \
- /home/nirmitp/workspace/CS381/Pong/inc/Entity381.h \
- /home/nirmitp/workspace/CS381/Pong/inc/Types.h \
- /home/nirmitp/workspace/CS381/Pong/inc/gameMgr.h \
- /home/nirmitp/workspace/CS381/Pong/inc/UiMgr.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/EntityMgr.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/Entity381.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/Types.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/gameMgr.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/UiMgr.h \
  /usr/local/include/OGRE/SdkTrays.h /usr/local/include/OGRE/Ogre.h \
  /usr/local/include/OGRE/OgreArchiveManager.h \
  /usr/local/include/OGRE/OgreBillboardChain.h \
@@ -247,7 +247,7 @@ src/SoundMgr.d: ../src/SoundMgr.cpp \
  /usr/include/ois/OISException.h /usr/include/ois/OISEffect.h \
  /usr/include/ois/OISForceFeedback.h
 
-/home/nirmitp/workspace/CS381/Pong/inc/SoundMgr.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/SoundMgr.h:
 
 /usr/local/include/OGRE/OgreVector3.h:
 
@@ -287,11 +287,11 @@ src/SoundMgr.d: ../src/SoundMgr.cpp \
 
 /usr/include/AL/alc.h:
 
-/home/nirmitp/workspace/CS381/Pong/inc/mgr.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/mgr.h:
 
-/home/nirmitp/workspace/CS381/Pong/inc/engine.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/engine.h:
 
-/home/nirmitp/workspace/CS381/Pong/inc/GfxMgr.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/GfxMgr.h:
 
 /usr/local/include/OGRE/OgreRoot.h:
 
@@ -537,7 +537,7 @@ src/SoundMgr.d: ../src/SoundMgr.cpp \
 
 /usr/local/include/OGRE/OgreWindowEventUtilities.h:
 
-/home/nirmitp/workspace/CS381/Pong/inc/inputMgr.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/inputMgr.h:
 
 /usr/include/ois/OISEvents.h:
 
@@ -557,15 +557,15 @@ src/SoundMgr.d: ../src/SoundMgr.cpp \
 
 /usr/include/ois/OISMouse.h:
 
-/home/nirmitp/workspace/CS381/Pong/inc/EntityMgr.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/EntityMgr.h:
 
-/home/nirmitp/workspace/CS381/Pong/inc/Entity381.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/Entity381.h:
 
-/home/nirmitp/workspace/CS381/Pong/inc/Types.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/Types.h:
 
-/home/nirmitp/workspace/CS381/Pong/inc/gameMgr.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/gameMgr.h:
 
-/home/nirmitp/workspace/CS381/Pong/inc/UiMgr.h:
+/home/randygonzalez/Desktop/CS381/Pong/inc/UiMgr.h:
 
 /usr/local/include/OGRE/SdkTrays.h:
 
