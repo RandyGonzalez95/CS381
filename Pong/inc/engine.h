@@ -13,6 +13,7 @@
 #include <EntityMgr.h>
 #include <gameMgr.h>
 #include <UiMgr.h>
+#include <SoundMgr.h>
 
 class Engine
 {
@@ -27,6 +28,7 @@ public:
 	InputMgr*       inputMgr;
 	GameMgr*        gameMgr;
 	UiMgr*			uiMgr;
+	OgreSND::SoundMgr*		soundMgr;
 	//SelectionMgr* selectionMgr;
 	//ControlMgr*   controlMgr;
 

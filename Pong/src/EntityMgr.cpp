@@ -59,7 +59,7 @@ void EntityMgr::CreateOgreEntityAndNode(Entity381 *ent)
 Entity381* EntityMgr::CreateEntity(EntityType entityType, Ogre::Vector3 position)
 {
 
-	Entity381 *ent = 0;// = new Entity381(entityType, position, heading);
+	Entity381 *ent = 0;
 
 	switch(entityType)
 	{

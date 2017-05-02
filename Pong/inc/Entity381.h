@@ -24,7 +24,7 @@ public:
 	Entity381(EntityType type, Ogre::Vector3 pos);
 	virtual ~Entity381();
 	void Tick(float dt); // loops through list of aspects
-
+	void DefaultInit();
 	std::vector<Aspect*> aspects;
 
 	// Ogre Stuff
@@ -42,6 +42,18 @@ public:
 	// Static
 	Ogre::Vector3 position;
 	float speed;
+
+	Ogre::Vector3 pos;
+
+	//selection
+	bool isSelected;
+	bool didSelectSoundPlay;
+
+	//sound
+	std::string soundFile;
+	bool playSound;
+	unsigned int audioId;
+
 };
 
 class Ball : public Entity381

@@ -150,7 +150,7 @@ void InputMgr::UpdateCamera(float dt)
 	  if (keyboard->isKeyDown(OIS::KC_A))
 	  {
 	    if (keyboard->isKeyDown(OIS::KC_LSHIFT))
-		      engine->gfxMgr->cameraNode->yaw(Ogre::Degree(5 * rotate));
+		      engine->gfxMgr->cameraNode->yaw(Ogre::Degree(0.5 * rotate));
 	    else
 	      dirVec.x -= move;
 	  }
@@ -158,7 +158,7 @@ void InputMgr::UpdateCamera(float dt)
 	  if (keyboard->isKeyDown(OIS::KC_D))
 	  {
 	    if (keyboard->isKeyDown(OIS::KC_LSHIFT))
-	      engine->gfxMgr->cameraNode->yaw(Ogre::Degree(-5 * rotate));
+	      engine->gfxMgr->cameraNode->yaw(Ogre::Degree(-0.5 * rotate));
 	    else
 	      dirVec.x += move;
 	  }

@@ -1,8 +1,8 @@
 src/gameMgr.d: ../src/gameMgr.cpp \
- /home/randygonzalez/Desktop/CS381/Pong/inc/gameMgr.h \
- /home/randygonzalez/Desktop/CS381/Pong/inc/mgr.h \
- /home/randygonzalez/Desktop/CS381/Pong/inc/engine.h \
- /home/randygonzalez/Desktop/CS381/Pong/inc/GfxMgr.h \
+ /home/nirmitp/workspace/CS381/Pong/inc/gameMgr.h \
+ /home/nirmitp/workspace/CS381/Pong/inc/mgr.h \
+ /home/nirmitp/workspace/CS381/Pong/inc/engine.h \
+ /home/nirmitp/workspace/CS381/Pong/inc/GfxMgr.h \
  /usr/local/include/OGRE/OgreRoot.h \
  /usr/local/include/OGRE/OgrePrerequisites.h \
  /usr/local/include/OGRE/OgrePlatform.h \
@@ -135,17 +135,17 @@ src/gameMgr.d: ../src/gameMgr.cpp \
  /usr/local/include/OGRE/OgreHardwareUniformBuffer.h \
  /usr/local/include/OGRE/OgreRenderToVertexBuffer.h \
  /usr/local/include/OGRE/OgreWindowEventUtilities.h \
- /home/randygonzalez/Desktop/CS381/Pong/inc/inputMgr.h \
+ /home/nirmitp/workspace/CS381/Pong/inc/inputMgr.h \
  /usr/include/ois/OISEvents.h /usr/include/ois/OISPrereqs.h \
  /usr/include/ois/OISConfig.h /usr/include/ois/OISInputManager.h \
  /usr/include/ois/OISKeyboard.h /usr/include/ois/OISObject.h \
  /usr/include/ois/OISInterface.h /usr/include/ois/OISEvents.h \
  /usr/include/ois/OISMouse.h \
- /home/randygonzalez/Desktop/CS381/Pong/inc/EntityMgr.h \
+ /home/nirmitp/workspace/CS381/Pong/inc/EntityMgr.h \
  /usr/local/include/OGRE/OgreVector3.h \
- /home/randygonzalez/Desktop/CS381/Pong/inc/Entity381.h \
- /home/randygonzalez/Desktop/CS381/Pong/inc/Types.h \
- /home/randygonzalez/Desktop/CS381/Pong/inc/UiMgr.h \
+ /home/nirmitp/workspace/CS381/Pong/inc/Entity381.h \
+ /home/nirmitp/workspace/CS381/Pong/inc/Types.h \
+ /home/nirmitp/workspace/CS381/Pong/inc/UiMgr.h \
  /usr/local/include/OGRE/SdkTrays.h /usr/local/include/OGRE/Ogre.h \
  /usr/local/include/OGRE/OgreArchiveManager.h \
  /usr/local/include/OGRE/OgreBillboardChain.h \
@@ -241,15 +241,19 @@ src/gameMgr.d: ../src/gameMgr.cpp \
  /usr/include/ois/OISInputManager.h /usr/include/ois/OISFactoryCreator.h \
  /usr/include/ois/OISException.h /usr/include/ois/OISEffect.h \
  /usr/include/ois/OISForceFeedback.h \
+ /home/nirmitp/workspace/CS381/Pong/inc/SoundMgr.h \
+ /usr/local/include/OGRE/OgreQuaternion.h \
+ /usr/local/include/OGRE/OgreFrameListener.h /usr/include/audio/wave.h \
+ /usr/include/AL/al.h /usr/include/AL/alc.h \
  /usr/local/include/OGRE/OgreMeshManager.h
 
-/home/randygonzalez/Desktop/CS381/Pong/inc/gameMgr.h:
+/home/nirmitp/workspace/CS381/Pong/inc/gameMgr.h:
 
-/home/randygonzalez/Desktop/CS381/Pong/inc/mgr.h:
+/home/nirmitp/workspace/CS381/Pong/inc/mgr.h:
 
-/home/randygonzalez/Desktop/CS381/Pong/inc/engine.h:
+/home/nirmitp/workspace/CS381/Pong/inc/engine.h:
 
-/home/randygonzalez/Desktop/CS381/Pong/inc/GfxMgr.h:
+/home/nirmitp/workspace/CS381/Pong/inc/GfxMgr.h:
 
 /usr/local/include/OGRE/OgreRoot.h:
 
@@ -521,7 +525,7 @@ src/gameMgr.d: ../src/gameMgr.cpp \
 
 /usr/local/include/OGRE/OgreWindowEventUtilities.h:
 
-/home/randygonzalez/Desktop/CS381/Pong/inc/inputMgr.h:
+/home/nirmitp/workspace/CS381/Pong/inc/inputMgr.h:
 
 /usr/include/ois/OISEvents.h:
 
@@ -541,15 +545,15 @@ src/gameMgr.d: ../src/gameMgr.cpp \
 
 /usr/include/ois/OISMouse.h:
 
-/home/randygonzalez/Desktop/CS381/Pong/inc/EntityMgr.h:
+/home/nirmitp/workspace/CS381/Pong/inc/EntityMgr.h:
 
 /usr/local/include/OGRE/OgreVector3.h:
 
-/home/randygonzalez/Desktop/CS381/Pong/inc/Entity381.h:
+/home/nirmitp/workspace/CS381/Pong/inc/Entity381.h:
 
-/home/randygonzalez/Desktop/CS381/Pong/inc/Types.h:
+/home/nirmitp/workspace/CS381/Pong/inc/Types.h:
 
-/home/randygonzalez/Desktop/CS381/Pong/inc/UiMgr.h:
+/home/nirmitp/workspace/CS381/Pong/inc/UiMgr.h:
 
 /usr/local/include/OGRE/SdkTrays.h:
 
@@ -752,5 +756,17 @@ src/gameMgr.d: ../src/gameMgr.cpp \
 /usr/include/ois/OISEffect.h:
 
 /usr/include/ois/OISForceFeedback.h:
+
+/home/nirmitp/workspace/CS381/Pong/inc/SoundMgr.h:
+
+/usr/local/include/OGRE/OgreQuaternion.h:
+
+/usr/local/include/OGRE/OgreFrameListener.h:
+
+/usr/include/audio/wave.h:
+
+/usr/include/AL/al.h:
+
+/usr/include/AL/alc.h:
 
 /usr/local/include/OGRE/OgreMeshManager.h:

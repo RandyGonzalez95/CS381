@@ -18,7 +18,7 @@ public:
 	Mgr(Engine *eng);
 	virtual ~Mgr();
 
-	virtual void tick(float dt) = 0 ;
+	virtual void tick(float dt) = 0;
 	virtual void init() = 0;
 	virtual void loadLevel() = 0;
 	virtual void stop() = 0;

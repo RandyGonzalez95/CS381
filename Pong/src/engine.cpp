@@ -16,7 +16,6 @@ Engine::Engine()
 	gameMgr = 0;
 	uiMgr = 0;
 	keepRunning = true;
-
 }
 
 Engine::~Engine()
@@ -36,6 +35,7 @@ void Engine::init(){
 	entityMgr = new EntityMgr(this);
 	gameMgr = new GameMgr(this);
 	uiMgr = new UiMgr(this);
+	soundMgr = new OgreSND::SoundMgr(this);
 
 // initialize
 	gfxMgr->init();
@@ -43,6 +43,7 @@ void Engine::init(){
 	entityMgr->init();
 	gameMgr->init();
 	uiMgr->init();
+	soundMgr->init();
 
 // load level to play
 	gfxMgr->loadLevel();

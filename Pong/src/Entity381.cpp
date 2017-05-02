@@ -22,11 +22,21 @@ Entity381::Entity381(EntityType type, Ogre::Vector3 pos) : ogreSceneNode(0), ogr
 	this->aspects.push_back(ai);
 	speed = 10;
 
+this->playSound = false;
+
+this->soundFile = "Boat-Sound.wav";
+this->audioId = 0;
+DefaultInit();
 }
 
 Entity381::~Entity381()
 {
 	this->aspects.clear();
+}
+
+void Entity381::DefaultInit(){
+	this->soundFile = "Boat-Sound.wav";
+	this->audioId = 0;
 }
 
 void Entity381::Tick(float dt)
