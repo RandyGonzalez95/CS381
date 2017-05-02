@@ -1,9 +1,7 @@
 src/gameMgr.d: ../src/gameMgr.cpp \
  /home/randygonzalez/Desktop/CS381/Pong/inc/gameMgr.h \
  /home/randygonzalez/Desktop/CS381/Pong/inc/mgr.h \
- /home/randygonzalez/Desktop/CS381/Pong/inc/engine.h \
- /home/randygonzalez/Desktop/CS381/Pong/inc/GfxMgr.h \
- /usr/local/include/OGRE/OgreRoot.h \
+ /usr/local/include/OGRE/OgreVector3.h \
  /usr/local/include/OGRE/OgrePrerequisites.h \
  /usr/local/include/OGRE/OgrePlatform.h \
  /usr/local/include/OGRE/OgreConfig.h \
@@ -15,6 +13,11 @@ src/gameMgr.d: ../src/gameMgr.cpp \
  /usr/local/include/OGRE/OgreHeaderSuffix.h \
  /usr/local/include/OGRE/OgreMemorySTLAllocator.h \
  /usr/local/include/OGRE/OgreMemoryNedPooling.h \
+ /usr/local/include/OGRE/OgreMath.h \
+ /usr/local/include/OGRE/OgreQuaternion.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/engine.h \
+ /home/randygonzalez/Desktop/CS381/Pong/inc/GfxMgr.h \
+ /usr/local/include/OGRE/OgreRoot.h \
  /usr/local/include/OGRE/OgreSingleton.h \
  /usr/local/include/OGRE/OgreString.h \
  /usr/local/include/OGRE/OgreSceneManagerEnumerator.h \
@@ -22,8 +25,7 @@ src/gameMgr.d: ../src/gameMgr.cpp \
  /usr/local/include/OGRE/OgreSceneNode.h \
  /usr/local/include/OGRE/OgreNode.h /usr/local/include/OGRE/OgreCommon.h \
  /usr/local/include/OGRE/OgreMatrix3.h \
- /usr/local/include/OGRE/OgreVector3.h /usr/local/include/OGRE/OgreMath.h \
- /usr/local/include/OGRE/OgreQuaternion.h \
+ /usr/local/include/OGRE/OgreVector3.h \
  /usr/local/include/OGRE/OgreMatrix4.h \
  /usr/local/include/OGRE/OgreVector4.h \
  /usr/local/include/OGRE/OgrePlane.h \
@@ -142,7 +144,6 @@ src/gameMgr.d: ../src/gameMgr.cpp \
  /usr/include/ois/OISInterface.h /usr/include/ois/OISEvents.h \
  /usr/include/ois/OISMouse.h \
  /home/randygonzalez/Desktop/CS381/Pong/inc/EntityMgr.h \
- /usr/local/include/OGRE/OgreVector3.h \
  /home/randygonzalez/Desktop/CS381/Pong/inc/Entity381.h \
  /home/randygonzalez/Desktop/CS381/Pong/inc/Types.h \
  /home/randygonzalez/Desktop/CS381/Pong/inc/UiMgr.h \
@@ -251,11 +252,7 @@ src/gameMgr.d: ../src/gameMgr.cpp \
 
 /home/randygonzalez/Desktop/CS381/Pong/inc/mgr.h:
 
-/home/randygonzalez/Desktop/CS381/Pong/inc/engine.h:
-
-/home/randygonzalez/Desktop/CS381/Pong/inc/GfxMgr.h:
-
-/usr/local/include/OGRE/OgreRoot.h:
+/usr/local/include/OGRE/OgreVector3.h:
 
 /usr/local/include/OGRE/OgrePrerequisites.h:
 
@@ -279,6 +276,16 @@ src/gameMgr.d: ../src/gameMgr.cpp \
 
 /usr/local/include/OGRE/OgreMemoryNedPooling.h:
 
+/usr/local/include/OGRE/OgreMath.h:
+
+/usr/local/include/OGRE/OgreQuaternion.h:
+
+/home/randygonzalez/Desktop/CS381/Pong/inc/engine.h:
+
+/home/randygonzalez/Desktop/CS381/Pong/inc/GfxMgr.h:
+
+/usr/local/include/OGRE/OgreRoot.h:
+
 /usr/local/include/OGRE/OgreSingleton.h:
 
 /usr/local/include/OGRE/OgreString.h:
@@ -296,10 +303,6 @@ src/gameMgr.d: ../src/gameMgr.cpp \
 /usr/local/include/OGRE/OgreMatrix3.h:
 
 /usr/local/include/OGRE/OgreVector3.h:
-
-/usr/local/include/OGRE/OgreMath.h:
-
-/usr/local/include/OGRE/OgreQuaternion.h:
 
 /usr/local/include/OGRE/OgreMatrix4.h:
 
@@ -546,8 +549,6 @@ src/gameMgr.d: ../src/gameMgr.cpp \
 /usr/include/ois/OISMouse.h:
 
 /home/randygonzalez/Desktop/CS381/Pong/inc/EntityMgr.h:
-
-/usr/local/include/OGRE/OgreVector3.h:
 
 /home/randygonzalez/Desktop/CS381/Pong/inc/Entity381.h:
 

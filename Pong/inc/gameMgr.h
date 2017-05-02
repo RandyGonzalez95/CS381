@@ -9,6 +9,7 @@
 #define GAMEMGR_H_
 
 #include <mgr.h>
+#include <OgreVector3.h>
 
 
 class GameMgr : public Mgr
@@ -19,6 +20,10 @@ private:
 	void createSky();
 	void createGround();
 	void createWall();
+	void hitPaddle(float dt);
+
+	Ogre::Vector3 ball, leftPaddle, rightPaddle; //position of all objects
+	Ogre::Vector3 direction;
 
 
 public:

@@ -44,6 +44,7 @@ public:
 	float speed;
 
 	Ogre::Vector3 pos;
+	Ogre::Vector3 direction;
 
 	//selection
 	bool isSelected;
@@ -65,9 +66,7 @@ public:
 	void Tick(float dt);
 	void MoveBall(float dt);
 	void UpdateSpeed();
-	void hitPaddle();
 
-	Ogre::Vector3 direction;
 
 };
 

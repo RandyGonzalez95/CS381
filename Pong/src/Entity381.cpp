@@ -93,7 +93,6 @@ void Ball::MoveBall(float dt)
 		ogreSceneNode->setPosition(pos.x, -360, pos.z);
 		direction *= Ogre::Vector3(1, -1, 1 );
 	}
-	// Check Right Side
 
 }
 
