@@ -51,6 +51,7 @@ void Engine::init(){
 	entityMgr->loadLevel();
 	gameMgr->loadLevel();
 	uiMgr->loadLevel();
+	soundMgr->loadLevel();
 }
 
 void Engine::tickAll(float dt)
@@ -60,6 +61,7 @@ void Engine::tickAll(float dt)
 	entityMgr->tick(dt);
 	gameMgr->tick(dt);
 	uiMgr->tick(dt);
+
 }
 
 void Engine::shutdown()
@@ -69,6 +71,7 @@ void Engine::shutdown()
 	entityMgr->stop();
 	gameMgr->stop();
 	uiMgr->stop();
+	soundMgr->stop();
 }
 void Engine::run()
 {

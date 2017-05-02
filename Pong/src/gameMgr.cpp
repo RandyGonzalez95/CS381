@@ -44,7 +44,7 @@ void GameMgr::stop()
 
 void GameMgr::tick(float dt)
 {
-	hitPaddle(dt);
+	hitPaddle();
 }
 
 void GameMgr::createEnts()
@@ -69,38 +69,39 @@ void GameMgr::createEnts()
 	engine->entityMgr->entities[2]->ogreSceneNode->setScale(0.2, 0.2, 0.2);
 
 
+
+
+
+}
+
+void GameMgr::hitPaddle()
+{
 	// Grab Positions of all entities
 	leftPaddle = engine->entityMgr->entities[0]->ogreSceneNode->getPosition();
 	rightPaddle = engine->entityMgr->entities[1]->ogreSceneNode->getPosition();
 	ball = engine->entityMgr->entities[2]->ogreSceneNode->getPosition();
 
-	direction = engine->entityMgr->entities[2]->direction;
-
-}
-
-void GameMgr::hitPaddle(float dt)
-{
-	//engine->entityMgr->entities[2]->ogreSceneNode->translate( (direction*(engine->entityMgr->entities[2]->speed*dt)));
-
 
 	// Left
-	if((ball.x - 10) < (leftPaddle.x + 5))
+	if((ball.x - 20) < (leftPaddle.x + 30))
 	{
-		if( ((ball.y -10) < (leftPaddle.y + 20)) && ((ball.y + 10) > (leftPaddle.y - 20)) )
+		if( ((ball.y -10) < (leftPaddle.y +95)) && ((ball.y +10) > (leftPaddle.y -95)) )
 		{
-			direction *= Ogre::Vector3(-1, 1, 1 );
-			engine->entityMgr->entities[2]->ogreSceneNode->setPosition((leftPaddle.x + 10), ball.y, ball.z);
+
+			engine->entityMgr->entities[2]->direction *= Ogre::Vector3(-1, 1, 1 );
+			engine->entityMgr->entities[2]->ogreSceneNode->setPosition((leftPaddle.x + 50), ball.y, ball.z);
 		}
 
 	}
 
 	// Right
-	else if((ball.x + 10) > (rightPaddle.x - 5))
+	else if((ball.x + 20) > (rightPaddle.x - 30))
 	{
-		if( ((ball.y +10) < (rightPaddle.y - 20)) && ((ball.y - 10) > (rightPaddle.y + 20)) )
+
+		if( ((ball.y-10) < (rightPaddle.y + 95)) && ((ball.y+10) > (rightPaddle.y - 95)) )
 		{
-			direction *= Ogre::Vector3(-1, 1, 1 );
-			engine->entityMgr->entities[2]->ogreSceneNode->setPosition((rightPaddle.x - 10), ball.y, ball.z);
+			engine->entityMgr->entities[2]->direction *= Ogre::Vector3(-1, 1, 1 );
+			engine->entityMgr->entities[2]->ogreSceneNode->setPosition((rightPaddle.x - 50), ball.y, ball.z);
 		}
 
 	}

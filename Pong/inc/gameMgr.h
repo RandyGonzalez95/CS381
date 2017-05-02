@@ -20,10 +20,9 @@ private:
 	void createSky();
 	void createGround();
 	void createWall();
-	void hitPaddle(float dt);
+	void hitPaddle();
 
 	Ogre::Vector3 ball, leftPaddle, rightPaddle; //position of all objects
-	Ogre::Vector3 direction;
 
 
 public:

@@ -105,11 +105,11 @@ void InputMgr::windowClosed(Ogre::RenderWindow* rw){
 }
 
 bool InputMgr::keyPressed(const OIS::KeyEvent &arg) {
-	std::cout << "Key Pressed: " << arg.key << std::endl;
+	//std::cout << "Key Pressed: " << arg.key << std::endl;
 	return true;
 }
 bool InputMgr::keyReleased(const OIS::KeyEvent &arg){
-	std::cout << "Checking key release" << std::endl;
+	//std::cout << "Checking key release" << std::endl;
 
 	return true;
 }
@@ -118,7 +118,7 @@ bool InputMgr::mouseMoved(const OIS::MouseEvent &arg){
 	return true;
 }
 bool InputMgr::mousePressed(const OIS::MouseEvent &arg, OIS::MouseButtonID id) {
-	std::cout << "mouse clicked" << std::endl;
+	//std::cout << "mouse clicked" << std::endl;
     if (engine->uiMgr->mTrayMgr->injectMouseDown(arg, id)) return true;
 	return true;
 }
@@ -171,7 +171,7 @@ void InputMgr::MovePaddle(float dt)
 {
 	 Ogre::Vector3 dirVec = Ogre::Vector3::ZERO;
 	 Ogre::Vector3 dirVec2 = Ogre::Vector3::ZERO;
-	 float move = 150.0f, move2 = 150.0f;
+	 float move = 400.0f, move2 = 400.0f;
 
 	// Move Right Paddle
 	if(keyboard->isKeyDown(OIS::KC_I))

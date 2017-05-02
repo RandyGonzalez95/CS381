@@ -49,7 +49,7 @@ void Entity381::Tick(float dt)
 Ball::Ball(Ogre::Vector3 pos) : Entity381(EntityType::Ball, pos)
 {
 	this->meshfile = "sphere.mesh";
-	speed = 100;
+	speed = 600;
 	direction = Ogre::Vector3(1,-1,0);
 }
 

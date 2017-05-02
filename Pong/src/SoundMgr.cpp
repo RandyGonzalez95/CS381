@@ -100,7 +100,7 @@ void SoundMgr::initialize(void){
 
 	unsigned int sid;
         //background music
-	std::string filename = "data/watercraft/sounds/backgroundMusic.wav";
+	std::string filename = "data/watercraft/sounds/GOT.wav";
 	if (this->reserveAudio(filename, true, sid)){
 		std::cout << "background music loaded" << std::endl;
                 backgroundMusicSource = sourceInfo[sid].source;
@@ -218,11 +218,14 @@ void SoundMgr::crosslink(void){
 
 void SoundMgr::loadLevel(void){
 	syncListenerToCamera();
+
+	//resumeBackground();
+
 	//load sounds, bind buffers, start background music
 	//read sound files
 
 	//load background, start, loop
-	//loadStartBackground();
+	loadStartBackground();
 
 
 	return;
