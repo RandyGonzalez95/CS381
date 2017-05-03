@@ -55,6 +55,9 @@ public:
 	bool playSound;
 	unsigned int audioId;
 
+	// Score
+	int score1 = 0, score2 = 0;
+
 };
 
 class Ball : public Entity381

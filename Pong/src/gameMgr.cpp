@@ -45,6 +45,7 @@ void GameMgr::stop()
 void GameMgr::tick(float dt)
 {
 	hitPaddle();
+	moveAI(dt);
 }
 
 void GameMgr::createEnts()
@@ -67,6 +68,8 @@ void GameMgr::createEnts()
 
 
 	engine->entityMgr->entities[2]->ogreSceneNode->setScale(0.2, 0.2, 0.2);
+
+	dirVec = Ogre::Vector3::ZERO;
 
 
 
@@ -105,6 +108,17 @@ void GameMgr::hitPaddle()
 		}
 
 	}
+
+}
+
+void GameMgr::moveAI(float dt)
+{
+	ball = engine->entityMgr->entities[2]->ogreSceneNode->getPosition();
+
+	dirVec.y = ball.y;
+
+	// move AI
+	engine->entityMgr->entities[1]->ogreSceneNode->translate(dirVec *dt, Ogre::Node::TS_LOCAL);
 
 }
 

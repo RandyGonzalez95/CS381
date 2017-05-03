@@ -47,6 +47,12 @@ public:
 	OgreBites::InputContext mInputContext;
 	OgreBites::SdkTrayManager* mTrayMgr;
 	Ogre::OverlaySystem* mOverlaySystem;
+	OgreBites::TextBox *text, *text2;
+
+	bool playing = false;
+
+    Ogre::DisplayString helpText = "Randy: \n";
+    Ogre::DisplayString helpText2 = "Nirmit: \n";
 };
 
 #endif /* INC_UIMGR_H_ */

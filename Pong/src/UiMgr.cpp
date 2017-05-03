@@ -64,6 +64,23 @@ void UiMgr::loadLevel()
 void UiMgr::tick(float dt)
 {
 	mTrayMgr->refreshCursor();
+
+	std::string player1Score, player2Score;
+
+	if(playing)
+	{
+    	int score1 = engine->entityMgr->entities[2]->score1;
+    	int score2 = engine->entityMgr->entities[2]->score2;
+
+    	player1Score = std::to_string(score1);
+    	player2Score = std::to_string(score2);
+
+
+
+    	text->setText("Randy: " + player1Score);
+    	text2->setText("AI: " + player2Score);
+
+	}
 }
 
 void UiMgr::windowResized(Ogre::RenderWindow* rw)
@@ -84,7 +101,6 @@ void UiMgr::windowClosed(Ogre::RenderWindow* rw)
 
 bool UiMgr::keyPressed(const OIS::KeyEvent &arg)
 {
-	std::cout << "Key Pressed: " << arg.key << std::endl;
 	return true;
 }
 bool UiMgr::keyReleased(const OIS::KeyEvent &arg)
@@ -99,7 +115,6 @@ bool UiMgr::mouseMoved(const OIS::MouseEvent &arg)
 }
 bool UiMgr::mousePressed(const OIS::MouseEvent &arg, OIS::MouseButtonID id)
 {
-	std::cout << "mouse clicked" << std::endl;
 	if (mTrayMgr->injectMouseDown(arg, id)) return true;
 	    /* normal mouse processing here... */
 	return true;
@@ -115,6 +130,8 @@ void UiMgr::buttonHit(OgreBites::Button *b)
 {
     if(b->getName()=="StartButton")
     {
+
+
         //std::cout <<"Click Me!" << std::endl;
         mTrayMgr->hideBackdrop();
         mTrayMgr->destroyWidget(b->getName());
@@ -122,17 +139,18 @@ void UiMgr::buttonHit(OgreBites::Button *b)
         mTrayMgr->showLogo(OgreBites::TL_BOTTOMRIGHT);
         mTrayMgr->showCursor();
 
-        Ogre::DisplayString helpText = "Randy: 0\n";
-        Ogre::DisplayString helpText2 = "Nirmit: 0\n";
+
 
 
 
         //mTrayMgr->createLabel(OgreBites::TL_BOTTOMLEFT, "Label", "", 200);
-        OgreBites::TextBox *text = mTrayMgr->createTextBox(OgreBites::TL_TOPLEFT, "text", "Player 1", 150, 75);
-        text->setText(helpText);
+        text = mTrayMgr->createTextBox(OgreBites::TL_TOPLEFT, "text", "Player 1", 150, 75);
+        //text->setText(helpText);
 
-        OgreBites::TextBox *text2 = mTrayMgr->createTextBox(OgreBites::TL_TOPRIGHT, "text2", "Player 2", 150, 75);
-        text2->setText(helpText2);
+        text2 = mTrayMgr->createTextBox(OgreBites::TL_TOPRIGHT, "text2", "Player 2", 150, 75);
+        //text2->setText(helpText2);
+
+        playing = true;
 
 
         /*mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label2", "Caption", 200);

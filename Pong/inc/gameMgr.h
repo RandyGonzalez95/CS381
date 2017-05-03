@@ -21,8 +21,10 @@ private:
 	void createGround();
 	void createWall();
 	void hitPaddle();
+	void moveAI(float dt);
 
 	Ogre::Vector3 ball, leftPaddle, rightPaddle; //position of all objects
+	Ogre::Vector3 dirVec;
 
 
 public:
