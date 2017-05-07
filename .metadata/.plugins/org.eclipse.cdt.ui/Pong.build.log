@@ -1,9 +1,9 @@
-17:19:25 **** Incremental Build of configuration Debug for project Pong ****
+20:18:09 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-Building file: ../src/Entity381.cpp
+Building file: ../src/gameMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
-Finished building: ../src/Entity381.cpp
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
  
 Building target: Pong
 Invoking: GCC C++ Linker
@@ -11,5 +11,5 @@ g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGR
 Finished building target: Pong
  
 
-17:19:28 Build Finished (took 3s.68ms)
+20:18:17 Build Finished (took 8s.528ms)
 

@@ -51,70 +51,24 @@ Ball::Ball(Ogre::Vector3 pos) : Entity381(EntityType::Ball, pos)
 	this->meshfile = "sphere.mesh";
 	speed = 600;
 	direction = Ogre::Vector3(1,-1,0);
+
+	this->velocity = direction*speed;
 }
 
 Ball::~Ball(){}
 
-void Ball::Tick(float dt)
-{
-	MoveBall(dt);
-}
-
-
-void Ball::MoveBall(float dt)
-{
-	this->ogreSceneNode->translate( (direction*(speed*dt)));
-	this->pos = this->ogreSceneNode->getPosition();
-
-
-	// Check Left Side
-	if((pos.x - 40) <= -250)
-	{
-		// Reset the Ball
-		ogreSceneNode->setPosition(400, 0, 0);
-		direction *= Ogre::Vector3(-1, 1, 1 );
-
-		// Update Score
-		score2++;
-	}
-	// Check Right Wall
-	else if((pos.x + 40) >= 1050)
-	{
-		ogreSceneNode->setPosition(400, 0, 0);
-		direction *= Ogre::Vector3(-1, 1, 1 );
-
-		// Update Score
-		score1++;
-	}
-	//Check Top
-	else if((pos.y +40) >= 400 && direction.y > 0)
-	{
-		ogreSceneNode->setPosition(pos.x, 360, pos.z);
-		direction *= Ogre::Vector3(1, -1, 1 );
-
-	}
-	// Check Bottom
-	else if((pos.y -40 ) <= -400 && direction.y < 0)
-	{
-		ogreSceneNode->setPosition(pos.x, -360, pos.z);
-		direction *= Ogre::Vector3(1, -1, 1 );
-	}
-
-}
-
-void Ball::UpdateSpeed()
-{
-
-}
 
 Paddle::Paddle(Ogre::Vector3 pos): Entity381(EntityType::Paddle, pos)
 {
 	this->meshfile = "cube.mesh";
+	speed = 1;
+	direction = Ogre::Vector3::ZERO;
+	velocity = Ogre::Vector3::ZERO;
 }
 
 Paddle::~Paddle()
 {
-
+	//this->velocity = Ogre::Vector3::ZERO;
 }
 
 
@@ -125,6 +79,9 @@ void Paddle::MovePaddle(Ogre::Vector3 dir)
 
 Wall::Wall(Ogre::Vector3 pos) : Entity381(EntityType::Wall, pos){
 	this->meshfile = "cube.mesh";
+	speed = 0;
+	direction = Ogre::Vector3::ZERO;
+	velocity = Ogre::Vector3::ZERO;
 }
 Wall::~Wall(){}
 

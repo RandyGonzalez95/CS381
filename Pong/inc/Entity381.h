@@ -23,7 +23,7 @@ public:
 
 	Entity381(EntityType type, Ogre::Vector3 pos);
 	virtual ~Entity381();
-	virtual void Tick(float dt); // loops through list of aspects
+	void Tick(float dt); // loops through list of aspects
 	void DefaultInit();
 	std::vector<Aspect*> aspects;
 
@@ -40,6 +40,7 @@ public:
 	std::string meshfile;
 
 	// Static
+	Ogre::Vector3 velocity = Ogre::Vector3::ZERO;
 	Ogre::Vector3 position;
 	float speed;
 

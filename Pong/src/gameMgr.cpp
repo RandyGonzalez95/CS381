@@ -69,11 +69,8 @@ void GameMgr::createEnts()
 
 	engine->entityMgr->entities[2]->ogreSceneNode->setScale(0.2, 0.2, 0.2);
 
-	dirVec = Ogre::Vector3::ZERO;
-
-
-
-
+	dirVec = Ogre::Vector3(1,-1,0);
+	AIVector = Ogre::Vector3(1,-1,0);
 
 }
 
@@ -84,15 +81,40 @@ void GameMgr::hitPaddle()
 	rightPaddle = engine->entityMgr->entities[1]->ogreSceneNode->getPosition();
 	ball = engine->entityMgr->entities[2]->ogreSceneNode->getPosition();
 
+	//engine->entityMgr->entities[0]->ogreSceneNode->showBoundingBox(true);
+	//Ogre::MovableObject * paddle= engine->entityMgr->entities[0]->ogreSceneNode->getAttachedObject(0);
+	//std::cout<<paddle->getBoundingBox()<<std::endl;
+
+
+
+	//engine->entityMgr->entities[2]->velocity = dirVec * engine->entityMgr->entities[2]->speed;
+	moveBall();
 
 	// Left
 	if((ball.x - 20) < (leftPaddle.x + 30))
 	{
-		if( ((ball.y -10) < (leftPaddle.y +95)) && ((ball.y +10) > (leftPaddle.y -95)) )
+		if( ((ball.y -10) < (leftPaddle.y +100)) && ((ball.y +10) > (leftPaddle.y -100)) )
 		{
+			// Find the hit factor of the ball
+			/*y = bounceBall(ball, leftPaddle, 190);
 
+			dirVec = Ogre::Vector3(1, y, ball.z);
+			dirVec.normalise();
+
+			std::cout<<dirVec<<std::endl;*/
+
+			y=  (ball.y - leftPaddle.y)/102;
+
+			dirVec = Ogre::Vector3(-1, y, ball.z);
+
+
+			engine->entityMgr->entities[2]->direction = dirVec;
+			//engine->entityMgr->entities[2]->velocity = dirVec * engine->entityMgr->entities[2]->speed;
 			engine->entityMgr->entities[2]->direction *= Ogre::Vector3(-1, 1, 1 );
+
+
 			engine->entityMgr->entities[2]->ogreSceneNode->setPosition((leftPaddle.x + 50), ball.y, ball.z);
+
 		}
 
 	}
@@ -111,15 +133,74 @@ void GameMgr::hitPaddle()
 
 }
 
-void GameMgr::moveAI(float dt)
+void GameMgr::moveBall()
 {
 	ball = engine->entityMgr->entities[2]->ogreSceneNode->getPosition();
 
-	dirVec.y = ball.y;
+
+	// Check Left Side
+	if((ball.x - 40) <= -250)
+	{
+		// Reset the Ball
+		engine->entityMgr->entities[2]->ogreSceneNode->setPosition(400, 0, 0);
+		engine->entityMgr->entities[2]->direction *= Ogre::Vector3(-1, 1, 1 );
+
+		// Update Score
+		engine->entityMgr->entities[2]->score2++;
+	}
+	// Check Right Wall
+	else if((ball.x + 40) >= 1050)
+	{
+		engine->entityMgr->entities[2]->ogreSceneNode->setPosition(400, 0, 0);
+		engine->entityMgr->entities[2]->direction *= Ogre::Vector3(-1, 1, 1 );
+
+		// Update Score
+		engine->entityMgr->entities[2]->score1++;
+	}
+	//Check Top
+	else if((ball.y +40) >= 400 && engine->entityMgr->entities[2]->direction.y > 0)
+	{
+		engine->entityMgr->entities[2]->ogreSceneNode->setPosition(ball.x, 360, ball.z);
+		engine->entityMgr->entities[2]->direction *= Ogre::Vector3(1, -1, 1 );
+
+	}
+	// Check Bottom
+	else if((ball.y -40 ) <= -400 && engine->entityMgr->entities[2]->direction.y < 0)
+	{
+		engine->entityMgr->entities[2]->ogreSceneNode->setPosition(ball.x, -360, ball.z);
+		engine->entityMgr->entities[2]->direction *= Ogre::Vector3(1, -1, 1 );
+	}
+}
+
+float GameMgr::bounceBall(Ogre::Vector3 ballPos, Ogre::Vector3 paddlePos, float paddleHeight)
+{
+	return(ballPos.y - paddlePos.y)/paddleHeight;
+}
+
+void GameMgr::moveAI(float dt)
+{
+	ball = engine->entityMgr->entities[2]->ogreSceneNode->getPosition();
+	rightPaddle = engine->entityMgr->entities[1]->ogreSceneNode->getPosition();
+
+	float relativePos = ball.y - rightPaddle.y;
+
+	if(relativePos > 0)
+	{
+		AIVector.y = std::min(relativePos, 1.0f);
+		AIVector.x = 0;
+	}
+	if(relativePos < 0)
+	{
+		AIVector.y = -1 * std::min(-relativePos, 1.0f);
+		AIVector.x = 0;
+	}
+	engine->entityMgr->entities[1]->direction = AIVector;
+	engine->entityMgr->entities[1]->speed = 500;
+
+	//AIVector.y = ball.y;
 
 	// move AI
-	engine->entityMgr->entities[1]->ogreSceneNode->translate(dirVec *dt, Ogre::Node::TS_LOCAL);
-
+	//engine->entityMgr->entities[1]->ogreSceneNode->translate(AIVector *dt, Ogre::Node::TS_LOCAL);
 }
 
 void GameMgr::createGround(){

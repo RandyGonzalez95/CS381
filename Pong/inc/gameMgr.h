@@ -21,10 +21,15 @@ private:
 	void createGround();
 	void createWall();
 	void hitPaddle();
+	float bounceBall(Ogre::Vector3 ballPos, Ogre::Vector3 paddlePos, float paddleHeight);
+	void moveBall();
 	void moveAI(float dt);
 
 	Ogre::Vector3 ball, leftPaddle, rightPaddle; //position of all objects
 	Ogre::Vector3 dirVec;
+	Ogre::Vector3 AIVector;
+
+	float y = 0.0f;
 
 
 public:

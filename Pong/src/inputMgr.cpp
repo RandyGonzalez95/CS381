@@ -173,6 +173,8 @@ void InputMgr::MovePaddle(float dt)
 	 Ogre::Vector3 dirVec2 = Ogre::Vector3::ZERO;
 	 float move = 400.0f, move2 = 400.0f;
 
+	 Ogre::Vector3 left = engine->entityMgr->entities[0]->ogreSceneNode->getPosition();
+
 	// Move Right Paddle
 	/*if(keyboard->isKeyDown(OIS::KC_UP))
 	{
@@ -186,18 +188,41 @@ void InputMgr::MovePaddle(float dt)
 	//engine->entityMgr->entities[0]->position = Ogre::Vector3(0, dirVec.y, 0);
 	engine->entityMgr->entities[0]->ogreSceneNode->translate(dirVec *dt, Ogre::Node::TS_LOCAL);*/
 
-	// Move Left Paddle
-	if(keyboard->isKeyDown(OIS::KC_I))
-	{
-		dirVec2.y += move2;
-	}
-	if(keyboard->isKeyDown(OIS::KC_K))
-	{
-		dirVec2.y -= move2;
-	}
 
-	engine->entityMgr->entities[0]->ogreSceneNode->translate(dirVec2 *dt, Ogre::Node::TS_LOCAL);
 
+
+	 if(left.y >= 268)
+	 {
+		if(keyboard->isKeyDown(OIS::KC_K))
+		{
+			dirVec2.y -= move2;
+		}
+	 }
+	 else if(left.y <= -268)
+	 {
+		// Move Left Paddle
+		if(keyboard->isKeyDown(OIS::KC_I))
+		{
+			dirVec2.y += move2;
+		}
+
+	 }
+	 else
+	 {
+		if(keyboard->isKeyDown(OIS::KC_K))
+		{
+			dirVec2.y -= move2;
+		}
+		// Move Left Paddle
+		if(keyboard->isKeyDown(OIS::KC_I))
+		{
+			dirVec2.y += move2;
+		}
+
+	 }
+
+	 engine->entityMgr->entities[0]->direction = dirVec2;
+	//engine->entityMgr->entities[0]->ogreSceneNode->translate(dirVec2 *dt, Ogre::Node::TS_LOCAL);
 }
 
 
