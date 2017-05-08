@@ -43,6 +43,7 @@ public:
 	void tick(float dt);
 	void loadLevel();
 	void stop();
+	void endCondition();
 
 	OgreBites::InputContext mInputContext;
 	OgreBites::SdkTrayManager* mTrayMgr;

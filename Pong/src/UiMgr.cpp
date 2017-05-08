@@ -49,7 +49,8 @@ void UiMgr::loadLevel()
 	mTrayMgr->showBackdrop("Background");
 
 	//OgreBites::SelectMenu* menu = mTrayMgr->createThickSelectMenu(OgreBites::TL_CENTER, "MyMenu", "Menu", 200, 3);
-	OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_BOTTOM, "StartButton", "Start");
+	//OgreBites::Button *b =
+	mTrayMgr->createButton(OgreBites::TL_BOTTOM, "StartButton", "Start");
 
 	OgreBites::SelectMenu* menu = mTrayMgr->createLongSelectMenu(OgreBites::TL_BOTTOM, "MyMenu", "Options Menu", 400, 200, 5);
 	menu->addItem("How To Play");
@@ -89,7 +90,46 @@ void UiMgr::tick(float dt)
     		text2->setText("Nirmit: " + player2Score);
     	}
 
+    	// Check if a player won
+    	if(score1 == 11 || score2 == 11)
+    	{
+    		endCondition();
+    	}
 
+
+
+	}
+
+
+
+}
+
+void UiMgr::endCondition()
+{
+	playing = false;
+
+	// Grab the score of each player
+	int score2 = engine->entityMgr->entities[2]->score2;
+	int score1 = engine->entityMgr->entities[2]->score1;
+
+	// End Screen
+	Ogre::MaterialPtr material = Ogre::MaterialManager::getSingleton().create("End", "General");
+	material->getTechnique(0)->getPass(0)->createTextureUnitState("pong.png");
+	material->getTechnique(0)->getPass(0)->setDepthCheckEnabled(false);
+	material->getTechnique(0)->getPass(0)->setDepthWriteEnabled(false);
+	material->getTechnique(0)->getPass(0)->setLightingEnabled(false);
+
+	//mTrayMgr->createButton(OgreBites::TL_BOTTOM, "Quit", "END");
+
+	mTrayMgr->showBackdrop("End");
+
+	if(score1 == 11)
+	{
+		mTrayMgr->createLabel(OgreBites::TL_CENTER, "Player1", "PLAYER 1 WINS!!", 500);
+	}
+	else if(score2 == 11)
+	{
+		mTrayMgr->createLabel(OgreBites::TL_CENTER, "Player2", "PLAYER 2 WINS!!", 500);
 	}
 }
 
@@ -168,6 +208,12 @@ void UiMgr::buttonHit(OgreBites::Button *b)
         mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label4", "Caption", 200);
         mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label5", "Caption", 200);*/
     }
+
+   /* if(b->getName() == "Quit")
+    {
+    	mTrayMgr->destroyAllWidgets();
+    	exit(1);
+    }*/
 
 }
 
