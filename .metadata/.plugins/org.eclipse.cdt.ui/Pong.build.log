@@ -1,9 +1,13 @@
-18:18:08 **** Incremental Build of configuration Debug for project Pong ****
+19:02:48 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-Building file: ../src/gameMgr.cpp
+Building file: ../src/UiMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
-Finished building: ../src/gameMgr.cpp
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
+../src/UiMgr.cpp: In member function ‘virtual void UiMgr::loadLevel()’:
+../src/UiMgr.cpp:52:21: warning: unused variable ‘b’ [-Wunused-variable]
+  OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_BOTTOM, "StartButton", "Start");
+                     ^
+Finished building: ../src/UiMgr.cpp
  
 Building target: Pong
 Invoking: GCC C++ Linker
@@ -11,5 +15,5 @@ g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGR
 Finished building target: Pong
  
 
-18:18:18 Build Finished (took 9s.830ms)
+19:02:58 Build Finished (took 9s.830ms)
 

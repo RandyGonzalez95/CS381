@@ -45,7 +45,10 @@ void GameMgr::stop()
 void GameMgr::tick(float dt)
 {
 	hitPaddle();
-	moveAI(dt);
+
+	// if we have one player, Move AI
+	if(engine->uiMgr->singlePlayer)
+		moveAI(dt);
 }
 
 void GameMgr::createEnts()

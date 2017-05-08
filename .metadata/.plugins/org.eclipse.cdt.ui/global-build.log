@@ -1025,3 +1025,208 @@ Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
 Finished building target: Pong
  
+18:28:32 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/UiMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
+../src/UiMgr.cpp: In member function ‘virtual void UiMgr::loadLevel()’:
+../src/UiMgr.cpp:52:21: warning: unused variable ‘b’ [-Wunused-variable]
+  OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_BOTTOM, "StartButton", "Start");
+                     ^
+Finished building: ../src/UiMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 
+18:28:58 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+make: Nothing to be done for 'all'.
+18:43:44 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/UiMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
+../src/UiMgr.cpp: In member function ‘virtual void UiMgr::loadLevel()’:
+../src/UiMgr.cpp:52:21: warning: unused variable ‘b’ [-Wunused-variable]
+  OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_BOTTOM, "StartButton", "Start");
+                     ^
+../src/UiMgr.cpp: In member function ‘virtual void UiMgr::itemSelected(OgreBites::SelectMenu*)’:
+../src/UiMgr.cpp:175:20: error: switch quantity not an integer
+         switch(item)
+                    ^
+../src/UiMgr.cpp:177:9: error: could not convert ‘"How To Play"’ from ‘const char [12]’ to ‘<type error>’
+    case "How To Play":
+         ^
+../src/UiMgr.cpp:182:9: error: could not convert ‘"Single Player"’ from ‘const char [14]’ to ‘<type error>’
+    case "Single Player":
+         ^
+../src/UiMgr.cpp:186:9: error: could not convert ‘"Two Player"’ from ‘const char [11]’ to ‘<type error>’
+    case "Two Player":
+         ^
+make: *** [src/UiMgr.o] Error 1
+src/subdir.mk:48: recipe for target 'src/UiMgr.o' failed
+18:46:25 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/UiMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
+../src/UiMgr.cpp: In member function ‘virtual void UiMgr::loadLevel()’:
+../src/UiMgr.cpp:52:21: warning: unused variable ‘b’ [-Wunused-variable]
+  OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_BOTTOM, "StartButton", "Start");
+                     ^
+Finished building: ../src/UiMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 
+18:47:06 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/UiMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
+../src/UiMgr.cpp: In member function ‘virtual void UiMgr::loadLevel()’:
+../src/UiMgr.cpp:52:21: warning: unused variable ‘b’ [-Wunused-variable]
+  OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_BOTTOM, "StartButton", "Start");
+                     ^
+Finished building: ../src/UiMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 
+18:54:24 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
+Finished building: ../src/GfxMgr.cpp
+ 
+Building file: ../src/Pong.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/Pong.d" -MT"src/Pong.d" -o "src/Pong.o" "../src/Pong.cpp"
+Finished building: ../src/Pong.cpp
+ 
+Building file: ../src/SoundMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/SoundMgr.d" -MT"src/SoundMgr.d" -o "src/SoundMgr.o" "../src/SoundMgr.cpp"
+../src/SoundMgr.cpp: In member function ‘void OgreSND::SoundMgr::attachSelectedNodeToSoundIndex(Entity381*, unsigned int)’:
+../src/SoundMgr.cpp:239:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (index == -1) //if there is no defined sound for the specified type, don't do anything
+                   ^
+../src/SoundMgr.cpp: In member function ‘bool OgreSND::SoundMgr::isAudioPlaying(ALuint)’:
+../src/SoundMgr.cpp:745:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/SoundMgr.cpp: At global scope:
+../src/SoundMgr.cpp:233:15: warning: ‘tmpT’ defined but not used [-Wunused-variable]
+ double static tmpT = 0.0;
+               ^
+../src/SoundMgr.cpp:234:13: warning: ‘paused’ defined but not used [-Wunused-variable]
+ bool static paused = false;
+             ^
+Finished building: ../src/SoundMgr.cpp
+ 
+Building file: ../src/UiMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
+../src/UiMgr.cpp: In member function ‘virtual void UiMgr::loadLevel()’:
+../src/UiMgr.cpp:52:21: warning: unused variable ‘b’ [-Wunused-variable]
+  OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_BOTTOM, "StartButton", "Start");
+                     ^
+Finished building: ../src/UiMgr.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
+ 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 
+18:56:54 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+make: Nothing to be done for 'all'.
+18:57:05 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+make: Nothing to be done for 'all'.
+18:58:02 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+make: Nothing to be done for 'all'.
+18:58:07 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+make: Nothing to be done for 'all'.
+19:00:17 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 
+19:02:00 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/UiMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
+../src/UiMgr.cpp: In member function ‘virtual void UiMgr::loadLevel()’:
+../src/UiMgr.cpp:52:21: warning: unused variable ‘b’ [-Wunused-variable]
+  OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_BOTTOM, "StartButton", "Start");
+                     ^
+Finished building: ../src/UiMgr.cpp
+ 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 
+19:02:41 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+make: Nothing to be done for 'all'.
+19:02:48 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/UiMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
+../src/UiMgr.cpp: In member function ‘virtual void UiMgr::loadLevel()’:
+../src/UiMgr.cpp:52:21: warning: unused variable ‘b’ [-Wunused-variable]
+  OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_BOTTOM, "StartButton", "Start");
+                     ^
+Finished building: ../src/UiMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 

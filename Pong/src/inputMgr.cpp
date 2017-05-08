@@ -191,26 +191,50 @@ void InputMgr::UpdateCamera(float dt)
 
 void InputMgr::MovePaddle(float dt)
 {
-//	 Ogre::Vector3 dirVec = Ogre::Vector3::ZERO;
+	 Ogre::Vector3 dirVec = Ogre::Vector3::ZERO;
 	 Ogre::Vector3 dirVec2 = Ogre::Vector3::ZERO;
 	 float move = 400.0f, move2 = 400.0f;
 
 	 Ogre::Vector3 left = engine->entityMgr->entities[0]->ogreSceneNode->getPosition();
 
-	// Move Right Paddle
-	/*if(keyboard->isKeyDown(OIS::KC_UP))
-	{
-		dirVec.y += move;
-	}
-	if(keyboard->isKeyDown(OIS::KC_DOWN))
-	{
-		dirVec.y -= move;
-	}
-
-	//engine->entityMgr->entities[0]->position = Ogre::Vector3(0, dirVec.y, 0);
-	engine->entityMgr->entities[0]->ogreSceneNode->translate(dirVec *dt, Ogre::Node::TS_LOCAL);*/
 
 
+	 // Move Right Paddle if 2 player mode
+	 if(!engine->uiMgr->singlePlayer)
+	 {
+		 Ogre::Vector3 right = engine->entityMgr->entities[1]->ogreSceneNode->getPosition();
+		 engine->entityMgr->entities[1]->speed = 1;
+		 if(right.y >= 268)
+		 {
+			if(keyboard->isKeyDown(OIS::KC_DOWN))
+			{
+				dirVec.y -= move;
+			}
+		 }
+		 else if(right.y <= -268)
+		 {
+			// Move Left Paddle
+			if(keyboard->isKeyDown(OIS::KC_UP))
+			{
+				dirVec.y += move;
+			}
+
+		 }
+		 else
+		 {
+			if(keyboard->isKeyDown(OIS::KC_DOWN))
+			{
+				dirVec.y -= move;
+			}
+			// Move Left Paddle
+			if(keyboard->isKeyDown(OIS::KC_UP))
+			{
+				dirVec.y += move;
+			}
+		 }
+
+		 engine->entityMgr->entities[1]->direction = dirVec;
+	 }
 
 
 	 if(left.y >= 268)

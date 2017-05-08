@@ -50,6 +50,7 @@ public:
 	OgreBites::TextBox *text, *text2;
 
 	bool playing = false;
+	bool singlePlayer = true; // game is single player by default
 
     Ogre::DisplayString helpText = "Randy: \n";
     Ogre::DisplayString helpText2 = "Nirmit: \n";

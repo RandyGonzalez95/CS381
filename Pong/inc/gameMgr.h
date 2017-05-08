@@ -30,6 +30,7 @@ private:
 	Ogre::Vector3 AIVector;
 
 	float y = 0.0f;
+	bool singlePlayer = true; // game by default is single player
 
 	Ogre::Vector3 currentDir, currentVel;
 
