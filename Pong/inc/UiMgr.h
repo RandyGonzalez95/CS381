@@ -20,6 +20,7 @@
 class UiMgr : public Mgr, public Ogre::FrameListener, public OIS::KeyListener, public OIS::MouseListener, public Ogre::WindowEventListener, public OgreBites::SdkTrayListener
 {
 private:
+	void HowToPlay();
 
 
 protected:
@@ -48,7 +49,7 @@ public:
 	OgreBites::InputContext mInputContext;
 	OgreBites::SdkTrayManager* mTrayMgr;
 	Ogre::OverlaySystem* mOverlaySystem;
-	OgreBites::TextBox *text, *text2;
+	OgreBites::TextBox *text, *text2, *instructions;
 
 	bool playing = false;
 	bool singlePlayer = true; // game is single player by default

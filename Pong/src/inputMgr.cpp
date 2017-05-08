@@ -67,15 +67,18 @@ void InputMgr::loadLevel()
 
 void InputMgr::tick(float dt)
 {
-
-	keyboard->capture();
-	mouse->capture();
 	if(keyboard->isKeyDown(OIS::KC_ESCAPE))
 		engine->stop();
+	keyboard->capture();
+	mouse->capture();
 
 
-	UpdateCamera(dt);
-	MovePaddle(dt);
+	if(engine->uiMgr->playing)
+	{
+		UpdateCamera(dt);
+		MovePaddle(dt);
+	}
+
 
 }
 
@@ -167,6 +170,7 @@ void InputMgr::UpdateCamera(float dt)
 	  }
 
 	  // Pause
+	  /*
 	  if (keyboard->isKeyDown(OIS::KC_1) && !pause)
 	  {
 		  //engine->entityMgr->entities[2]->direction = Ogre::Vector3::ZERO;
@@ -182,6 +186,17 @@ void InputMgr::UpdateCamera(float dt)
 		  engine->entityMgr->entities[2]->velocity = engine->entityMgr->entities[2]->speed *dt;
 		  pause = false;
 
+	  }*/
+
+	  if(pause)
+	  {
+		  engine->entityMgr->entities[2]->speed = 0.0f;
+		  wait(dt);
+
+	  }
+	  else
+	  {
+		  engine->entityMgr->entities[2]->speed = 600.0f;
 	  }
 
 
@@ -269,6 +284,17 @@ void InputMgr::MovePaddle(float dt)
 
 	 engine->entityMgr->entities[0]->direction = dirVec2;
 	//engine->entityMgr->entities[0]->ogreSceneNode->translate(dirVec2 *dt, Ogre::Node::TS_LOCAL);
+}
+
+void InputMgr::wait(float dt)
+{
+	selectionTimer -= dt;
+
+	if(selectionTimer < 0)
+	{
+		selectionTimer = this->selectionTime;
+		pause = false;
+	}
 }
 
 

@@ -95,9 +95,6 @@ void UiMgr::tick(float dt)
     	{
     		endCondition();
     	}
-
-
-
 	}
 
 
@@ -191,8 +188,6 @@ void UiMgr::buttonHit(OgreBites::Button *b)
 
 
 
-
-
         //mTrayMgr->createLabel(OgreBites::TL_BOTTOMLEFT, "Label", "", 200);
         text = mTrayMgr->createTextBox(OgreBites::TL_TOPLEFT, "text", "Player 1", 150, 75);
         //text->setText(helpText);
@@ -207,6 +202,25 @@ void UiMgr::buttonHit(OgreBites::Button *b)
         mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label3", "Caption", 200);
         mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label4", "Caption", 200);
         mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label5", "Caption", 200);*/
+    }
+    else if(b->getName() == "BackButton")
+    {
+    	mTrayMgr->showBackdrop("Background");
+    	b->hide();
+    	OgreBites::Widget *backButton = mTrayMgr->getWidget("BackButton");
+    	backButton->hide();
+    	mTrayMgr->destroyWidget("BackButton");
+
+    	OgreBites::Widget *rules = mTrayMgr->getWidget("Instructions");
+    	rules->hide();
+    	mTrayMgr->destroyWidget("Instructions");
+
+    	OgreBites::Widget *startButton = mTrayMgr->getWidget("StartButton");
+    	startButton->show();
+
+    	OgreBites::Widget *menu = mTrayMgr->getWidget("MyMenu");
+    	menu->show();
+
     }
 
    /* if(b->getName() == "Quit")
@@ -225,22 +239,40 @@ void UiMgr::itemSelected(OgreBites::SelectMenu *m)
     {
         item = m->getSelectedItem();
 
+        // Open Instruction Manual
         if(item == "How To Play")
         {
         	std::cout<< "How to play"<<std::endl;
+        	HowToPlay();
         }
+        // Set Modes
         else if(item == "Single Player")
         {
         	singlePlayer = true;
-        	std::cout<< "Single Player Mode"<<std::endl;
+        	std::cout<< "Single Player"<<std::endl;
         }
         else if(item == "Two Player")
         {
         	singlePlayer = false; // set game mode to two players
-        	std::cout<< "Two Player Mode"<<std::endl;
+        	std::cout<< "Two Player"<<std::endl;
         }
     }
+}
 
+void UiMgr::HowToPlay()
+{
+	mTrayMgr->hideBackdrop();
 
+	// Create instructions Text Box
+	instructions = mTrayMgr->createTextBox(OgreBites::TL_CENTER, "Instructions", "How To Play", 500, 500);
+	instructions->setText("Hello Welcome To Pong!\n");
 
+	//OgreBites::Button *b =
+	mTrayMgr->createButton(OgreBites::TL_CENTER, "BackButton", "Close");
+
+	OgreBites::Widget *menu = mTrayMgr->getWidget("MyMenu");
+	menu->hide();
+
+	OgreBites::Widget *startButton = mTrayMgr->getWidget("StartButton");
+	startButton->hide();
 }

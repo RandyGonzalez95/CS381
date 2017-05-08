@@ -48,11 +48,16 @@ void GameMgr::stop()
 
 void GameMgr::tick(float dt)
 {
-	hitPaddle();
 
-	// if we have one player, Move AI
-	if(engine->uiMgr->singlePlayer)
-		moveAI(dt);
+	if(engine->uiMgr->playing)
+	{
+		hitPaddle();
+
+		// if we have one player, Move AI
+		if(engine->uiMgr->singlePlayer)
+			moveAI(dt);
+	}
+
 
 }
 
