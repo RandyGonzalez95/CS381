@@ -1,4 +1,4 @@
-12:32:13 **** Incremental Build of configuration Debug for project Pong ****
+12:37:29 **** Incremental Build of configuration Debug for project Pong ****
 make all 
 Building file: ../src/UiMgr.cpp
 Invoking: GCC C++ Compiler
@@ -11,5 +11,5 @@ g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGR
 Finished building target: Pong
  
 
-12:32:22 Build Finished (took 9s.727ms)
+12:37:39 Build Finished (took 9s.480ms)
 

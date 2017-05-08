@@ -123,11 +123,15 @@ void UiMgr::endCondition()
 	if(score1 == 11)
 	{
 		mTrayMgr->createLabel(OgreBites::TL_CENTER, "Player1", "PLAYER 1 WINS!!", 500);
+
 	}
 	else if(score2 == 11)
 	{
 		mTrayMgr->createLabel(OgreBites::TL_CENTER, "Player2", "PLAYER 2 WINS!!", 500);
 	}
+
+	OgreBites::TextBox* credits = mTrayMgr->createTextBox(OgreBites::TL_CENTER, "Credits", "Credits", 200, 200);
+	credits->setText("Pong\n Implementation by\n Randy Gonzalez\n Nirmit Patel\n");
 }
 
 void UiMgr::windowResized(Ogre::RenderWindow* rw)
