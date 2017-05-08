@@ -35,6 +35,10 @@ void GameMgr::loadLevel()
 	createWall();
 	//createSky();
 	//createGround();
+
+	// Start the ball paused
+	engine->entityMgr->entities[2]->speed = 0.0f;
+	//pause = true;
 }
 
 void GameMgr::stop()
@@ -150,6 +154,8 @@ void GameMgr::moveBall()
 		// Update Score
 		engine->entityMgr->entities[2]->score2++;
 
+		engine->entityMgr->entities[2]->speed = 0.0f;
+		engine->inputMgr->pause = true;
 
 	}
 	// Check Right Wall
@@ -160,6 +166,9 @@ void GameMgr::moveBall()
 
 		// Update Score
 		engine->entityMgr->entities[2]->score1++;
+
+		engine->entityMgr->entities[2]->speed = 0.0f;
+		engine->inputMgr->pause = true;
 
 	}
 	//Check Top
