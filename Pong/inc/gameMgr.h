@@ -31,6 +31,8 @@ private:
 
 	float y = 0.0f;
 
+	Ogre::Vector3 currentDir, currentVel;
+
 
 public:
 	GameMgr(Engine *engine);

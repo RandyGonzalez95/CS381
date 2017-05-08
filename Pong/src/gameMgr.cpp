@@ -81,38 +81,23 @@ void GameMgr::hitPaddle()
 	rightPaddle = engine->entityMgr->entities[1]->ogreSceneNode->getPosition();
 	ball = engine->entityMgr->entities[2]->ogreSceneNode->getPosition();
 
-	//engine->entityMgr->entities[0]->ogreSceneNode->showBoundingBox(true);
-	//Ogre::MovableObject * paddle= engine->entityMgr->entities[0]->ogreSceneNode->getAttachedObject(0);
-	//std::cout<<paddle->getBoundingBox()<<std::endl;
-
-
-
-	//engine->entityMgr->entities[2]->velocity = dirVec * engine->entityMgr->entities[2]->speed;
+	// Check where the ball is at
 	moveBall();
 
 	// Left
 	if((ball.x - 20) < (leftPaddle.x + 30))
 	{
-		if( ((ball.y -10) < (leftPaddle.y +100)) && ((ball.y +10) > (leftPaddle.y -100)) )
+		if( ((ball.y -10) < (leftPaddle.y +95)) && ((ball.y +10) > (leftPaddle.y -95)) )
 		{
-			// Find the hit factor of the ball
-			/*y = bounceBall(ball, leftPaddle, 190);
-
-			dirVec = Ogre::Vector3(1, y, ball.z);
-			dirVec.normalise();
-
-			std::cout<<dirVec<<std::endl;*/
-
-			y=  (ball.y - leftPaddle.y)/102;
-
+			// Find the direction the ball should go
+			y = bounceBall(ball, leftPaddle, 102);
 			dirVec = Ogre::Vector3(-1, y, ball.z);
 
-
+			// Set the direction of the ball and have it go back to the other side
 			engine->entityMgr->entities[2]->direction = dirVec;
-			//engine->entityMgr->entities[2]->velocity = dirVec * engine->entityMgr->entities[2]->speed;
 			engine->entityMgr->entities[2]->direction *= Ogre::Vector3(-1, 1, 1 );
 
-
+			// Set the position at the left side of the paddle
 			engine->entityMgr->entities[2]->ogreSceneNode->setPosition((leftPaddle.x + 50), ball.y, ball.z);
 
 		}
@@ -137,6 +122,10 @@ void GameMgr::moveBall()
 {
 	ball = engine->entityMgr->entities[2]->ogreSceneNode->getPosition();
 
+	// Grab current direction and velocity of the ball
+	currentDir = engine->entityMgr->entities[2]->direction;
+	currentVel = engine->entityMgr->entities[2]->velocity;
+
 
 	// Check Left Side
 	if((ball.x - 40) <= -250)
@@ -147,6 +136,8 @@ void GameMgr::moveBall()
 
 		// Update Score
 		engine->entityMgr->entities[2]->score2++;
+
+
 	}
 	// Check Right Wall
 	else if((ball.x + 40) >= 1050)
@@ -156,6 +147,7 @@ void GameMgr::moveBall()
 
 		// Update Score
 		engine->entityMgr->entities[2]->score1++;
+
 	}
 	//Check Top
 	else if((ball.y +40) >= 400 && engine->entityMgr->entities[2]->direction.y > 0)
@@ -179,11 +171,17 @@ float GameMgr::bounceBall(Ogre::Vector3 ballPos, Ogre::Vector3 paddlePos, float 
 
 void GameMgr::moveAI(float dt)
 {
+
+	// Get Position of Ball and the AI
 	ball = engine->entityMgr->entities[2]->ogreSceneNode->getPosition();
 	rightPaddle = engine->entityMgr->entities[1]->ogreSceneNode->getPosition();
 
+
+	// Find Distance between the ball and the paddle
 	float relativePos = ball.y - rightPaddle.y;
 
+
+	// Have the AI move to the ball
 	if(relativePos > 0)
 	{
 		AIVector.y = std::min(relativePos, 1.0f);
@@ -194,13 +192,11 @@ void GameMgr::moveAI(float dt)
 		AIVector.y = -1 * std::min(-relativePos, 1.0f);
 		AIVector.x = 0;
 	}
+
+	// Set the direction and speed of the AI
 	engine->entityMgr->entities[1]->direction = AIVector;
-	engine->entityMgr->entities[1]->speed = 500;
+	engine->entityMgr->entities[1]->speed = 400;
 
-	//AIVector.y = ball.y;
-
-	// move AI
-	//engine->entityMgr->entities[1]->ogreSceneNode->translate(AIVector *dt, Ogre::Node::TS_LOCAL);
 }
 
 void GameMgr::createGround(){
@@ -236,26 +232,52 @@ void GameMgr::createSky()
 void GameMgr::createWall()
 {
 	Entity381 * ent;
+	int x = -100;
+	int y = -450;
 
 	// Entity[3] Top Wall
-	ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(400, 400, 50));
-	ent->ogreEntity->setMaterialName("Examples/Rockwall");
-	engine->entityMgr->entities[3]->ogreSceneNode->setScale(12, 0.5, 1);
+	for(int i = 0; i < 12; i++)
+	{
+		ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(x, 450, 0));
+		ent->ogreEntity->setMaterialName("Examples/Rockwall");
+		x += 100;
+		//engine->entityMgr->entities[3]->ogreSceneNode->setScale(12, 0.5, 1);
+	}
+
+	// reset x value
+	x = -100;
 
 	// Entity[4] Bottom Wall
-	ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(400, -400, 50));
-	ent->ogreEntity->setMaterialName("Examples/Rockwall");
-	engine->entityMgr->entities[4]->ogreSceneNode->setScale(12, 0.5, 1);
+	for(int i = 0; i< 12; i++)
+	{
+		ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(x, -450, 0));
+		ent->ogreEntity->setMaterialName("Examples/Rockwall");
+		x += 100;
+	}
+
+	//engine->entityMgr->entities[4]->ogreSceneNode->setScale(12, 0.5, 1);
 
 	// Entity[5] Left Wall
-	ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(-250, 0, 0));
-	ent->ogreEntity->setMaterialName("Examples/Rockwall");
-	engine->entityMgr->entities[5]->ogreSceneNode->setScale(0.5, 9, 1);
+	for(int i = 0; i < 10; i++)
+	{
+		ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(-200, y, 0));
+		ent->ogreEntity->setMaterialName("Examples/Rockwall");
+		y+= 100;
+	}
+
+	y = -450;
+
+	//engine->entityMgr->entities[5]->ogreSceneNode->setScale(0.5, 9, 1);
 
 	// Entity[6] Right Wall
-	ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(1050, 0, 0));
-	ent->ogreEntity->setMaterialName("Examples/Rockwall");
-	engine->entityMgr->entities[6]->ogreSceneNode->setScale(0.5, 9, 1);
+	for(int i = 0; i < 10; i++)
+	{
+		ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(1050, y, 0));
+		ent->ogreEntity->setMaterialName("Examples/Rockwall");
+		y += 100;
+	}
+
+	//engine->entityMgr->entities[6]->ogreSceneNode->setScale(0.5, 9, 1);
 }
 
 

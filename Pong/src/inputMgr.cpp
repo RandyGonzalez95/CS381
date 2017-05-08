@@ -73,6 +73,7 @@ void InputMgr::tick(float dt)
 	if(keyboard->isKeyDown(OIS::KC_ESCAPE))
 		engine->stop();
 
+
 	UpdateCamera(dt);
 	MovePaddle(dt);
 
@@ -133,6 +134,8 @@ void InputMgr::UpdateCamera(float dt)
 	float move = 100.0f;
 	float rotate = 0.1f;
 
+
+
 	 Ogre::Vector3 dirVec = Ogre::Vector3::ZERO;
 
 	  if (keyboard->isKeyDown(OIS::KC_W))
@@ -163,13 +166,14 @@ void InputMgr::UpdateCamera(float dt)
 	      dirVec.x += move;
 	  }
 
+
 	  engine->gfxMgr->cameraNode->translate(dirVec * dt, Ogre::Node::TS_LOCAL);
 
 }
 
 void InputMgr::MovePaddle(float dt)
 {
-	 Ogre::Vector3 dirVec = Ogre::Vector3::ZERO;
+//	 Ogre::Vector3 dirVec = Ogre::Vector3::ZERO;
 	 Ogre::Vector3 dirVec2 = Ogre::Vector3::ZERO;
 	 float move = 400.0f, move2 = 400.0f;
 
