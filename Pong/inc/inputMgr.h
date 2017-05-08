@@ -24,6 +24,7 @@ private:
 	float selectionTimer;
 	const float keyTime = 0.2f;
 	const float selectionTime = 0.2f;
+	bool pause = false;
 
 protected:
 	virtual void windowResized(Ogre::RenderWindow *rw);

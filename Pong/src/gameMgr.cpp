@@ -85,10 +85,14 @@ void GameMgr::hitPaddle()
 	moveBall();
 
 	// Left
-	if((ball.x - 20) < (leftPaddle.x + 30))
+	if((ball.x -20) < (leftPaddle.x+40))
 	{
-		if( ((ball.y -10) < (leftPaddle.y +95)) && ((ball.y +10) > (leftPaddle.y -95)) )
+		if( ((ball.y -20) < (leftPaddle.y +95)) && ((ball.y +20) > (leftPaddle.y -95)) )
 		{
+			// ball has gone past the paddle
+			if(ball.x < leftPaddle.x-30)
+				return;
+
 			// Find the direction the ball should go
 			y = bounceBall(ball, leftPaddle, 102);
 			dirVec = Ogre::Vector3(-1, y, ball.z);
@@ -98,20 +102,26 @@ void GameMgr::hitPaddle()
 			engine->entityMgr->entities[2]->direction *= Ogre::Vector3(-1, 1, 1 );
 
 			// Set the position at the left side of the paddle
-			engine->entityMgr->entities[2]->ogreSceneNode->setPosition((leftPaddle.x + 50), ball.y, ball.z);
+			engine->entityMgr->entities[2]->ogreSceneNode->setPosition((leftPaddle.x + 60), ball.y, ball.z);
 
 		}
 
 	}
 
 	// Right
-	else if((ball.x + 20) > (rightPaddle.x - 30))
+	else if((ball.x + 20) > (rightPaddle.x - 40))
 	{
 
-		if( ((ball.y-10) < (rightPaddle.y + 95)) && ((ball.y+10) > (rightPaddle.y - 95)) )
+
+		if( ((ball.y-20) < (rightPaddle.y + 95)) && ((ball.y+20) > (rightPaddle.y - 95)) )
 		{
+			// ball has gone past the paddle
+			if(ball.x+10 > rightPaddle.x+30)
+				return;
+
+			// else
 			engine->entityMgr->entities[2]->direction *= Ogre::Vector3(-1, 1, 1 );
-			engine->entityMgr->entities[2]->ogreSceneNode->setPosition((rightPaddle.x - 50), ball.y, ball.z);
+			engine->entityMgr->entities[2]->ogreSceneNode->setPosition((rightPaddle.x - 60), ball.y, ball.z);
 		}
 
 	}

@@ -166,6 +166,24 @@ void InputMgr::UpdateCamera(float dt)
 	      dirVec.x += move;
 	  }
 
+	  // Pause
+	  if (keyboard->isKeyDown(OIS::KC_1) && !pause)
+	  {
+		  //engine->entityMgr->entities[2]->direction = Ogre::Vector3::ZERO;
+		  //engine->entityMgr->entities[2]->velocity = Ogre::Vector3::ZERO;
+		  engine->entityMgr->entities[2]->speed = 0.0f;
+		  pause = true;
+	  }
+	  // Resume
+	  if(keyboard->isKeyDown(OIS::KC_2) && pause)
+	  {
+		  //engine->entityMgr->entities[2]->direction = Ogre::Vector3(-1,1,0);
+		  engine->entityMgr->entities[2]->speed = 600;
+		  engine->entityMgr->entities[2]->velocity = engine->entityMgr->entities[2]->speed *dt;
+		  pause = false;
+
+	  }
+
 
 	  engine->gfxMgr->cameraNode->translate(dirVec * dt, Ogre::Node::TS_LOCAL);
 

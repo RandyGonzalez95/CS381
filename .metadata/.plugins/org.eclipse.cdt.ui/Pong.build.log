@@ -1,13 +1,9 @@
-17:29:23 **** Incremental Build of configuration Debug for project Pong ****
+18:18:08 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-Building file: ../src/inputMgr.cpp
+Building file: ../src/gameMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
-../src/inputMgr.cpp: In member function ‘void InputMgr::MovePaddle(float)’:
-../src/inputMgr.cpp:194:9: warning: unused variable ‘move’ [-Wunused-variable]
-   float move = 400.0f, move2 = 400.0f;
-         ^
-Finished building: ../src/inputMgr.cpp
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
  
 Building target: Pong
 Invoking: GCC C++ Linker
@@ -15,5 +11,5 @@ g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGR
 Finished building target: Pong
  
 
-17:29:34 Build Finished (took 11s.388ms)
+18:18:18 Build Finished (took 9s.830ms)
 
