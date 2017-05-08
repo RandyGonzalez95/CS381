@@ -178,14 +178,11 @@ void UiMgr::buttonHit(OgreBites::Button *b)
     if(b->getName()=="StartButton")
     {
 
-
-        //std::cout <<"Click Me!" << std::endl;
         mTrayMgr->hideBackdrop();
         mTrayMgr->destroyWidget(b->getName());
         mTrayMgr->destroyWidget("MyMenu");
         mTrayMgr->showLogo(OgreBites::TL_BOTTOMRIGHT);
         mTrayMgr->showCursor();
-
 
 
         //mTrayMgr->createLabel(OgreBites::TL_BOTTOMLEFT, "Label", "", 200);
@@ -196,12 +193,6 @@ void UiMgr::buttonHit(OgreBites::Button *b)
         //text2->setText(helpText2);
 
         playing = true;
-
-
-        /*mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label2", "Caption", 200);
-        mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label3", "Caption", 200);
-        mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label4", "Caption", 200);
-        mTrayMgr->createLabel(OgreBites::TL_BOTTOM, "Label5", "Caption", 200);*/
     }
     else if(b->getName() == "BackButton")
     {
@@ -222,12 +213,6 @@ void UiMgr::buttonHit(OgreBites::Button *b)
     	menu->show();
 
     }
-
-   /* if(b->getName() == "Quit")
-    {
-    	mTrayMgr->destroyAllWidgets();
-    	exit(1);
-    }*/
 
 }
 
@@ -265,9 +250,15 @@ void UiMgr::HowToPlay()
 
 	// Create instructions Text Box
 	instructions = mTrayMgr->createTextBox(OgreBites::TL_CENTER, "Instructions", "How To Play", 500, 500);
-	instructions->setText("Hello Welcome To Pong!\n");
+	instructions->setText("				Hello Welcome To Pong!\n");
+	instructions->appendText("1). Choose Player One or Player Two Mode.\n");
+	instructions->appendText("2). Camera Movement: WASD.\n");
+	instructions->appendText("3). Player One Movement: I goes up, K goes down.\n");
+	instructions->appendText("4). Player Two Movement: Up/Down arrow keys.\n");
+	instructions->appendText("5). Player scores when ball hits the opposite wall.\n\n\n\n");
+	instructions->appendText("Enjoy the game! :)");
 
-	//OgreBites::Button *b =
+
 	mTrayMgr->createButton(OgreBites::TL_CENTER, "BackButton", "Close");
 
 	OgreBites::Widget *menu = mTrayMgr->getWidget("MyMenu");
