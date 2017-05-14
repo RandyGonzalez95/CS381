@@ -31,7 +31,7 @@ Entity381::Entity381(EntityType type, Ogre::Vector3 pos) : ogreSceneNode(0), ogr
 
 Entity381::~Entity381()
 {
-	this->aspects.clear();
+
 }
 
 void Entity381::DefaultInit(){
@@ -55,7 +55,15 @@ Ball::Ball(Ogre::Vector3 pos) : Entity381(EntityType::Ball, pos)
 	this->velocity = direction*speed;
 }
 
-Ball::~Ball(){}
+Ball::~Ball()
+{
+	delete ogreSceneNode;
+	delete ogreEntity;
+
+	this->aspects.clear();
+
+	std::cout<< "Entity Destructor called\n";
+}
 
 
 Paddle::Paddle(Ogre::Vector3 pos): Entity381(EntityType::Paddle, pos)
@@ -69,6 +77,12 @@ Paddle::Paddle(Ogre::Vector3 pos): Entity381(EntityType::Paddle, pos)
 Paddle::~Paddle()
 {
 	//this->velocity = Ogre::Vector3::ZERO;
+	delete ogreSceneNode;
+	delete ogreEntity;
+
+	this->aspects.clear();
+
+	std::cout<< "Entity Destructor called\n";
 }
 
 
@@ -83,7 +97,16 @@ Wall::Wall(Ogre::Vector3 pos) : Entity381(EntityType::Wall, pos){
 	direction = Ogre::Vector3::ZERO;
 	velocity = Ogre::Vector3::ZERO;
 }
-Wall::~Wall(){}
+Wall::~Wall()
+{
+	delete ogreSceneNode;
+	delete ogreEntity;
+
+	this->aspects.clear();
+
+	std::cout<< "Entity Destructor called\n";
+
+}
 
 
 

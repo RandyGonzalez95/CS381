@@ -11,7 +11,7 @@
 
 GameMgr::GameMgr(Engine *engine): Mgr(engine)
 {
-
+	timer = currentTime;
 }
 
 GameMgr::~GameMgr()
@@ -33,11 +33,13 @@ void GameMgr::loadLevel()
 
 	createEnts();
 	createWall();
-	//createSky();
+	createSky();
 	//createGround();
 
-	// Start the ball paused
+	// Start the ball pausedogre mesh file
 	engine->entityMgr->entities[2]->speed = 0.0f;
+
+	srand(time(NULL));
 	//pause = true;
 }
 
@@ -49,6 +51,7 @@ void GameMgr::stop()
 void GameMgr::tick(float dt)
 {
 
+
 	if(engine->uiMgr->playing)
 	{
 		hitPaddle();
@@ -56,8 +59,44 @@ void GameMgr::tick(float dt)
 		// if we have one player, Move AI
 		if(engine->uiMgr->singlePlayer)
 			moveAI(dt);
-	}
 
+
+
+		//createPowerup(dt);
+
+
+	}
+}
+
+void GameMgr::instantiate()
+{
+	// Variables
+	Entity381 * ent;
+
+	// random variables
+	int x = (rand()%600)+100;
+	int y = rand()% ((268*2)+1) + (-268);
+
+
+
+	ent = engine->entityMgr->CreateEntity(EntityType::Ball, Ogre::Vector3(x, y, 0));
+	size++;
+	ent->ogreSceneNode->setScale(0.2, 0.2, 0.2);
+	ent->speed = 0;
+
+	powerUp = true;
+}
+
+void GameMgr::createPowerup(float dt)
+{
+	timer -= dt;
+
+	if(timer < 0)
+	{
+		timer = currentTime;
+		instantiate();
+		std::cerr<<"Power up created"<<std::endl;
+	}
 
 }
 
@@ -65,17 +104,42 @@ void GameMgr::createEnts()
 {
 	int x = 0;
 
+	Ogre::MaterialPtr material = Ogre::MaterialManager::getSingleton().create("wood", "General");
+	material->getTechnique(0)->getPass(0)->createTextureUnitState("wood.jpg");
+	material->getTechnique(0)->getPass(0)->setDepthCheckEnabled(false);
+	material->getTechnique(0)->getPass(0)->setDepthWriteEnabled(false);
+	material->getTechnique(0)->getPass(0)->setLightingEnabled(false);
+
+	Ogre::MaterialPtr material2 = Ogre::MaterialManager::getSingleton().create("wood2", "General");
+	material2->getTechnique(0)->getPass(0)->createTextureUnitState("wood2.jpg");
+	material2->getTechnique(0)->getPass(0)->setDepthCheckEnabled(false);
+	material2->getTechnique(0)->getPass(0)->setDepthWriteEnabled(false);
+	material2->getTechnique(0)->getPass(0)->setLightingEnabled(false);
+
+	Ogre::MaterialPtr egg = Ogre::MaterialManager::getSingleton().create("egg", "General");
+	egg->getTechnique(0)->getPass(0)->createTextureUnitState("egg.jpg");
+	egg->getTechnique(0)->getPass(0)->setDepthCheckEnabled(false);
+	egg->getTechnique(0)->getPass(0)->setDepthWriteEnabled(false);
+	egg->getTechnique(0)->getPass(0)->setLightingEnabled(false);
+
 	// Entity[0] left paddle
 	engine->entityMgr->CreateEntity(EntityType::Paddle, Ogre::Vector3(x, 0, 0));
+	size++;
+	engine->entityMgr->entities[0]->ogreEntity->setMaterialName("wood");
 	x += 800;
 
 	// Entity[1] right paddle
 	engine->entityMgr->CreateEntity(EntityType::Paddle, Ogre::Vector3(x, 0, 0));
+	size++;
+	engine->entityMgr->entities[1]->ogreEntity->setMaterialName("wood2");
 
-	// Entity[2] left ball
+	// Entity[2] ball
 	engine->entityMgr->CreateEntity(EntityType::Ball, Ogre::Vector3(400, 0, 0));
+	size++;
+	engine->entityMgr->entities[2]->ogreEntity->setMaterialName("egg");
 
 
+	// Set Scales
 	engine->entityMgr->entities[0]->ogreSceneNode->setScale(0.5, 2.5, 1);
 	engine->entityMgr->entities[1]->ogreSceneNode->setScale(0.5, 2.5, 1);
 
@@ -263,11 +327,18 @@ void GameMgr::createWall()
 	int x = -100;
 	int y = -450;
 
+	Ogre::MaterialPtr wall = Ogre::MaterialManager::getSingleton().create("wall", "General");
+	wall->getTechnique(0)->getPass(0)->createTextureUnitState("wall.jpg");
+	wall->getTechnique(0)->getPass(0)->setDepthCheckEnabled(false);
+	wall->getTechnique(0)->getPass(0)->setDepthWriteEnabled(false);
+	wall->getTechnique(0)->getPass(0)->setLightingEnabled(false);
+
 	// Entity[3] Top Wall
 	for(int i = 0; i < 12; i++)
 	{
 		ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(x, 450, 0));
-		ent->ogreEntity->setMaterialName("Examples/Rockwall");
+		size++;
+		ent->ogreEntity->setMaterialName("wall");
 		x += 100;
 		//engine->entityMgr->entities[3]->ogreSceneNode->setScale(12, 0.5, 1);
 	}
@@ -279,7 +350,8 @@ void GameMgr::createWall()
 	for(int i = 0; i< 12; i++)
 	{
 		ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(x, -450, 0));
-		ent->ogreEntity->setMaterialName("Examples/Rockwall");
+		size++;
+		ent->ogreEntity->setMaterialName("wall");
 		x += 100;
 	}
 
@@ -289,7 +361,8 @@ void GameMgr::createWall()
 	for(int i = 0; i < 10; i++)
 	{
 		ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(-200, y, 0));
-		ent->ogreEntity->setMaterialName("Examples/Rockwall");
+		size++;
+		ent->ogreEntity->setMaterialName("wall");
 		y+= 100;
 	}
 
@@ -301,12 +374,15 @@ void GameMgr::createWall()
 	for(int i = 0; i < 10; i++)
 	{
 		ent = engine->entityMgr->CreateEntity(EntityType::Wall, Ogre::Vector3(1050, y, 0));
-		ent->ogreEntity->setMaterialName("Examples/Rockwall");
+		size++;
+		ent->ogreEntity->setMaterialName("wall");
 		y += 100;
 	}
 
 	//engine->entityMgr->entities[6]->ogreSceneNode->setScale(0.5, 9, 1);
 }
+
+
 
 
 

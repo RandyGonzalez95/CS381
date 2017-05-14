@@ -36,6 +36,7 @@ public:
 
 	Entity381 *CreateEntity(EntityType entityType, Ogre::Vector3 position);
 	void CreateOgreEntityAndNode(Entity381 *ent);
+	void DeleteEntity();
 
 	std::vector<Entity381*> entities;
 

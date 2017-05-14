@@ -1,10 +1,190 @@
-10:57:30 **** Build of configuration Debug for project Pong ****
+16:22:27 **** Clean-only build of configuration Debug for project Pong ****
+make clean 
+rm -rf  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o  ./src/Aspect.d ./src/Entity381.d ./src/EntityMgr.d ./src/GfxMgr.d ./src/Pong.d ./src/SoundMgr.d ./src/UiMgr.d ./src/engine.d ./src/gameMgr.d ./src/inputMgr.d ./src/mgr.d  Pong
+ 
+16:22:28 **** Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/Aspect.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/Aspect.d" -MT"src/Aspect.d" -o "src/Aspect.o" "../src/Aspect.cpp"
+Finished building: ../src/Aspect.cpp
+ 
+Building file: ../src/Entity381.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/Entity381.d" -MT"src/Entity381.d" -o "src/Entity381.o" "../src/Entity381.cpp"
+../src/Entity381.cpp: In destructor ‘virtual Ball::~Ball()’:
+../src/Entity381.cpp:61:9: warning: possible problem detected in invocation of delete operator: [-Wdelete-incomplete]
+  delete ogreEntity;
+         ^
+../src/Entity381.cpp:61:9: warning: invalid use of incomplete type ‘class Ogre::Entity’
+In file included from /usr/local/include/OGRE/OgreVector3.h:31:0,
+                 from /home/randygonzalez/Desktop/CS381/Pong/inc/Entity381.h:11,
+                 from ../src/Entity381.cpp:8:
+/usr/local/include/OGRE/OgrePrerequisites.h:153:11: note: forward declaration of ‘class Ogre::Entity’
+     class Entity;
+           ^
+../src/Entity381.cpp:61:9: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+  delete ogreEntity;
+         ^
+../src/Entity381.cpp: In destructor ‘virtual Paddle::~Paddle()’:
+../src/Entity381.cpp:81:9: warning: possible problem detected in invocation of delete operator: [-Wdelete-incomplete]
+  delete ogreEntity;
+         ^
+../src/Entity381.cpp:81:9: warning: invalid use of incomplete type ‘class Ogre::Entity’
+In file included from /usr/local/include/OGRE/OgreVector3.h:31:0,
+                 from /home/randygonzalez/Desktop/CS381/Pong/inc/Entity381.h:11,
+                 from ../src/Entity381.cpp:8:
+/usr/local/include/OGRE/OgrePrerequisites.h:153:11: note: forward declaration of ‘class Ogre::Entity’
+     class Entity;
+           ^
+../src/Entity381.cpp:81:9: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+  delete ogreEntity;
+         ^
+../src/Entity381.cpp: In destructor ‘virtual Wall::~Wall()’:
+../src/Entity381.cpp:103:9: warning: possible problem detected in invocation of delete operator: [-Wdelete-incomplete]
+  delete ogreEntity;
+         ^
+../src/Entity381.cpp:103:9: warning: invalid use of incomplete type ‘class Ogre::Entity’
+In file included from /usr/local/include/OGRE/OgreVector3.h:31:0,
+                 from /home/randygonzalez/Desktop/CS381/Pong/inc/Entity381.h:11,
+                 from ../src/Entity381.cpp:8:
+/usr/local/include/OGRE/OgrePrerequisites.h:153:11: note: forward declaration of ‘class Ogre::Entity’
+     class Entity;
+           ^
+../src/Entity381.cpp:103:9: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+  delete ogreEntity;
+         ^
+Finished building: ../src/Entity381.cpp
+ 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+Finished building: ../src/EntityMgr.cpp
+ 
+Building file: ../src/GfxMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
+Finished building: ../src/GfxMgr.cpp
+ 
+Building file: ../src/Pong.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/Pong.d" -MT"src/Pong.d" -o "src/Pong.o" "../src/Pong.cpp"
+Finished building: ../src/Pong.cpp
+ 
+Building file: ../src/SoundMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/SoundMgr.d" -MT"src/SoundMgr.d" -o "src/SoundMgr.o" "../src/SoundMgr.cpp"
+../src/SoundMgr.cpp: In member function ‘void OgreSND::SoundMgr::attachSelectedNodeToSoundIndex(Entity381*, unsigned int)’:
+../src/SoundMgr.cpp:239:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (index == -1) //if there is no defined sound for the specified type, don't do anything
+                   ^
+../src/SoundMgr.cpp: In member function ‘bool OgreSND::SoundMgr::isAudioPlaying(ALuint)’:
+../src/SoundMgr.cpp:745:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/SoundMgr.cpp: At global scope:
+../src/SoundMgr.cpp:233:15: warning: ‘tmpT’ defined but not used [-Wunused-variable]
+ double static tmpT = 0.0;
+               ^
+../src/SoundMgr.cpp:234:13: warning: ‘paused’ defined but not used [-Wunused-variable]
+ bool static paused = false;
+             ^
+Finished building: ../src/SoundMgr.cpp
+ 
+Building file: ../src/UiMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
+Finished building: ../src/UiMgr.cpp
+ 
+Building file: ../src/engine.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
+Finished building: ../src/engine.cpp
+ 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
+ 
+Building file: ../src/inputMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
+Finished building: ../src/inputMgr.cpp
+ 
+Building file: ../src/mgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/mgr.d" -MT"src/mgr.d" -o "src/mgr.o" "../src/mgr.cpp"
+Finished building: ../src/mgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 
+16:24:37 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/EntityMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
+Finished building: ../src/EntityMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 
+16:25:20 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 
+16:25:40 **** Incremental Build of configuration Debug for project Pong ****
 make all 
 make: Nothing to be done for 'all'.
-10:57:34 **** Incremental Build of configuration Debug for project Pong ****
+16:27:02 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-make: Nothing to be done for 'all'.
-11:04:40 **** Incremental Build of configuration Debug for project Pong ****
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 
+16:28:02 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 
+16:29:26 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
+ 
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 
+16:35:43 **** Incremental Build of configuration Debug for project Pong ****
 make all 
 Building file: ../src/EntityMgr.cpp
 Invoking: GCC C++ Compiler
@@ -66,224 +246,20 @@ Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
 Finished building target: Pong
  
-11:08:20 **** Incremental Build of configuration Debug for project Pong ****
+16:38:21 **** Incremental Build of configuration Debug for project Pong ****
 make all 
 Building file: ../src/gameMgr.cpp
 Invoking: GCC C++ Compiler
 g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
 Finished building: ../src/gameMgr.cpp
  
-Building file: ../src/inputMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
-Finished building: ../src/inputMgr.cpp
- 
 Building target: Pong
 Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
 Finished building target: Pong
  
-11:09:45 **** Incremental Build of configuration Debug for project Pong ****
+16:40:06 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-Building file: ../src/gameMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
-Finished building: ../src/gameMgr.cpp
- 
-Building file: ../src/inputMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
-Finished building: ../src/inputMgr.cpp
- 
-Building target: Pong
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
-Finished building target: Pong
- 
-11:10:52 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/inputMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
-Finished building: ../src/inputMgr.cpp
- 
-Building target: Pong
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
-Finished building target: Pong
- 
-11:19:44 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/EntityMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
-Finished building: ../src/EntityMgr.cpp
- 
-Building file: ../src/GfxMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
-Finished building: ../src/GfxMgr.cpp
- 
-Building file: ../src/Pong.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/Pong.d" -MT"src/Pong.d" -o "src/Pong.o" "../src/Pong.cpp"
-Finished building: ../src/Pong.cpp
- 
-Building file: ../src/SoundMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/SoundMgr.d" -MT"src/SoundMgr.d" -o "src/SoundMgr.o" "../src/SoundMgr.cpp"
-../src/SoundMgr.cpp: In member function ‘void OgreSND::SoundMgr::attachSelectedNodeToSoundIndex(Entity381*, unsigned int)’:
-../src/SoundMgr.cpp:239:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         if (index == -1) //if there is no defined sound for the specified type, don't do anything
-                   ^
-../src/SoundMgr.cpp: In member function ‘bool OgreSND::SoundMgr::isAudioPlaying(ALuint)’:
-../src/SoundMgr.cpp:745:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-../src/SoundMgr.cpp: At global scope:
-../src/SoundMgr.cpp:233:15: warning: ‘tmpT’ defined but not used [-Wunused-variable]
- double static tmpT = 0.0;
-               ^
-../src/SoundMgr.cpp:234:13: warning: ‘paused’ defined but not used [-Wunused-variable]
- bool static paused = false;
-             ^
-Finished building: ../src/SoundMgr.cpp
- 
-Building file: ../src/UiMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-Finished building: ../src/UiMgr.cpp
- 
-Building file: ../src/engine.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
-Finished building: ../src/engine.cpp
- 
-Building file: ../src/gameMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
-Finished building: ../src/gameMgr.cpp
- 
-Building file: ../src/inputMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
-Finished building: ../src/inputMgr.cpp
- 
-Building target: Pong
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
-Finished building target: Pong
- 
-11:22:08 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/inputMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
-Finished building: ../src/inputMgr.cpp
- 
-Building target: Pong
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
-Finished building target: Pong
- 
-11:22:56 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/inputMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
-Finished building: ../src/inputMgr.cpp
- 
-Building target: Pong
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
-Finished building target: Pong
- 
-11:24:42 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/EntityMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
-Finished building: ../src/EntityMgr.cpp
- 
-Building file: ../src/GfxMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
-Finished building: ../src/GfxMgr.cpp
- 
-Building file: ../src/Pong.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/Pong.d" -MT"src/Pong.d" -o "src/Pong.o" "../src/Pong.cpp"
-Finished building: ../src/Pong.cpp
- 
-Building file: ../src/SoundMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/SoundMgr.d" -MT"src/SoundMgr.d" -o "src/SoundMgr.o" "../src/SoundMgr.cpp"
-../src/SoundMgr.cpp: In member function ‘void OgreSND::SoundMgr::attachSelectedNodeToSoundIndex(Entity381*, unsigned int)’:
-../src/SoundMgr.cpp:239:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         if (index == -1) //if there is no defined sound for the specified type, don't do anything
-                   ^
-../src/SoundMgr.cpp: In member function ‘bool OgreSND::SoundMgr::isAudioPlaying(ALuint)’:
-../src/SoundMgr.cpp:745:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-../src/SoundMgr.cpp: At global scope:
-../src/SoundMgr.cpp:233:15: warning: ‘tmpT’ defined but not used [-Wunused-variable]
- double static tmpT = 0.0;
-               ^
-../src/SoundMgr.cpp:234:13: warning: ‘paused’ defined but not used [-Wunused-variable]
- bool static paused = false;
-             ^
-Finished building: ../src/SoundMgr.cpp
- 
-Building file: ../src/UiMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-Finished building: ../src/UiMgr.cpp
- 
-Building file: ../src/engine.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
-Finished building: ../src/engine.cpp
- 
-Building file: ../src/gameMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
-Finished building: ../src/gameMgr.cpp
- 
-Building file: ../src/inputMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
-Finished building: ../src/inputMgr.cpp
- 
-Building target: Pong
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
-Finished building target: Pong
- 
-11:29:50 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/engine.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
-Finished building: ../src/engine.cpp
- 
-Building target: Pong
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
-Finished building target: Pong
- 
-11:31:40 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/UiMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-Finished building: ../src/UiMgr.cpp
- 
-Building file: ../src/engine.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
-Finished building: ../src/engine.cpp
- 
 Building file: ../src/gameMgr.cpp
 Invoking: GCC C++ Compiler
 g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
@@ -294,276 +270,128 @@ Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
 Finished building target: Pong
  
-11:37:31 **** Incremental Build of configuration Debug for project Pong ****
+16:40:51 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-Building file: ../src/inputMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
-Finished building: ../src/inputMgr.cpp
- 
-Building target: Pong
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
-Finished building target: Pong
- 
-11:38:03 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/inputMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
-Finished building: ../src/inputMgr.cpp
- 
-Building target: Pong
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
-Finished building target: Pong
- 
-12:10:32 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/EntityMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/EntityMgr.d" -MT"src/EntityMgr.d" -o "src/EntityMgr.o" "../src/EntityMgr.cpp"
-Finished building: ../src/EntityMgr.cpp
- 
-Building file: ../src/GfxMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/GfxMgr.d" -MT"src/GfxMgr.d" -o "src/GfxMgr.o" "../src/GfxMgr.cpp"
-Finished building: ../src/GfxMgr.cpp
- 
-Building file: ../src/Pong.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/Pong.d" -MT"src/Pong.d" -o "src/Pong.o" "../src/Pong.cpp"
-Finished building: ../src/Pong.cpp
- 
-Building file: ../src/SoundMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/SoundMgr.d" -MT"src/SoundMgr.d" -o "src/SoundMgr.o" "../src/SoundMgr.cpp"
-../src/SoundMgr.cpp: In member function ‘void OgreSND::SoundMgr::attachSelectedNodeToSoundIndex(Entity381*, unsigned int)’:
-../src/SoundMgr.cpp:239:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         if (index == -1) //if there is no defined sound for the specified type, don't do anything
-                   ^
-../src/SoundMgr.cpp: In member function ‘bool OgreSND::SoundMgr::isAudioPlaying(ALuint)’:
-../src/SoundMgr.cpp:745:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-../src/SoundMgr.cpp: At global scope:
-../src/SoundMgr.cpp:233:15: warning: ‘tmpT’ defined but not used [-Wunused-variable]
- double static tmpT = 0.0;
-               ^
-../src/SoundMgr.cpp:234:13: warning: ‘paused’ defined but not used [-Wunused-variable]
- bool static paused = false;
-             ^
-Finished building: ../src/SoundMgr.cpp
- 
-Building file: ../src/UiMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-../src/UiMgr.cpp: In member function ‘virtual void UiMgr::buttonHit(OgreBites::Button*)’:
-../src/UiMgr.cpp:210:29: error: invalid conversion from ‘OgreBites::Widget*’ to ‘OgreBites::Button*’ [-fpermissive]
-      b = mTrayMgr->getWidget("BackButton");
-                             ^
-../src/UiMgr.cpp: In member function ‘void UiMgr::HowToPlay()’:
-../src/UiMgr.cpp:256:21: warning: unused variable ‘b’ [-Wunused-variable]
-  OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_CENTER, "BackButton", "Close");
-                     ^
-make: *** [src/UiMgr.o] Error 1
-src/subdir.mk:48: recipe for target 'src/UiMgr.o' failed
-12:12:11 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/UiMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-../src/UiMgr.cpp: In member function ‘virtual void UiMgr::buttonHit(OgreBites::Button*)’:
-../src/UiMgr.cpp:210:56: error: conversion from ‘OgreBites::Widget*’ to non-scalar type ‘OgreBites::Widget’ requested
-      OgreBites::Widget backButton = mTrayMgr->getWidget("BackButton");
-                                                        ^
-../src/UiMgr.cpp:211:16: error: base operand of ‘->’ has non-pointer type ‘OgreBites::Widget’
-      backButton->hide();
-                ^
-../src/UiMgr.cpp: In member function ‘void UiMgr::HowToPlay()’:
-../src/UiMgr.cpp:256:21: warning: unused variable ‘b’ [-Wunused-variable]
-  OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_CENTER, "BackButton", "Close");
-                     ^
-src/subdir.mk:48: recipe for target 'src/UiMgr.o' failed
-make: *** [src/UiMgr.o] Error 1
-12:12:42 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/UiMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-../src/UiMgr.cpp: In member function ‘void UiMgr::HowToPlay()’:
-../src/UiMgr.cpp:256:21: warning: unused variable ‘b’ [-Wunused-variable]
-  OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_CENTER, "BackButton", "Close");
-                     ^
-Finished building: ../src/UiMgr.cpp
- 
-Building file: ../src/engine.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/engine.d" -MT"src/engine.d" -o "src/engine.o" "../src/engine.cpp"
-Finished building: ../src/engine.cpp
- 
 Building file: ../src/gameMgr.cpp
 Invoking: GCC C++ Compiler
 g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
 Finished building: ../src/gameMgr.cpp
  
-Building file: ../src/inputMgr.cpp
+Building target: Pong
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
+Finished building target: Pong
+ 
+16:42:38 **** Incremental Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/gameMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/inputMgr.d" -MT"src/inputMgr.d" -o "src/inputMgr.o" "../src/inputMgr.cpp"
-Finished building: ../src/inputMgr.cpp
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
  
 Building target: Pong
 Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
 Finished building target: Pong
  
-12:13:56 **** Incremental Build of configuration Debug for project Pong ****
+16:43:50 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-make: Nothing to be done for 'all'.
-12:14:31 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/UiMgr.cpp
+Building file: ../src/gameMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-../src/UiMgr.cpp: In member function ‘void UiMgr::HowToPlay()’:
-../src/UiMgr.cpp:258:21: warning: unused variable ‘b’ [-Wunused-variable]
-  OgreBites::Button *b = mTrayMgr->createButton(OgreBites::TL_CENTER, "BackButton", "Close");
-                     ^
-Finished building: ../src/UiMgr.cpp
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
  
 Building target: Pong
 Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
 Finished building target: Pong
  
-12:19:23 **** Incremental Build of configuration Debug for project Pong ****
+16:44:45 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-Building file: ../src/UiMgr.cpp
+Building file: ../src/gameMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-Finished building: ../src/UiMgr.cpp
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+../src/gameMgr.cpp: In member function ‘virtual void GameMgr::tick(float)’:
+../src/gameMgr.cpp:64:30: error: ‘stdl’ is not a member of ‘std’
+   std::cout<<"Size: "<<size<<std::stdl;
+                              ^
+src/subdir.mk:48: recipe for target 'src/gameMgr.o' failed
+make: *** [src/gameMgr.o] Terminated
+Command canceled
+16:45:01 **** Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
  
 Building target: Pong
 Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
 Finished building target: Pong
  
-12:20:25 **** Incremental Build of configuration Debug for project Pong ****
+16:46:04 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-Building file: ../src/UiMgr.cpp
+Building file: ../src/gameMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-Finished building: ../src/UiMgr.cpp
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
  
 Building target: Pong
 Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
 Finished building target: Pong
  
-12:20:52 **** Incremental Build of configuration Debug for project Pong ****
+16:47:15 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-Building file: ../src/UiMgr.cpp
+Building file: ../src/gameMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-Finished building: ../src/UiMgr.cpp
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+src/subdir.mk:48: recipe for target 'src/gameMgr.o' failed
+make: *** [src/gameMgr.o] Terminated
+Command canceled
+16:47:22 **** Build of configuration Debug for project Pong ****
+make all 
+Building file: ../src/gameMgr.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
  
 Building target: Pong
 Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
 Finished building target: Pong
  
-12:22:33 **** Incremental Build of configuration Debug for project Pong ****
+16:48:05 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-Building file: ../src/UiMgr.cpp
+Building file: ../src/gameMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-Finished building: ../src/UiMgr.cpp
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
  
 Building target: Pong
 Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
 Finished building target: Pong
  
-12:23:34 **** Incremental Build of configuration Debug for project Pong ****
+16:49:20 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-Building file: ../src/UiMgr.cpp
+Building file: ../src/gameMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-Finished building: ../src/UiMgr.cpp
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
  
 Building target: Pong
 Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
 Finished building target: Pong
  
-12:24:02 **** Incremental Build of configuration Debug for project Pong ****
+16:50:11 **** Incremental Build of configuration Debug for project Pong ****
 make all 
-Building file: ../src/UiMgr.cpp
+Building file: ../src/gameMgr.cpp
 Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-Finished building: ../src/UiMgr.cpp
- 
-Building target: Pong
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
-Finished building target: Pong
- 
-12:24:33 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/UiMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-Finished building: ../src/UiMgr.cpp
- 
-Building target: Pong
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
-Finished building target: Pong
- 
-12:25:04 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-make: Nothing to be done for 'all'.
-12:27:58 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/UiMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-../src/UiMgr.cpp: In member function ‘void UiMgr::HowToPlay()’:
-../src/UiMgr.cpp:257:2: error: expected ‘;’ before ‘mTrayMgr’
-  mTrayMgr->createButton(OgreBites::TL_CENTER, "BackButton", "Close");
-  ^
-src/subdir.mk:48: recipe for target 'src/UiMgr.o' failed
-make: *** [src/UiMgr.o] Error 1
-12:28:14 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/UiMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-Finished building: ../src/UiMgr.cpp
- 
-Building target: Pong
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
-Finished building target: Pong
- 
-12:32:13 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/UiMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-Finished building: ../src/UiMgr.cpp
- 
-Building target: Pong
-Invoking: GCC C++ Linker
-g++ -L/usr/lib/x86_64-linux-gnu -L/usr/lib -L/usr/local/lib -L/usr/local/lib/OGRE -o "Pong"  ./src/Aspect.o ./src/Entity381.o ./src/EntityMgr.o ./src/GfxMgr.o ./src/Pong.o ./src/SoundMgr.o ./src/UiMgr.o ./src/engine.o ./src/gameMgr.o ./src/inputMgr.o ./src/mgr.o   -lOgreMain -lOgreTerrain -laudio -lopenal -lOgreOverlay -lOIS -lboost_system
-Finished building target: Pong
- 
-12:37:29 **** Incremental Build of configuration Debug for project Pong ****
-make all 
-Building file: ../src/UiMgr.cpp
-Invoking: GCC C++ Compiler
-g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/UiMgr.d" -MT"src/UiMgr.d" -o "src/UiMgr.o" "../src/UiMgr.cpp"
-Finished building: ../src/UiMgr.cpp
+g++ -I/usr/local/include/OGRE -I/usr/include/AL -I/usr/include/audio -I"/home/randygonzalez/Desktop/CS381/Pong/materials" -I"/home/randygonzalez/Desktop/CS381/Pong/inc" -I/usr/local/include/OGRE/Overlay -I/usr/include/ois -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/gameMgr.d" -MT"src/gameMgr.d" -o "src/gameMgr.o" "../src/gameMgr.cpp"
+Finished building: ../src/gameMgr.cpp
  
 Building target: Pong
 Invoking: GCC C++ Linker

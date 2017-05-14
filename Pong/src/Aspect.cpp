@@ -45,6 +45,7 @@ Physics::~Physics(){
 
 void Physics::Tick(float dt)
 {
+
 	entity->velocity = entity->direction*entity->speed;
 	this->entity->ogreSceneNode->translate( (this->entity->velocity*dt));
 

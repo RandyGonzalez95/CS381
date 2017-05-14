@@ -1,0 +1,87 @@
+/*
+ * EntityMgr.cpp
+ *
+ *  Created on: Feb 22, 2017
+ *      Author: sushil
+ */
+
+
+#include <EntityMgr.h>
+#include <engine.h>
+
+
+EntityMgr::EntityMgr(Engine *eng): Mgr(eng)
+{
+
+}
+
+EntityMgr::~EntityMgr()
+{
+
+}
+
+void EntityMgr::tick(float dt)
+{
+	// Loop through list of entities
+	for(unsigned int i = 0; i<entities.size();i++)
+		entities[i]->Tick(dt);
+
+
+}
+
+void EntityMgr::init()
+{
+	return;
+}
+
+void EntityMgr::loadLevel()
+{
+
+}
+
+void EntityMgr::stop()
+{
+	return;
+}
+
+void EntityMgr::CreateOgreEntityAndNode(Entity381 *ent)
+{
+
+	if(ent)
+	{
+		ent->ogreEntity = engine->gfxMgr->ogreSceneManager->createEntity(ent->meshfile);
+		ent->ogreSceneNode = engine->gfxMgr->ogreSceneManager->getRootSceneNode()->createChildSceneNode(ent->position);
+		ent->ogreSceneNode->attachObject(ent->ogreEntity);
+	}
+
+}
+
+Entity381* EntityMgr::CreateEntity(EntityType entityType, Ogre::Vector3 position)
+{
+
+	Entity381 *ent = 0;
+
+	switch(entityType)
+	{
+		case EntityType::Ball:
+			ent = new Ball(position);
+			break;
+		case EntityType::Paddle:
+			ent = new Paddle(position);
+			break;
+		case EntityType::Wall:
+			ent = new Wall(position);
+			break;
+	}
+
+	CreateOgreEntityAndNode(ent);
+
+	// push back entity to list
+	entities.push_back(ent);
+
+	return ent;
+}
+
+void DeleteEntity();
+
+

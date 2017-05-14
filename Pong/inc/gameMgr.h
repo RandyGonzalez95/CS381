@@ -22,6 +22,8 @@ private:
 	void createWall();
 	void hitPaddle();
 	float bounceBall(Ogre::Vector3 ballPos, Ogre::Vector3 paddlePos, float paddleHeight);
+	void createPowerup(float dt);
+	void instantiate();
 	void moveBall();
 	void moveAI(float dt);
 
@@ -31,6 +33,14 @@ private:
 
 	float y = 0.0f;
 	bool singlePlayer = true; // game by default is single player
+
+	// Cooldown for powerups
+	float timer;
+	const float currentTime = 5.0f; // in seconds
+
+	bool powerUp = false;
+
+	int size = 0;
 
 	Ogre::Vector3 currentDir, currentVel;
 
