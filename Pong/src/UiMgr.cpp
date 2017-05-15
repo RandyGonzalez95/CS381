@@ -48,19 +48,14 @@ void UiMgr::loadLevel()
 
 	mTrayMgr->showBackdrop("Background");
 
-	//OgreBites::SelectMenu* menu = mTrayMgr->createThickSelectMenu(OgreBites::TL_CENTER, "MyMenu", "Menu", 200, 3);
-	//OgreBites::Button *b =
 	mTrayMgr->createButton(OgreBites::TL_BOTTOM, "StartButton", "Start");
 
 	OgreBites::SelectMenu* menu = mTrayMgr->createLongSelectMenu(OgreBites::TL_BOTTOM, "MyMenu", "Options Menu", 400, 200, 5);
+	menu->addItem("");
 	menu->addItem("How To Play");
 	menu->addItem("Single Player");
 	menu->addItem("Two Player");
-	menu->addItem("Choose Difficulty");
 
-	//Ogre::Bites SelectMenu *menu = mTrayMgr->createThickSelectMenu(OgreBites::TL_CENTER, "MyMenu", "Menu", 300, 3);
-
-	//OgreBites::Label *label = mTrayMgr->createLabel(OgreBites::TL_NONE, "Label", "Caption", 200);
 }
 
 void UiMgr::tick(float dt)
@@ -256,10 +251,18 @@ void UiMgr::HowToPlay()
 	instructions = mTrayMgr->createTextBox(OgreBites::TL_CENTER, "Instructions", "How To Play", 500, 500);
 	instructions->setText("				Hello Welcome To Pong!\n");
 	instructions->appendText("1). Choose Player One or Player Two Mode.\n");
-	instructions->appendText("2). Camera Movement: WASD.\n");
-	instructions->appendText("3). Player One Movement: I goes up, K goes down.\n");
-	instructions->appendText("4). Player Two Movement: Up/Down arrow keys.\n");
-	instructions->appendText("5). Player scores when ball hits the opposite wall.\n\n\n\n");
+	instructions->appendText("2). Player One Mode:\n");
+	instructions->appendText("		a). Powerups Are Available!\n");
+	instructions->appendText("			i). Green: Ball goes FAST!!\n");
+	instructions->appendText("			ii). Purple: Your paddle is 2x faster. 5sec reset.\n");
+	instructions->appendText("			iii). Pink: AI paddle 2x slower. 5sec reset.\n");
+	instructions->appendText("3). Player Two Mode:\n");
+	instructions->appendText("		a). Player One Movement: I goes up, K goes down.\n");
+	instructions->appendText("		b). Player Two Movement: Up/Down arrow keys.\n");
+	instructions->appendText("4). Rules:\n");
+	instructions->appendText("		a). Hit ball with paddles.\n");
+	instructions->appendText("		b). Player scores when ball hits the opposite wall.\n");
+	instructions->appendText("		c). Player wins when score reaches 11.\n\n\n\n");
 	instructions->appendText("Enjoy the game! :)");
 
 

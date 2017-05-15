@@ -198,6 +198,9 @@ void InputMgr::UpdateCamera(float dt)
 	  {
 		  if(!engine->gameMgr->green)
 		  engine->entityMgr->entities[2]->speed = 600.0f;
+
+		  if(engine->gameMgr->green)
+		  engine->entityMgr->entities[2]->speed = 1200.0f;
 	  }
 
 
