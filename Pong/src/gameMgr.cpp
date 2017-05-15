@@ -12,6 +12,7 @@
 GameMgr::GameMgr(Engine *engine): Mgr(engine)
 {
 	timer = currentTime;
+	timer2 = currentTime2;
 }
 
 GameMgr::~GameMgr()
@@ -54,17 +55,33 @@ void GameMgr::tick(float dt)
 
 	if(engine->uiMgr->playing)
 	{
+		// Check for paddles
 		hitPaddle();
 
 		// if we have one player, Move AI
 		if(engine->uiMgr->singlePlayer)
+		{
 			moveAI(dt);
 
+			// if powerup exists
+			if(powerUp)
+			{
+				// check which one we hit
+				checkPowerUp(dt);
+			}
 
+			// create power ups if there are none
 
-		//createPowerup(dt);
+			if(!powerUp)
+				createPowerup(dt);
+		}
 
+		if(!engine->uiMgr->singlePlayer)
+		{
+			engine->entityMgr->entities[1]->ogreSceneNode->showBoundingBox(true);
+		}
 
+		engine->entityMgr->entities[0]->ogreSceneNode->showBoundingBox(true);
 	}
 }
 
@@ -77,13 +94,19 @@ void GameMgr::instantiate()
 	int x = (rand()%600)+100;
 	int y = rand()% ((268*2)+1) + (-268);
 
+	// Delete our last power up
+	if(size > 47)
+		engine->entityMgr->entities[size - 1]->ogreSceneNode->setVisible(false);
 
 
+	// Create new powerup at random location
 	ent = engine->entityMgr->CreateEntity(EntityType::Ball, Ogre::Vector3(x, y, 0));
 	size++;
-	ent->ogreSceneNode->setScale(0.2, 0.2, 0.2);
+	ent->ogreSceneNode->setScale(0.4, 0.4, 0.4);
 	ent->speed = 0;
 
+	// randomize type of powerup
+	randomizePP();
 	powerUp = true;
 }
 
@@ -97,6 +120,41 @@ void GameMgr::createPowerup(float dt)
 		instantiate();
 		std::cerr<<"Power up created"<<std::endl;
 	}
+
+}
+
+void GameMgr::checkPowerUp(float dt)
+{
+	// Get position of power up
+	powerupPos = engine->entityMgr->entities[size-1]->ogreSceneNode->getPosition();
+	ball = engine->entityMgr->entities[2]->ogreSceneNode->getPosition();
+
+	float xPos = std::abs(powerupPos.x - ball.x);
+	float yPos = std::abs(powerupPos.y - ball.y);
+
+	// Power Up grabbed
+	if(xPos <= 40)
+	{
+		if(yPos<= 40)
+		{
+			std::cerr<<"Power UP Grabbed!!\n";
+			engine->entityMgr->entities[size - 1]->ogreSceneNode->setVisible(false);
+
+			// Hit a powerup
+				// do something
+			activatePP(dt);
+			activated = true;
+
+
+			// Reset all powerups
+			powerUp = false;
+			resetPowerUps();
+		}
+	}
+
+	if( activated )
+		wait(dt);
+
 
 }
 
@@ -145,6 +203,10 @@ void GameMgr::createEnts()
 
 
 	engine->entityMgr->entities[2]->ogreSceneNode->setScale(0.2, 0.2, 0.2);
+
+
+	// Set AI
+	engine->entityMgr->entities[1]->speed = 400;
 
 	dirVec = Ogre::Vector3(1,-1,0);
 	AIVector = Ogre::Vector3(1,-1,0);
@@ -226,6 +288,7 @@ void GameMgr::moveBall()
 
 		engine->entityMgr->entities[2]->speed = 0.0f;
 		engine->inputMgr->pause = true;
+		green = false;
 
 	}
 	// Check Right Wall
@@ -239,6 +302,7 @@ void GameMgr::moveBall()
 
 		engine->entityMgr->entities[2]->speed = 0.0f;
 		engine->inputMgr->pause = true;
+		green = false;
 
 	}
 	//Check Top
@@ -287,7 +351,6 @@ void GameMgr::moveAI(float dt)
 
 	// Set the direction and speed of the AI
 	engine->entityMgr->entities[1]->direction = AIVector;
-	engine->entityMgr->entities[1]->speed = 400;
 
 }
 
@@ -380,6 +443,92 @@ void GameMgr::createWall()
 	}
 
 	//engine->entityMgr->entities[6]->ogreSceneNode->setScale(0.5, 9, 1);
+}
+
+void GameMgr::resetPowerUps()
+{
+	//green = false;
+	purple = false;
+	pink = false;
+}
+
+void GameMgr::randomizePP()
+{
+	int number = rand()%3;
+
+	createMaterials();
+
+	switch(number)
+	{
+		case 0:
+			green = true;
+			engine->entityMgr->entities[size - 1]->ogreEntity->setMaterialName("green");
+			break;
+
+		case 1:
+			purple = true;
+			engine->entityMgr->entities[size - 1]->ogreEntity->setMaterialName("purple");
+			break;engine->entityMgr->entities[1]->speed *= 0.5;
+
+		case 2:
+			pink = true;
+			engine->entityMgr->entities[size - 1]->ogreEntity->setMaterialName("pink");
+			break;
+	}
+}
+
+void GameMgr::activatePP(float dt)
+{
+	if(green)
+	{
+		std::cerr<<"We hit the green PP"<<std::endl;
+		engine->entityMgr->entities[2]->speed *= 5;
+	}
+	else if(purple)
+	{
+		std::cerr<<"We hit the purple PP"<<std::endl;
+		engine->entityMgr->entities[0]->speed *= 2;
+	}
+	else if(pink)
+	{
+		std::cerr<<"We hit the pink PP"<<std::endl;
+		engine->entityMgr->entities[1]->speed *= 0.5;
+	}
+}
+
+void GameMgr::createMaterials()
+{
+	Ogre::MaterialPtr greenMaterial = Ogre::MaterialManager::getSingleton().create("green", "General");
+	greenMaterial->getTechnique(0)->getPass(0)->createTextureUnitState("green.jpg");
+	greenMaterial->getTechnique(0)->getPass(0)->setDepthCheckEnabled(false);
+	greenMaterial->getTechnique(0)->getPass(0)->setDepthWriteEnabled(false);
+	greenMaterial->getTechnique(0)->getPass(0)->setLightingEnabled(false);
+
+	Ogre::MaterialPtr purpleMaterial = Ogre::MaterialManager::getSingleton().create("purple", "General");
+	purpleMaterial->getTechnique(0)->getPass(0)->createTextureUnitState("purple.jpg");
+	purpleMaterial->getTechnique(0)->getPass(0)->setDepthCheckEnabled(false);
+	purpleMaterial->getTechnique(0)->getPass(0)->setDepthWriteEnabled(false);
+	purpleMaterial->getTechnique(0)->getPass(0)->setLightingEnabled(false);
+
+	Ogre::MaterialPtr pinkMaterial = Ogre::MaterialManager::getSingleton().create("pink", "General");
+	pinkMaterial->getTechnique(0)->getPass(0)->createTextureUnitState("pink.jpg");
+	pinkMaterial->getTechnique(0)->getPass(0)->setDepthCheckEnabled(false);
+	pinkMaterial->getTechnique(0)->getPass(0)->setDepthWriteEnabled(false);
+	pinkMaterial->getTechnique(0)->getPass(0)->setLightingEnabled(false);
+}
+
+void GameMgr::wait(float dt)
+{
+	timer2 -= dt;
+
+	if(timer2 < 0)
+	{
+		std::cerr<<"Speed has been reset"<<std::endl;
+		engine->entityMgr->entities[0]->speed = 1;
+		engine->entityMgr->entities[1]->speed = 400;
+		timer2 = currentTime2;
+		activated = false;
+	}
 }
 
 
